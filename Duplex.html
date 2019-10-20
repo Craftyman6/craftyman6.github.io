@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html>
+    <font id='font' face = "Arial">
+    <head>
+        DUPLEX
+    </head>
+    
+    <body>
+        <br>
+        <br>
+        <br>
+        <h id='tick'></h>
+        <br>
+        <div id ='-' style='float:left;margin:0px 0px 0px 60px;' href="#" onclick='avi()'>-</div>
+        <br>
+        <h id = 'p8' onclick='alisub(k,j,h,g,f,d,s,a)'>-</h>
+        <br>
+        <div id ='p75' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='m()'><</div>
+        <br>
+        <h id = 'p7'onclick='alisub(j,h,g,f,d,s,a,0)'>-</h>
+        <br>
+        <div id = 'p65' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='n()'><</div>
+        <br>
+        <h id = 'p6'onclick='alisub(h,g,f,d,s,a,0,0)'>-</h>
+        <br>
+        <div id = 'p55' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='b()'><</div>
+        <br>
+        <h id = 'p5'onclick='alisub(g,f,d,s,a,0,0,0)'>-</h>
+        <br>
+        <div id = 'p45' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='v()'><</div>
+        <br>
+        <h id = 'p4'onclick='alisub(f,d,s,a,0,0,0,0)'>-</h>
+        <br>
+        <div id = 'p35' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='c()'><</div>
+        <br>
+        <h id = 'p3'onclick='alisub(d,s,a,0,0,0,0,0)'>-</h>
+        <br>
+        <div id = 'p25' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='x()'><</div>
+        <br>
+        <h id = 'p2'onclick='alisub(s,a,0,0,0,0,0,0)'>-</h>
+        <br>
+        <div id = 'p15' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='z()'><</div>
+        <br>
+        <h id = 'p1'onclick='alisub(a,0,0,0,0,0,0,0)'>-</h>
+        <br>
+        <div id = 'p05' style='float:left;margin:0px 0px 0px 20px;' href="#" onclick='sh()'><</div>
+        <br>
+        <br>
+        <div id = 'cu' style='float:left;margin:0px 0px 0px 100px;'>-</div>
+        <br>
+        <div id = 'hi' style='float:left;margin:0px 0px 0px 190px;'>-</div>
+        <br>
+        <div id = 'po' style='float:left;margin:0px 0px 0px 100px;'>-</div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h> Shop:</h>
+        <br>
+        <br>
+        <h id='pause' onclick='paused()'></h>
+        <br>
+        <br>
+        <h id='ll' >Letters left: 5</h>
+        <br>
+        <br>
+        <h id='ba' href='#' onclick="letterbuy('a',10)">$10: A</h>
+        <br>
+        <h id='bb' href='#' onclick="letterbuy('b',3)">$3: B</h>
+        <br>
+        <h id='bc' href='#' onclick="letterbuy('c',3)">$3: C</h>
+        <br>
+        <h id='bd' href='#' onclick="letterbuy('d',3)">$3: D</h>
+        <br>
+        <h id='be' href='#' onclick="letterbuy('e',5)">$5: E</h>
+        <br>
+        <h id='bf' href='#' onclick="letterbuy('f',3)">$3: F</h>
+        <br>
+        <h id='bg' href='#' onclick="letterbuy('g',3)">$3: G</h>
+        <br>
+        <h id='bh' href='#' onclick="letterbuy('h',7)">$7: H</h>
+        <br>
+        <h id='bi' href='#' onclick="letterbuy('i',8)">$8: I</h>
+        <br>
+        <h id='bj' href='#' onclick="letterbuy('j',3)">$3: J</h>
+        <br>
+        <h id='bk' href='#' onclick="letterbuy('k',3)">$3: K</h>
+        <br>
+        <h id='bl' href='#' onclick="letterbuy('l',3)">$3: L</h>
+        <br>
+        <h id='bm' href='#' onclick="letterbuy('m',3)">$3: M</h>
+        <br>
+        <h id='bn' href='#' onclick="letterbuy('n',3)">$3: N</h>
+        <br>
+        <h id='bo' href='#' onclick="letterbuy('o',15)">$15: O</h>
+        <br>
+        <h id='bp' href='#' onclick="letterbuy('p',3)">$3: P</h>
+        <br>
+        <h id='bq' href='#' onclick="letterbuy('q',3)">$3: Q</h>
+        <br>
+        <h id='br' href='#' onclick="letterbuy('r',3)">$3: R</h>
+        <br>
+        <h id='bs' href='#' onclick="letterbuy('s',3)">$3: S</h>
+        <br>
+        <h id='bt' href='#' onclick="letterbuy('t',3)">$3: T</h>
+        <br>
+        <h id='bu' href='#' onclick="letterbuy('u',3)">$3: U</h>
+        <br>
+        <h id='bv' href='#' onclick="letterbuy('v',3)">$3: V</h>
+        <br>
+        <h id='bw' href='#' onclick="letterbuy('w',3)">$3: W</h>
+        <br>
+        <h id='bx' href='#' onclick="letterbuy('x',3)">$3: X</h>
+        <br>
+        <h id='by' href='#' onclick="letterbuy('y',3)">$3: Y</h>
+        <br>
+        <h id='bz' href='#' onclick="letterbuy('z',3)">$3: Z</h>
+        <br>
+        <br>
+        <br>
+        <h id='bra' href='#' onclick="randombuy()">$2: Randomize selected</h>
+        <br>
+        <h id='brav' href='#' onclick="randombuyv()">$5: Randomize selected (vowel)</h>
+        <br>
+        <br>
+        <br>
+        <h id='b8' href='#' onclick="placebuy('k')">$4: 8th place clear</h>
+        <br>
+        <h id='b7' href='#' onclick="placebuy('j')">$4: 7th place clear</h>
+        <br>
+        <h id='b6' href='#' onclick="placebuy('h')">$4: 6th place clear</h>
+        <br>
+        <h id='b5' href='#' onclick="placebuy('g')">$4: 5th place clear</h>
+        <br>
+        <h id='b4' href='#' onclick="placebuy('f')">$4: 4th place clear</h>
+        <br>
+        <h id='b3' href='#' onclick="placebuy('d')">$4: 3rd place clear</h>
+        <br>
+        <h id='b2' href='#' onclick="placebuy('s')">$4: 2nd place clear</h>
+        <br>
+        <h id='b1' href='#' onclick="placebuy('a')">$4: 1st place clear</h>
+        <br>
+        <br>
+        <br>
+        <br>    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h id='alisont' href='#' onclick="alifun()">nope</h>
+        <br>
+        <br>
+        <h id='glasses'></h>
+        <br>
+        <h id='arial'onclick="arialfun()"></h>
+        <br>
+        <h id='verdana'onclick="verdanafun()"></h>
+        <br>
+        <h id='timesnewroman'onclick="timesnewromanfun()"></h>
+        <br>
+        <h id='courier'onclick="courierfun()"></h>
+        <br>
+        <h id='impact'onclick="impactfun()"></h>
+        <br>
+        <h id='comicsansms'onclick="comicsansmsfun()"></h>
+        <br>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+        </h>
+        <br>
+        <br>
+    </body>
+    </font>
+</html>
+
+<script>
+
+    var pk = document.getElementById('p8');
+    var pm = document.getElementById('p75');
+    var pj = document.getElementById('p7');
+    var pn = document.getElementById('p65');
+    var ph = document.getElementById('p6');
+    var pb = document.getElementById('p55');
+    var pg = document.getElementById('p5');
+    var pv = document.getElementById('p45');
+    var pf = document.getElementById('p4');
+    var pc = document.getElementById('p35');
+    var pd = document.getElementById('p3');
+    var px = document.getElementById('p25');
+    var ps = document.getElementById('p2');
+    var pz = document.getElementById('p15');
+    var pa = document.getElementById('p1');
+    var pav = document.getElementById('-');
+    var psh = document.getElementById('p05');
+    var cu = document.getElementById('cu');
+    var hi = document.getElementById('hi');
+    var po = document.getElementById('po');
+
+    var ba = document.getElementById('ba');
+    var bb = document.getElementById('bb');
+    var bc = document.getElementById('bc');
+    var bd = document.getElementById('bd');
+    var be = document.getElementById('be');
+    var bf = document.getElementById('bf');
+    var bg = document.getElementById('bg');
+    var bh = document.getElementById('bh');
+    var bi = document.getElementById('bi');
+    var bj = document.getElementById('bj');
+    var bk = document.getElementById('bk');
+    var bl = document.getElementById('bl');
+    var bm = document.getElementById('bm');
+    var bn = document.getElementById('bn');
+    var bo = document.getElementById('bo');
+    var bp = document.getElementById('bp');
+    var bq = document.getElementById('bq');
+    var br = document.getElementById('br');
+    var bs = document.getElementById('bs');
+    var bt = document.getElementById('bt');
+    var bu = document.getElementById('bu');
+    var bv = document.getElementById('bv');
+    var bw = document.getElementById('bw');
+    var bx = document.getElementById('bx');
+    var by = document.getElementById('by');
+    var bz = document.getElementById('bz');
+
+    var bra = document.getElementById('bra');
+    var brav = document.getElementById('brav');
+
+    var b8 = document.getElementById('b8');
+    var b7 = document.getElementById('b7');
+    var b6 = document.getElementById('b6');
+    var b5 = document.getElementById('b5');
+    var b4 = document.getElementById('b4');
+    var b3 = document.getElementById('b3');
+    var b2 = document.getElementById('b2');
+    var b1 = document.getElementById('b1');
+    var ll = document.getElementById('ll');
+    var tick = document.getElementById('tick');
+    var pause = document.getElementById('pause');
+    var alison = document.getElementById('alisont');
+    var font = document.getElementById('font');
+
+    var glasses = document.getElementById('glasses');
+    var arial = document.getElementById('arial');
+    var verdana = document.getElementById('verdana');
+    var timesnowroman = document.getElementById('timesnewroman');
+    var courier = document.getElementById('courier');
+    var impact = document.getElementById('impact');
+    var comicsansms = document.getElementById('comicsansms');
+
+    var k = undefined;
+    var j = undefined;
+    var h = undefined;
+    var g = undefined;
+    var f = undefined;
+    var d = undefined;
+    var s = undefined;
+    var a = undefined;
+
+    var voweltime = 0;
+    var plusable = 1;
+    var av = 'o';
+    var money = 0;
+    var points = 0;
+    var high = 0;
+    var timer = setInterval(timing,100);
+    var time = -1;
+    var long = 50;
+    var pauseprice = 3;
+    var ali = 0;
+    var alidone = true;
+
+    var letterpers = 0;
+    var randombought = false;
+    var randomvbought = false;
+    var firbought = false;
+    var secbought = false;
+    var thibought = false;
+    var foubought = false;
+    var fifbought = false;
+    var sixbought = false;
+    var sevbought = false;
+    var eigbought = false;
+
+
+
+
+function m() {
+    
+    if (!(av=='plus')) {
+        if (k==undefined){
+
+        if (a==undefined || s==undefined || a==undefined || f==undefined || g==undefined || h==undefined || j==undefined) {
+
+            if(a==undefined) {a=av}
+            else if (s==undefined) {s=av}
+            else if (d==undefined) {d=av}
+            else if (f==undefined) {f=av}
+            else if (g==undefined) {g=av}
+            else if (j==undefined) {j=av}
+        }
+        else { 
+            k=av
+        }
+
+        randomize();
+        update();
+        }else{lose()}
+    }
+
+    else {
+        update()
+        add('m');
+
+    }
+    if(points>=25){time=long}
+}
+
+function n() {
+    if(points>=25){time=long}
+ if (!(av=='plus')) {
+    if (k==undefined){
+ if (a==undefined || s==undefined || a==undefined || f==undefined || g==undefined || h==undefined) {
+ if(a==undefined) {a=av}
+ else if (s==undefined) {s=av}
+ else if (d==undefined) {d=av}
+ else if (f==undefined) {f=av}
+ else if (g==undefined) {g=av}
+ else if (h==undefined) {h=av}
+ }
+ else{ 
+ k=j;j=av
+ }
+ randomize();
+ update()
+    }else{lose()}
+ }
+ else {
+    update()
+ add('n');
+}
+
+}
+
+function b() {
+    
+ if (!(av=='plus')) {
+    if (k==undefined){
+ if (a==undefined || s==undefined || a==undefined || f==undefined || g==undefined) {
+ if(a==undefined) {a=av}
+ else if (s==undefined) {s=av}
+ else if (d==undefined) {d=av}
+ else if (f==undefined) {f=av}
+ else if (g==undefined) {g=av}
+ }
+ else{ 
+ k=j;j=h;h=av
+ }
+ randomize();
+update();
+    }else{lose()}
+}
+ else { update(); add('b');}
+ if(points>=25){time=long}
+}
+
+
+
+
+function v() {
+    
+ if (!(av=='plus')) {
+    if (k==undefined){
+ if (d==undefined || s==undefined || a==undefined || f==undefined) {
+ if (a==undefined) {a=av;}
+ else if (s==undefined) {s=av}
+ else if (d==undefined) {d=av}
+ else if (f==undefined) {f=av}
+ }
+ else {
+ k=j;j=h;h=g;g=av
+};
+randomize();
+update()
+    }else{lose()}
+}
+ else {
+    update()
+ add('v');
+ }
+
+ if(points>=25){time=long}
+}
+
+
+
+
+function c() {
+    
+ if (!(av=='plus')) {
+     if (k==undefined){
+ if (d==undefined || s==undefined || a==undefined) {
+ if (a==undefined) {a=av;}
+ else if (s==undefined) {s=av}
+ else if (d==undefined) {d=av}
+ }
+ else {
+ k=j;j=h;h=g;g=f;f=av
+};
+randomize();
+update()
+     }
+     else {lose()}
+}
+ else {
+    update()
+ add('c');
+ }
+
+ if(points>=25){time=long}
+}
+
+
+
+function x() {
+    
+     if (!(av=='plus')) {
+    if (k==undefined){
+ if (s==undefined || a==undefined) {
+ if (a==undefined) {a=av;}
+ else if (s==undefined) {s=av}
+ }
+ else {
+ k=j;j=h;h=g;g=f;f=d;d=av
+};
+randomize();
+update()
+    }else{lose()}
+}
+ else {
+ update();
+ add('x');
+ }
+
+
+ if(points>=25){time=long}
+}
+
+
+
+function z() {
+    
+     if (!(av=='plus')) {
+    if (k==undefined){
+ if (a==undefined) {a=av}
+ else {
+ k=j;j=h;h=g;g=f;f=d;d=s;s=av}
+ randomize();
+update();
+    }else{lose()}
+}
+ else {
+    update()
+add('z');
+ }
+ if(points>=25){time=long}
+}
+
+
+function sh() { 
+    if (!(av=='plus')) {
+        if (k==undefined){
+        k=j;j=h;h=g;g=f;f=d;d=s;s=a;a=av
+        randomize();
+        update();
+        }else{lose()}
+        if(points>=25){time=long}
+    }
+    else {
+        alert('That is not how it works')
+    }
+    
+}
+
+
+function avi() {
+    if (plusable==1) {
+        av='plus';
+        update();
+    }
+}
+
+
+function randomize() 
+{
+    if (voweltime==0) {
+        switch (Math.floor(Math.random() * (+22 - +1)) + +1) {
+            case 1:av='b';break;
+            case 2:av='c';break;
+            case 3:av='d';break;
+            case 4:av='f';break;
+            case 5:av='g';break;
+            case 6:av='h';break;
+            case 7:av='j';break;
+            case 8:av='k';break;
+            case 9:av='l';break;
+            case 10:av='m';break;
+            case 11:av='n';break;
+            case 12:av='p';break;
+            case 13:av='q';break;
+            case 14:av='r';break;
+            case 15:av='s';break;
+            case 16:av='t';break;
+            case 17:av='v';break;
+            case 18:av='w';break;
+            case 19:av='x';break;
+            case 20:av='y';break;
+            case 21:av='z';break;
+        }
+        voweltime=1
+    }
+    else {
+        switch (Math.floor(Math.random() * (+6 - +1)) + +1) {
+            case 1:av='a';break;
+            case 2:av='e';break;
+            case 3:av='i';break;
+            case 4:av='o';break;
+            case 5:av='u';break;
+        }
+        voweltime=0
+    }
+    plusable=1;
+}
+
+
+function add(where) {
+
+    var top = undefined;
+    var bottom = undefined;
+    switch (where) {
+        case 'z': top = s; bottom = a;break
+        case 'x': top = d; bottom = s;break
+        case 'c': top = f; bottom = d;break
+        case 'v': top = g; bottom = f;break
+        case 'b': top = h; bottom = g;break
+        case 'n': top = j; bottom = h;break
+        case 'm': top = k; bottom = j;break
+    };
+
+
+    if (top=='a') {
+        if (bottom=='b'||bottom=='d'||bottom=='g'||bottom=='h'||bottom=='l'||bottom=='m'||bottom=='n'||bottom=='s'||bottom=='t'||bottom=='u'||bottom=='w'||bottom=='x')
+            {win(where);} 
+        else 
+            {fail();}
+    }
+    else if (top=='b') {
+        if (bottom=='e'||bottom=='y')
+            {win(where);} 
+        else 
+            {fail();}
+    }
+    else if (top=='c') {
+        if (bottom=='o')
+            {win(where);} 
+        else 
+            {fail();}
+    }
+    else if (top=='d') {
+        if (bottom=='o') 
+            {win(where);} 
+        else 
+            {fail();}
+    }
+    else if (top=='e') {
+        if(bottom=='h'||bottom=='x'||bottom=='w') 
+            {win(where);} else {fail();}
+    }
+    else if (top=='g') {
+        if(bottom=='o'||bottom=='u') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='h') {
+        if(bottom=='e'||bottom=='a'||bottom=='i'||bottom=='m'||bottom=='o')
+        {win(where);} else {fail();}
+    }
+    else if (top=='i') {
+        if(bottom=='d'||bottom=='f'||bottom=='n'||bottom=='s'||bottom=='t') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='j') {
+        if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='l') {
+        if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='m') {
+        if(bottom=='e'||bottom=='y') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='n') {
+        if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='o') {
+        if(bottom=='h'||bottom=='f'||bottom=='i'||bottom=='k'||bottom=='n'||bottom=='r'||bottom=='x'||bottom=='z') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='p') {
+        if(bottom=='i') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='q') {
+        if(bottom=='i') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='s') {
+        if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='t') {
+        if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='u') {
+        if(bottom=='p'||bottom=='h'||bottom=='s'||bottom=='k'||bottom=='r') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='w') {
+        if(bottom=='e') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='v') {
+        if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else {fail();}
+}
+
+function win(what) {
+    switch (what) {
+    case 'z': a=d;s=f;d=g;f=h;g=j;h=k;break;
+    case 'x': s=f;d=g;f=h;g=j;h=k;break;
+    case 'c': d=g;f=h;g=j;h=k;break;
+    case 'v': f=h;g=j;h=k;break;
+    case 'b': g=j;h=k;break;
+    case 'n': h=k;break;
+    case 'm': break;
+    }
+    j=undefined; 
+    k=undefined;
+    randomize();
+    points=(points+1);
+    if(points>=high){high=points}
+    update();
+    if(alidone){grub(1.5)}else{grub(1);};
+    
+
+
+}
+
+function fail(){
+    if(points>0){points=points-1};
+    randomize();
+    update();
+    plusable=0;
+}
+
+function lose(){
+k=undefined;
+j=undefined;
+h=undefined;
+g=undefined;
+f=undefined;
+d=undefined;
+s=undefined;
+a=undefined;
+randombought = false;
+randomvbought = false;
+firbought = false;
+secbought = false;
+thibought = false;
+foubought = false;
+fifbought = false;
+sixbought = false;
+sevbought = false;
+eigbought = false;
+randomize();
+points=0;
+letterpers = 0;
+pauseprice = 3;
+time=-1
+update();
+}
+function grub(much) {
+    money=(money+much);
+    update();
+}
+
+function letterbuy(letter,cost) {
+    if (letterpers<5){
+    if (money>=cost) {
+        av=letter;
+        money=(money-cost);
+        letterpers=(letterpers+1);
+        update();
+    }
+    };
+}
+
+function placebuy (where) {
+    if (money >= 4) {
+    switch (where) {
+        case 'k': if(!eigbuoght){k=undefined;eigbought=true}break;
+        case 'j': if(!sevbought){j=k;k=undefined;sevbought=true}break;
+        case 'h': if(!sixbought){h=j;j=k;k=undefined;sixbought=true}break;
+        case 'g': if(!fifbought){g=h;h=j;j=k;k=undefined;fifbought=true}break;
+        case 'f': if(!foubought){f=g;g=h;h=j;j=k;k=undefined;foubought=true}break;
+        case 'd': if(!thibought){d=f;f=g;g=h;h=j;j=k;k=undefined;thibought=true}break;
+        case 's': if(!secbought){s=d;d=f;f=g;g=h;h=j;j=k;k=undefined;secbought=true}break;
+        case 'a': if(!firbought){a=s;s=d;d=f;f=g;g=h;h=j;j=k;k=undefined;firbought=true}break;
+    }
+    money=(money-4);
+    update();
+    }
+}
+
+function randombuy(){
+    if(!randombought){
+    if(money=>2){
+        randomize();
+        money=(money-2)
+        randombought=true;
+        update();
+    }
+    }
+}
+
+function randombuyv(){
+    if(!randomvbought){
+    if(money=>5){
+        switch (Math.floor(Math.random() * (+5 - +1)) + +1) {
+            case 1:av='a';break;
+            case 2:av='e';break;
+            case 3:av='i';break;
+            case 4:av='o';break;
+            case 5:av='u';break;
+        }
+        voweltime=0;
+        money=(money-5)
+        randomvbought=true;
+        update()
+    }
+    }
+}
+
+function timing(){
+    if(!(time==-1)){
+    time=time-1;
+        if(time==0){
+            timeout();
+            if(points>=25){time=long}
+        }
+    }
+
+    switch(time){
+        case 50:tick.innerHTML=('--------------------------------------------------');break;
+        case 49:tick.innerHTML=('-------------------------------------------------');break;
+        case 48:tick.innerHTML=('------------------------------------------------');break;
+        case 47:tick.innerHTML=('-----------------------------------------------');break;
+        case 46:tick.innerHTML=('----------------------------------------------');break;
+        case 45:tick.innerHTML=('---------------------------------------------');break;
+        case 44:tick.innerHTML=('--------------------------------------------');break;
+        case 43:tick.innerHTML=('-------------------------------------------');break;
+        case 42:tick.innerHTML=('------------------------------------------');break;
+        case 41:tick.innerHTML=('-----------------------------------------');break;
+        case 40:tick.innerHTML=('----------------------------------------');break;
+        case 39:tick.innerHTML=('---------------------------------------');break;
+        case 38:tick.innerHTML=('--------------------------------------');break;
+        case 37:tick.innerHTML=('-------------------------------------');break;
+        case 36:tick.innerHTML=('------------------------------------');break;
+        case 35:tick.innerHTML=('-----------------------------------');break;
+        case 34:tick.innerHTML=('----------------------------------');break;
+        case 33:tick.innerHTML=('---------------------------------');break;
+        case 32:tick.innerHTML=('--------------------------------');break;
+        case 31:tick.innerHTML=('-------------------------------');break;
+        case 30:tick.innerHTML=('------------------------------');break;
+        case 29:tick.innerHTML=('-----------------------------');break;
+        case 28:tick.innerHTML=('----------------------------');break;
+        case 27:tick.innerHTML=('---------------------------');break;
+        case 26:tick.innerHTML=('--------------------------');break;
+        case 25:tick.innerHTML=('-------------------------');break;
+        case 24:tick.innerHTML=('------------------------');break;
+        case 23:tick.innerHTML=('-----------------------');break;
+        case 22:tick.innerHTML=('----------------------');break;
+        case 21:tick.innerHTML=('---------------------');break;
+        case 20:tick.innerHTML=('--------------------');break;
+        case 19:tick.innerHTML=('-------------------');break;
+        case 18:tick.innerHTML=('------------------');break;
+        case 17:tick.innerHTML=('-----------------');break;
+        case 16:tick.innerHTML=('----------------');break;
+        case 15:tick.innerHTML=('---------------');break;
+        case 14:tick.innerHTML=('--------------');break;
+        case 13:tick.innerHTML=('-------------');break;
+        case 12:tick.innerHTML=('------------');break;
+        case 11:tick.innerHTML=('-----------');break;
+        case 10:tick.innerHTML=('----------');break;
+        case 9:tick.innerHTML=('---------');break;
+        case 8:tick.innerHTML=('--------');break;
+        case 7:tick.innerHTML=('-------');break;
+        case 6:tick.innerHTML=('------');break;
+        case 5:tick.innerHTML=('-----');break;
+        case 4:tick.innerHTML=('----');break;
+        case 3:tick.innerHTML=('---');break;
+        case 2:tick.innerHTML=('--');break;
+        case 1:tick.innerHTML=('-');break;
+        case -1:tick.innerHTML=('');break;
+    }
+}
+
+function timeout() {
+    if(av=='plus') {
+    fail();
+    }
+    else{
+    m();
+    }
+}
+
+function paused(){
+    if(time!==-1&&money>=pauseprice){
+        time=-1;
+        money=money-pauseprice
+        pauseprice=pauseprice+1;
+        update();
+    }
+}
+
+function arialfun(){
+    font.face='Arial';
+    update();
+}
+function verdanafun(){
+    font.face='Verdana';
+    update();
+}
+function timesnewromanfun(){
+    font.face='Times New Roman';
+    update();
+}
+function courierfun(){
+    font.face='Courier';
+    update();
+}
+function impactfun(){
+    font.face='Impact';
+    update();
+}
+function comicsansmsfun(){
+    font.face='Comic sans MS';
+    update();
+}
+
+
+
+
+
+function alisub(on,tw,th,fo,fi,si,se,ei){
+    switch(ali){
+        case 5:if(on=='t'&&tw=='h'&&th=='e'){ali=6;};break;
+        case 7:if(on=='a'&&tw=='l'&&th=='i'){ali=8; money=money+5;};break;
+        case 10:if(on=='k'&&tw=='i'&&th=='d'&&fo=='s'){ali=11};break;
+        case 11:if(on=='d'&&tw=='i'&&th=='m'&&fo=='e'){ali=12};break;
+        case 12:if(on=='f'&&tw=='o'&&th=='r'&&fo=='k'){ali=13};break;
+        case 18:if(on=='r'&&tw=='e'&&th=='d'){ali=19};break;
+        case 19:if(on=='t'&&tw=='i'&&th=='e'){ali=20};break;
+        case 21:if(on=='m'&&tw=='a'&&th=='y'){ali=22};break;
+        case 22:if(on=='r'&&tw=='i'&&th=='t'&&fo=='z'){ali=23};break;
+        case 24:if(on=='m'&&tw=='a'&&th=='r'&&fo=='s'){ali=25};break;
+        case 25:if(on=='m'&&tw=='i'&&th=='l'&&fo=='k'){ali=26};break;
+        case 27:if(on=='z'&&tw=='e'&&th=='l'&&fo=='d'&&fi=='a'){ali=28};break;
+        case 28:if(on=='s'&&tw=='u'&&th=='p'&&fo=='e'&&fi=='r'){ali=29};break;
+        case 30:if(on=='d'&&tw=='u'&&th=='p'&&fo=='l'&&fi=='e'&&si=='x'){ali=31};break;
+        
+
+    }
+    update();
+}
+
+
+function alifun(){
+switch (ali){
+    case 0:ali=1;break;
+    case 1:ali=2;break;
+    case 2:ali=3;break;
+    case 3:ali=4;break;
+    case 4:ali=5;break;
+    case 6:ali=7;break;
+    case 8:ali=9;break;
+    case 9:ali=10;break;
+    case 13:ali=14;break;
+    case 14:ali=15;break;
+    case 15:ali=16;break;
+    case 16:ali=17;break;
+    case 17:ali=18;break;
+    case 20:ali=21;break;
+    case 23:ali=24;break;
+    case 26:ali=27;break;
+    case 29:ali=30;break;
+    case 31:ali=32;break;
+    case 32:ali=33;alidone=true;break;
+    case 33:ali=34;break;
+
+
+
+}
+update();
+}
+
+
+function update() {
+
+
+    switch (ali){
+    case 0: alison.innerHTML = ('psssst');break;
+    case 1: alison.innerHTML = ('hey you');break;
+    case 2: alison.innerHTML = ('You seem like a hard working man, wouldn\'t you like to work for me?');break;
+    case 3: alison.innerHTML = ('The name\'s Alison, but you can call me Ali, if you do a few chores for me, I can give you a few things lying around.');break;
+    case 4: alison.innerHTML = ('For more info, refer to my workbook under the case of "ali is great", use that to gain access.');break;
+    case 5: alison.innerHTML = ('First up: In __ begining');break;
+    case 6: alison.innerHTML = ('Nice! you\'ve got the idea. Next time you\'re getting a reward.');break;
+    case 7: alison.innerHTML = ('Next one: I stated earlier that you could call me what?');break;
+    case 8: alison.innerHTML = ('Great! here\'s five bucks, it\'s yours.');break;
+    case 9: alison.innerHTML = ('Are you ready for more? I know I am.');break;
+    case 10: alison.innerHTML = ('Are you ready, __? Aye aye, captain!');break;
+    case 11: alison.innerHTML = ('10¢');break;
+    case 12: alison.innerHTML = ('Spork - spoon = __');break;
+    case 13: alison.innerHTML = ('Hey, you know what, I\'ve been building this new gadget, can you give it a test run, and since you\'ve been so helpful, it\'s free of charge!');break;
+    case 14: alison.innerHTML = ('I call these Font Glasses, they do nothing different without a cartrige.');break;
+    case 15: alison.innerHTML = ('The more words I collect there more fonts I can gather, here, take this one, verdana.');break;
+    case 16: alison.innerHTML = ('Just click on the fonts you have to equip it to your glasses, the more you help, the more fonts I can make!');break;
+    case 17: alison.innerHTML = ('I\'ve got plenty more work for you, so don\'t stop now!');
+    case 18: alison.innerHTML = ('If you see this color on a street light, I wouldn\'t put the petal to the metal if I were you.');break;
+    case 19: alison.innerHTML = ('I would wear one of these around your neck at a businuss meeting.');break;
+    case 20: alison.innerHTML = ('Just in case you wanted to write an essay, here\'s my newest cartridge, Times New Roman!');break;
+    case 21: alison.innerHTML = ('April showers bring __ flowers.');break;
+    case 22: alison.innerHTML = ('If you\'re blue and you don\'t know where to go to why don\'t you go where fasion sits? Putting on the __');break;
+    case 23: alison.innerHTML = ('Another day, another carttridge, there\'s more to come.');break;
+    case 24: alison.innerHTML = ('If we were to land a man on a planet this would be the closest and first.');break;
+    case 25: alison.innerHTML = ('Good for your bones.');break;
+    case 26: alison.innerHTML = ('Hopefully this new cartridge will make an impact. I hope you\'re having as much fun as I am');break;
+    case 27: alison.innerHTML = ('The Legend of __');break;
+    case 28: alison.innerHTML = ('__ duper.');break;
+    case 29: alison.innerHTML = ('Hehehe, gonna have a bad time with Comic sans MS.');break;
+    case 30: alison.innerHTML = ('Alright this is your final report: What have you been playing?');break;
+    case 31: alison.innerHTML = ('Nice! That\'s everything that I need, but I don\'t know how I could repay you for all of the work you\'ve done...');break;
+    case 32: alison.innerHTML = ('You know, I could probably talk to the manager at Duplex Cooperation and tell him how much of a great job you\'ve been doing.');break;
+    case 33: alison.innerHTML = ('Great news! He was so impressed that he decided to up your pay! You\'ll now get one and a half bucks for every combination!');break;
+    case 34: alison.innerHTML = ('I hope I could be of use to you. Thanks for everything!');break;
+
+    }
+
+
+    if(ali>=14){glasses.innerHTML=('Font Glasses:')}else{glasses.innerHTML=('')};
+    if(ali>=14){if(font.face=='Arial'){arial.innerHTML=('Arial (Equipped)')}else{arial.innerHTML=('Arial')}}else{arial.innerHTML=('')};
+    if(ali>=15){if(font.face=='Verdana'){verdana.innerHTML=('Verdana (Equipped)')}else{verdana.innerHTML=('Verdana')}}else{verdana.innerHTML=('')};
+    if(ali>=20){if(font.face=='Times New Roman'){timesnewroman.innerHTML=('Times New Roman (Equipped)')}else{timesnewroman.innerHTML=('Times New Roman')}}else{timesnewroman.innerHTML=('')};
+    if(ali>=23){if(font.face=='Courier'){courier.innerHTML=('Courier (Equipped)')}else{courier.innerHTML=('Courier')}}else{courier.innerHTML=('')};
+    if(ali>=26){if(font.face=='Impact'){impact.innerHTML=('Impact (Equipped)')}else{impact.innerHTML=('Impact')}}else{impact.innerHTML=('')};
+    if(ali>=29){if(font.face=='Comic sans MS'){comicsansms.innerHTML=('Comic sans MS (Equipped)')}else{comicsansms.innerHTML=('Comic sans MS')}}else{comicsansms.innerHTML=('')};
+
+
+    plusable=1
+
+    if(points<55){long=(75-points)}else{long=20}
+
+    cu.innerHTML = ('$'+money);
+    po.innerHTML = ('p:'+points);
+    hi.innerHTML = ('Highscore:'+high);
+
+
+
+
+    
+
+
+    pause.innerHTML=('$'+pauseprice+': Pause')
+
+    switch (av) {
+        case undefined: pav.innerHTML = ('-');break;
+        case 'plus': pav.innerHTML = ('+');break;
+        case 'a': pav.innerHTML = ('A');break;
+        case 'b': pav.innerHTML = ('B');break;
+        case 'c': pav.innerHTML = ('C');break;
+        case 'd': pav.innerHTML = ('D');break;
+        case 'e': pav.innerHTML = ('E');break;
+        case 'f': pav.innerHTML = ('F');break;
+        case 'g': pav.innerHTML = ('G');break;
+        case 'h': pav.innerHTML = ('H');break;
+        case 'i': pav.innerHTML = ('I');break;
+        case 'j': pav.innerHTML = ('J');break;
+        case 'k': pav.innerHTML = ('K');break;
+        case 'l': pav.innerHTML = ('L');break;
+        case 'm': pav.innerHTML = ('M');break;
+        case 'n': pav.innerHTML = ('N');break;
+        case 'o': pav.innerHTML = ('O');break;
+        case 'p': pav.innerHTML = ('P');break;
+        case 'q': pav.innerHTML = ('Q');break;
+        case 'r': pav.innerHTML = ('R');break;
+        case 's': pav.innerHTML = ('S');break;
+        case 't': pav.innerHTML = ('T');break;
+        case 'u': pav.innerHTML = ('U');break;
+        case 'v': pav.innerHTML = ('V');break;
+        case 'w': pav.innerHTML = ('W');break;
+        case 'x': pav.innerHTML = ('X');break;
+        case 'y': pav.innerHTML = ('Y');break;
+        case 'z': pav.innerHTML = ('Z');break;
+    }
+
+    switch (a) {
+        case undefined: pa.innerHTML = ('-');break;
+        case 'a': pa.innerHTML = ('A');break;
+        case 'b': pa.innerHTML = ('B');break;
+        case 'c': pa.innerHTML = ('C');break;
+        case 'd': pa.innerHTML = ('D');break;
+        case 'e': pa.innerHTML = ('E');break;
+        case 'f': pa.innerHTML = ('F');break;
+        case 'g': pa.innerHTML = ('G');break;
+        case 'h': pa.innerHTML = ('H');break;
+        case 'i': pa.innerHTML = ('I');break;
+        case 'j': pa.innerHTML = ('J');break;
+        case 'k': pa.innerHTML = ('K');break;
+        case 'l': pa.innerHTML = ('L');break;
+        case 'm': pa.innerHTML = ('M');break;
+        case 'n': pa.innerHTML = ('N');break;
+        case 'o': pa.innerHTML = ('O');break;
+        case 'p': pa.innerHTML = ('P');break;
+        case 'q': pa.innerHTML = ('Q');break;
+        case 'r': pa.innerHTML = ('R');break;
+        case 's': pa.innerHTML = ('S');break;
+        case 't': pa.innerHTML = ('T');break;
+        case 'u': pa.innerHTML = ('U');break;
+        case 'v': pa.innerHTML = ('V');break;
+        case 'w': pa.innerHTML = ('W');break;
+        case 'x': pa.innerHTML = ('X');break;
+        case 'y': pa.innerHTML = ('Y');break;
+        case 'z': pa.innerHTML = ('Z');break;
+    }
+
+    switch (s) {
+        case undefined: ps.innerHTML = ('-');break;
+        case 'a': ps.innerHTML = ('A');break;
+        case 'b': ps.innerHTML = ('B');break;
+        case 'c': ps.innerHTML = ('C');break;
+        case 'd': ps.innerHTML = ('D');break;
+        case 'e': ps.innerHTML = ('E');break;
+        case 'f': ps.innerHTML = ('F');break;
+        case 'g': ps.innerHTML = ('G');break;
+        case 'h': ps.innerHTML = ('H');break;
+        case 'i': ps.innerHTML = ('I');break;
+        case 'j': ps.innerHTML = ('J');break;
+        case 'k': ps.innerHTML = ('K');break;
+        case 'l': ps.innerHTML = ('L');break;
+        case 'm': ps.innerHTML = ('M');break;
+        case 'n': ps.innerHTML = ('N');break;
+        case 'o': ps.innerHTML = ('O');break;
+        case 'p': ps.innerHTML = ('P');break;
+        case 'q': ps.innerHTML = ('Q');break;
+        case 'r': ps.innerHTML = ('R');break;
+        case 's': ps.innerHTML = ('S');break;
+        case 't': ps.innerHTML = ('T');break;
+        case 'u': ps.innerHTML = ('U');break;
+        case 'v': ps.innerHTML = ('V');break;
+        case 'w': ps.innerHTML = ('W');break;
+        case 'x': ps.innerHTML = ('X');break;
+        case 'y': ps.innerHTML = ('Y');break;
+        case 'z': ps.innerHTML = ('Z');break;
+    }
+
+    switch (d) {
+        case undefined: pd.innerHTML = ('-');break;
+        case 'a': pd.innerHTML = ('A');break;
+        case 'b': pd.innerHTML = ('B');break;
+        case 'c': pd.innerHTML = ('C');break;
+        case 'd': pd.innerHTML = ('D');break;
+        case 'e': pd.innerHTML = ('E');break;
+        case 'f': pd.innerHTML = ('F');break;
+        case 'g': pd.innerHTML = ('G');break;
+        case 'h': pd.innerHTML = ('H');break;
+        case 'i': pd.innerHTML = ('I');break;
+        case 'j': pd.innerHTML = ('J');break;
+        case 'k': pd.innerHTML = ('K');break;
+        case 'l': pd.innerHTML = ('L');break;
+        case 'm': pd.innerHTML = ('M');break;
+        case 'n': pd.innerHTML = ('N');break;
+        case 'o': pd.innerHTML = ('O');break;
+        case 'p': pd.innerHTML = ('P');break;
+        case 'q': pd.innerHTML = ('Q');break;
+        case 'r': pd.innerHTML = ('R');break;
+        case 's': pd.innerHTML = ('S');break;
+        case 't': pd.innerHTML = ('T');break;
+        case 'u': pd.innerHTML = ('U');break;
+        case 'v': pd.innerHTML = ('V');break;
+        case 'w': pd.innerHTML = ('W');break;
+        case 'x': pd.innerHTML = ('X');break;
+        case 'y': pd.innerHTML = ('Y');break;
+        case 'z': pd.innerHTML = ('Z');break;
+    }
+
+    switch (f) {
+        case undefined: pf.innerHTML = ('-');break;
+        case 'a': pf.innerHTML = ('A');break;
+        case 'b': pf.innerHTML = ('B');break;
+        case 'c': pf.innerHTML = ('C');break;
+        case 'd': pf.innerHTML = ('D');break;
+        case 'e': pf.innerHTML = ('E');break;
+        case 'f': pf.innerHTML = ('F');break;
+        case 'g': pf.innerHTML = ('G');break;
+        case 'h': pf.innerHTML = ('H');break;
+        case 'i': pf.innerHTML = ('I');break;
+        case 'j': pf.innerHTML = ('J');break;
+        case 'k': pf.innerHTML = ('K');break;
+        case 'l': pf.innerHTML = ('L');break;
+        case 'm': pf.innerHTML = ('M');break;
+        case 'n': pf.innerHTML = ('N');break;
+        case 'o': pf.innerHTML = ('O');break;
+        case 'p': pf.innerHTML = ('P');break;
+        case 'q': pf.innerHTML = ('Q');break;
+        case 'r': pf.innerHTML = ('R');break;
+        case 's': pf.innerHTML = ('S');break;
+        case 't': pf.innerHTML = ('T');break;
+        case 'u': pf.innerHTML = ('U');break;
+        case 'v': pf.innerHTML = ('V');break;
+        case 'w': pf.innerHTML = ('W');break;
+        case 'x': pf.innerHTML = ('X');break;
+        case 'y': pf.innerHTML = ('Y');break;
+        case 'z': pf.innerHTML = ('Z');break;
+    }
+
+    switch (g) {
+        case undefined: pg.innerHTML = ('-');break;
+        case 'a': pg.innerHTML = ('A');break;
+        case 'b': pg.innerHTML = ('B');break;
+        case 'c': pg.innerHTML = ('C');break;
+        case 'd': pg.innerHTML = ('D');break;
+        case 'e': pg.innerHTML = ('E');break;
+        case 'f': pg.innerHTML = ('F');break;
+        case 'g': pg.innerHTML = ('G');break;
+        case 'h': pg.innerHTML = ('H');break;
+        case 'i': pg.innerHTML = ('I');break;
+        case 'j': pg.innerHTML = ('J');break;
+        case 'k': pg.innerHTML = ('K');break;
+        case 'l': pg.innerHTML = ('L');break;
+        case 'm': pg.innerHTML = ('M');break;
+        case 'n': pg.innerHTML = ('N');break;
+        case 'o': pg.innerHTML = ('O');break;
+        case 'p': pg.innerHTML = ('P');break;
+        case 'q': pg.innerHTML = ('Q');break;
+        case 'r': pg.innerHTML = ('R');break;
+        case 's': pg.innerHTML = ('S');break;
+        case 't': pg.innerHTML = ('T');break;
+        case 'u': pg.innerHTML = ('U');break;
+        case 'v': pg.innerHTML = ('V');break;
+        case 'w': pg.innerHTML = ('W');break;
+        case 'x': pg.innerHTML = ('X');break;
+        case 'y': pg.innerHTML = ('Y');break;
+        case 'z': pg.innerHTML = ('Z');break;
+    }
+
+    switch (h) {
+        case undefined: ph.innerHTML = ('-');break;
+        case 'a': ph.innerHTML = ('A');break;
+        case 'b': ph.innerHTML = ('B');break;
+        case 'c': ph.innerHTML = ('C');break;
+        case 'd': ph.innerHTML = ('D');break;
+        case 'e': ph.innerHTML = ('E');break;
+        case 'f': ph.innerHTML = ('F');break;
+        case 'g': ph.innerHTML = ('G');break;
+        case 'h': ph.innerHTML = ('H');break;
+        case 'i': ph.innerHTML = ('I');break;
+        case 'j': ph.innerHTML = ('J');break;
+        case 'k': ph.innerHTML = ('K');break;
+        case 'l': ph.innerHTML = ('L');break;
+        case 'm': ph.innerHTML = ('M');break;
+        case 'n': ph.innerHTML = ('N');break;
+        case 'o': ph.innerHTML = ('O');break;
+        case 'p': ph.innerHTML = ('P');break;
+        case 'q': ph.innerHTML = ('Q');break;
+        case 'r': ph.innerHTML = ('R');break;
+        case 's': ph.innerHTML = ('S');break;
+        case 't': ph.innerHTML = ('T');break;
+        case 'u': ph.innerHTML = ('U');break;
+        case 'v': ph.innerHTML = ('V');break;
+        case 'w': ph.innerHTML = ('W');break;
+        case 'x': ph.innerHTML = ('X');break;
+        case 'y': ph.innerHTML = ('Y');break;
+        case 'z': ph.innerHTML = ('Z');break;
+    }
+
+    switch (j) {
+        case undefined: pj.innerHTML = ('-');break;
+        case 'a': pj.innerHTML = ('A');break;
+        case 'b': pj.innerHTML = ('B');break;
+        case 'c': pj.innerHTML = ('C');break;
+        case 'd': pj.innerHTML = ('D');break;
+        case 'e': pj.innerHTML = ('E');break;
+        case 'f': pj.innerHTML = ('F');break;
+        case 'g': pj.innerHTML = ('G');break;
+        case 'h': pj.innerHTML = ('H');break;
+        case 'i': pj.innerHTML = ('I');break;
+        case 'j': pj.innerHTML = ('J');break;
+        case 'k': pj.innerHTML = ('K');break;
+        case 'l': pj.innerHTML = ('L');break;
+        case 'm': pj.innerHTML = ('M');break;
+        case 'n': pj.innerHTML = ('N');break;
+        case 'o': pj.innerHTML = ('O');break;
+        case 'p': pj.innerHTML = ('P');break;
+        case 'q': pj.innerHTML = ('Q');break;
+        case 'r': pj.innerHTML = ('R');break;
+        case 's': pj.innerHTML = ('S');break;
+        case 't': pj.innerHTML = ('T');break;
+        case 'u': pj.innerHTML = ('U');break;
+        case 'v': pj.innerHTML = ('V');break;
+        case 'w': pj.innerHTML = ('W');break;
+        case 'x': pj.innerHTML = ('X');break;
+        case 'y': pj.innerHTML = ('Y');break;
+        case 'z': pj.innerHTML = ('Z');break;
+    }
+
+    switch (k) {
+        case undefined: pk.innerHTML = ('-');break;
+        case 'a': pk.innerHTML = ('A');break;
+        case 'b': pk.innerHTML = ('B');break;
+        case 'c': pk.innerHTML = ('C');break;
+        case 'd': pk.innerHTML = ('D');break;
+        case 'e': pk.innerHTML = ('E');break;
+        case 'f': pk.innerHTML = ('F');break;
+        case 'g': pk.innerHTML = ('G');break;
+        case 'h': pk.innerHTML = ('H');break;
+        case 'i': pk.innerHTML = ('I');break;
+        case 'j': pk.innerHTML = ('J');break;
+        case 'k': pk.innerHTML = ('K');break;
+        case 'l': pk.innerHTML = ('L');break;
+        case 'm': pk.innerHTML = ('M');break;
+        case 'n': pk.innerHTML = ('N');break;
+        case 'o': pk.innerHTML = ('O');break;
+        case 'p': pk.innerHTML = ('P');break;
+        case 'q': pk.innerHTML = ('Q');break;
+        case 'r': pk.innerHTML = ('R');break;
+        case 's': pk.innerHTML = ('S');break;
+        case 't': pk.innerHTML = ('T');break;
+        case 'u': pk.innerHTML = ('U');break;
+        case 'v': pk.innerHTML = ('V');break;
+        case 'w': pk.innerHTML = ('W');break;
+        case 'x': pk.innerHTML = ('X');break;
+        case 'y': pk.innerHTML = ('Y');break;
+        case 'z': pk.innerHTML = ('Z');break;
+    }
+
+    if(firbought){b1.innerHTML = ('OUT')}else{'$4: 1st place clear'};
+    if(secbought){b2.innerHTML = ('OUT')}else{'$4: 2nd place clear'};
+    if(thibought){b3.innerHTML = ('OUT')}else{'$4: 3rd place clear'};
+    if(foubought){b4.innerHTML = ('OUT')}else{'$4: 4th place clear'};
+    if(fifbought){b5.innerHTML = ('OUT')}else{'$4: 5th place clear'};
+    if(sixbought){b6.innerHTML = ('OUT')}else{'$4: 6th place clear'};
+    if(sevbought){b7.innerHTML = ('OUT')}else{'$4: 7th place clear'};
+    if(eigbought){b8.innerHTML = ('OUT')}else{'$4: 8th place clear'};
+
+    if(randombought) {
+        bra.innerHTML = ('OUT')
+    }
+    else {
+        bra.innerHTML = ('$2: Randomize selected')
+    }
+
+    if(randomvbought){
+        brav.innerHTML = ('OUT')
+    }
+    else{
+        brav,innerHTML = ('$5: Randomize selected (vowel)')
+    }
+
+    if (letterpers<5){
+        ba.innerHTML = ('$10: A')
+        bb.innerHTML = ('$3: B')
+        bc.innerHTML = ('$3: C')
+        bd.innerHTML = ('$3: D')
+        be.innerHTML = ('$5: E')
+        bf.innerHTML = ('$3: F')
+        bg.innerHTML = ('$3: G')
+        bh.innerHTML = ('$7: H')
+        bi.innerHTML = ('$10: I')
+        bj.innerHTML = ('$3: J')
+        bk.innerHTML = ('$3: K')
+        bl.innerHTML = ('$3: L')
+        bm.innerHTML = ('$3: M')
+        bn.innerHTML = ('$3: N')
+        bo.innerHTML = ('$15: O')
+        bp.innerHTML = ('$3: P')
+        bq.innerHTML = ('$3: Q')
+        br.innerHTML = ('$3: R')
+        bs.innerHTML = ('$3: S')
+        bt.innerHTML = ('$3: T')
+        bu.innerHTML = ('$3: U')
+        bv.innerHTML = ('$3: V')
+        bw.innerHTML = ('$3: W')
+        bx.innerHTML = ('$3: X')
+        by.innerHTML = ('$3: Y')
+        bz.innerHTML = ('$3: Z')
+    }
+    else {        
+        ba.innerHTML = ('OUT')
+        bb.innerHTML = ('OUT')
+        bc.innerHTML = ('OUT')
+        bd.innerHTML = ('OUT')
+        be.innerHTML = ('OUT')
+        bf.innerHTML = ('OUT')
+        bg.innerHTML = ('OUT')
+        bh.innerHTML = ('OUT')
+        bi.innerHTML = ('OUT')
+        bj.innerHTML = ('OUT')
+        bk.innerHTML = ('OUT')
+        bl.innerHTML = ('OUT')
+        bm.innerHTML = ('OUT')
+        bn.innerHTML = ('OUT')
+        bo.innerHTML = ('OUT')
+        bp.innerHTML = ('OUT')
+        bq.innerHTML = ('OUT')
+        br.innerHTML = ('OUT')
+        bs.innerHTML = ('OUT')
+        bt.innerHTML = ('OUT')
+        bu.innerHTML = ('OUT')
+        bv.innerHTML = ('OUT')
+        bw.innerHTML = ('OUT')
+        bx.innerHTML = ('OUT')
+        by.innerHTML = ('OUT')
+        bz.innerHTML = ('OUT')
+
+    }
+
+    switch (letterpers){
+        case 0: ll.innerHTML=('Letters left: 5');break;
+        case 1: ll.innerHTML=('Letters left: 4');break;
+        case 2: ll.innerHTML=('Letters left: 3');break;
+        case 3: ll.innerHTML=('Letters left: 2');break;
+        case 4: ll.innerHTML=('Letters left: 1');break;
+        case 5: ll.innerHTML=('No letters left');break;
+    }
+
+
+}
+update();
+//The timing system wroks! We just need to find out when it should get timed(now it's whenever win is), how long it should go, and broadcasting it to the screen.
+</script>
