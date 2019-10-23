@@ -8,6 +8,11 @@
     <body>
         <br>
         <br>
+        <h id='duplo1view'></h>
+        <br>
+        <h id='duplo2view'></h>
+        <br>
+        <h id='duplo3view'></h>
         <br>
         <h id='tick'></h>
         <br>
@@ -144,7 +149,13 @@
         <h id='b1' href='#' onclick="placebuy('a')">$4: 1st place clear</h>
         <br>
         <br>
+        <h id='duplo1' onclick='duplo1fun()'></h>
         <br>
+        <br>
+        <h id='duplo2' onclick='duplo2fun()'></h>
+        <br>
+        <br>
+        <h id='duplo3' onclick='duplo3fun()'></h>
         <br>    
         <br>
         <br>
@@ -313,7 +324,7 @@
     var timer = setInterval(timing,100);
     var time = -1;
     var long = 50;
-    var pauseprice = 3;
+    var pauseprice = 2;
     var ali = 0;
     var alidone = false;
 
@@ -328,6 +339,83 @@
     var sixbought = false;
     var sevbought = false;
     var eigbought = false;
+
+    var duplo11 = '0';
+    var duplo12 = '0';
+    var duplo21 = '0';
+    var duplo22 = '0';
+    var duplo31 = '0';
+    var duplo32 = '0';
+    var duploSe = 'none';
+    var duplo1b = false;
+    var duplo2b = false;
+    var duplo3b = false;
+    var duplo1 = document.getElementById('duplo1');
+    var duplo2 = document.getElementById('duplo2');
+    var duplo3 = document.getElementById('duplo3');
+    var duplo1view = document.getElementById('duplo1view');
+    var duplo2view = document.getElementById('duplo2view');
+    var duplo3view = document.getElementById('duplo3view');
+
+
+
+
+function duplo1fun(){
+    if(money>=20||duplo1b){
+    if(duplo1b){
+        if(duploSe=='1'){
+            duploSe='none'
+        }
+        else{
+            duploSe='1'
+        }
+    }
+    else{duplo1b=true; money=money-20;};
+        
+    }
+    update();
+}
+function duplo2fun(){
+    if(money>=70||duplo2b){
+    if(duplo2b){
+        if(duploSe=='2'){
+            duploSe='none'
+        }
+        else{
+            duploSe='2'
+        }
+    }
+    else{duplo2b=true; money=money-70;};
+        
+    }
+    update();
+}
+function duplo3fun(){
+    if(money>=150||duplo3b){
+    if(duplo3b){
+        if(duploSe=='3'){
+            duploSe='none'
+        }
+        else{
+            duploSe='3'
+        }
+    }
+    else{duplo3b=true; money=money-150;};
+        
+    }
+    update();
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -344,6 +432,7 @@ function m() {
             else if (d==undefined) {d=av}
             else if (f==undefined) {f=av}
             else if (g==undefined) {g=av}
+            else if (h==undefined) {h=av}
             else if (j==undefined) {j=av}
         }
         else { 
@@ -596,7 +685,7 @@ function add(where) {
 
 
     if (top=='a') {
-        if (bottom=='b'||bottom=='d'||bottom=='g'||bottom=='h'||bottom=='l'||bottom=='m'||bottom=='n'||bottom=='s'||bottom=='t'||bottom=='u'||bottom=='w'||bottom=='x')
+        if (bottom=='b'||bottom=='d'||bottom=='g'||bottom=='h'||bottom=='i'||bottom=='l'||bottom=='m'||bottom=='n'||bottom=='s'||bottom=='t'||bottom=='u'||bottom=='w'||bottom=='x')
             {win(where);} 
         else 
             {fail();}
@@ -614,13 +703,13 @@ function add(where) {
             {fail();}
     }
     else if (top=='d') {
-        if (bottom=='o') 
+        if (bottom=='o'||bottom=='j') 
             {win(where);} 
         else 
             {fail();}
     }
     else if (top=='e') {
-        if(bottom=='h'||bottom=='x'||bottom=='w') 
+        if(bottom=='h'||bottom=='x'||bottom=='w'||bottom=='z') 
             {win(where);} else {fail();}
     }
     else if (top=='g') {
@@ -636,7 +725,7 @@ function add(where) {
         {win(where);} else {fail();}
     }
     else if (top=='j') {
-        if(bottom=='o') 
+        if(bottom=='o'||bottom=='e') 
         {win(where);} else {fail();}
     }
     else if (top=='l') {
@@ -652,7 +741,7 @@ function add(where) {
         {win(where);} else {fail();}
     }
     else if (top=='o') {
-        if(bottom=='h'||bottom=='f'||bottom=='i'||bottom=='k'||bottom=='n'||bottom=='r'||bottom=='x'||bottom=='z') 
+        if(bottom=='h'||bottom=='f'||bottom=='i'||bottom=='k'||bottom=='n'||bottom=='r'||bottom=='w'||bottom=='x'||bottom=='z') 
         {win(where);} else {fail();}
     }
     else if (top=='p') {
@@ -660,7 +749,7 @@ function add(where) {
         {win(where);} else {fail();}
     }
     else if (top=='q') {
-        if(bottom=='i') 
+        if(bottom=='i'||bottom=='u') 
         {win(where);} else {fail();}
     }
     else if (top=='s') {
@@ -672,21 +761,93 @@ function add(where) {
         {win(where);} else {fail();}
     }
     else if (top=='u') {
-        if(bottom=='p'||bottom=='h'||bottom=='s'||bottom=='k'||bottom=='r') 
+        if(bottom=='p'||bottom=='h'||bottom=='s'||bottom=='k'||bottom=='r'||bottom=='m') 
         {win(where);} else {fail();}
     }
     else if (top=='w') {
         if(bottom=='e') 
         {win(where);} else {fail();}
     }
-    else if (top=='v') {
+    else if (top=='y') {
         if(bottom=='o') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='v') {
+        if(bottom=='o'||bottom=='r') 
+        {win(where);} else {fail();}
+    }
+    else if (top=='x') {
+        if(bottom=='l') 
         {win(where);} else {fail();}
     }
     else {fail();}
 }
 
 function win(what) {
+
+    switch(what){
+                case 'z':if(duplo11==s&&duplo12==a){points=points+1};
+                if(duplo21==s&&duplo22==a){points=points+1};
+                if(duplo31==s&&duplo32==a){points=points+1};break;
+                case 'x':if(duplo11==d&&duplo12==s){points=points+1};
+                if(duplo21==d&&duplo22==s){points=points+1};
+                if(duplo31==d&&duplo32==s){points=points+1};break;
+                case 'c':if(duplo11==f&&duplo12==d){points=points+1};
+                if(duplo21==f&&duplo22==d){points=points+1};
+                if(duplo31==f&&duplo32==d){points=points+1};break;
+                case 'v':if(duplo11==g&&duplo12==f){points=points+1};
+                if(duplo21==g&&duplo22==f){points=points+1};
+                if(duplo31==g&&duplo32==f){points=points+1};break;
+                case 'b':if(duplo11==h&&duplo12==g){points=points+1};
+                if(duplo21==h&&duplo22==g){points=points+1};
+                if(duplo31==h&&duplo32==g){points=points+1};break;
+                case 'n':if(duplo11==j&&duplo12==h){points=points+1};
+                if(duplo21==j&&duplo22==h){points=points+1};
+                if(duplo31==j&&duplo32==h){points=points+1};break;
+                case 'm':if(duplo11==k&&duplo12==j){points=points+1};
+                if(duplo21==k&&duplo22==j){points=points+1};
+                if(duplo31==k&&duplo32==j){points=points+1};break;
+            }
+
+
+    if(!(duploSe=='none')){
+        if(duploSe=='1'){
+            switch(what){
+                case 'z':duplo11=s;duplo12=a;break;
+                case 'x':duplo11=d;duplo12=s;break;
+                case 'c':duplo11=f;duplo12=d;break;
+                case 'v':duplo11=g;duplo12=f;break;
+                case 'b':duplo11=h;duplo12=g;break;
+                case 'n':duplo11=j;duplo12=h;break;
+                case 'm':duplo11=k;duplo12=j;break;
+            }
+        }
+        if(duploSe=='2'){
+            switch(what){
+                case 'z':duplo21=s;duplo22=a;break;
+                case 'x':duplo21=d;duplo22=s;break;
+                case 'c':duplo21=f;duplo22=d;break;
+                case 'v':duplo21=g;duplo22=f;break;
+                case 'b':duplo21=h;duplo22=g;break;
+                case 'n':duplo21=j;duplo22=h;break;
+                case 'm':duplo21=k;duplo22=j;break;
+            }
+        }
+        if(duploSe=='3'){
+            switch(what){
+                case 'z':duplo31=s;duplo32=a;break;
+                case 'x':duplo31=d;duplo32=s;break;
+                case 'c':duplo31=f;duplo32=d;break;
+                case 'v':duplo31=g;duplo32=f;break;
+                case 'b':duplo31=h;duplo32=g;break;
+                case 'n':duplo31=j;duplo32=h;break;
+                case 'm':duplo31=k;duplo32=j;break;
+            }
+        }
+        duploSe='none';
+    };
+
+
     switch (what) {
     case 'z': a=d;s=f;d=g;f=h;g=j;h=k;break;
     case 'x': s=f;d=g;f=h;g=j;h=k;break;
@@ -760,7 +921,7 @@ function letterbuy(letter,cost) {
 function placebuy (where) {
     if (money >= 4) {
     switch (where) {
-        case 'k': if(!eigbuoght){k=undefined;eigbought=true}break;
+        case 'k': if(!eigbought){k=undefined;eigbought=true}break;
         case 'j': if(!sevbought){j=k;k=undefined;sevbought=true}break;
         case 'h': if(!sixbought){h=j;j=k;k=undefined;sixbought=true}break;
         case 'g': if(!fifbought){g=h;h=j;j=k;k=undefined;fifbought=true}break;
@@ -880,7 +1041,7 @@ function paused(){
     if(time!==-1&&money>=pauseprice){
         time=-1;
         money=money-pauseprice
-        pauseprice=pauseprice+1;
+        pauseprice=pauseprice*2;
         update();
     }
 }
@@ -902,7 +1063,12 @@ function courierfun(){
     update();
 }
 function impactfun(){
-    font.face='Impact';
+    if(font.style.fontWeight == '1000'){
+        font.style.fontWeight = '500';
+    }
+    else{
+        font.style.fontWeight = '1000';
+    }
     update();
 }
 function comicsansmsfun(){
@@ -988,7 +1154,7 @@ function update() {
     case 14: alison.innerHTML = ('I call these Font Glasses, they do nothing different without a cartrige.');break;
     case 15: alison.innerHTML = ('The more words I collect there more fonts I can gather, here, take this one, verdana.');break;
     case 16: alison.innerHTML = ('Just click on the fonts you have to equip it to your glasses, the more you help, the more fonts I can make!');break;
-    case 17: alison.innerHTML = ('I\'ve got plenty more work for you, so don\'t stop now!');
+    case 17: alison.innerHTML = ('I\'ve got plenty more work for you, so don\'t stop now!');break;
     case 18: alison.innerHTML = ('If you see this color on a street light, I wouldn\'t put the petal to the metal if I were you.');break;
     case 19: alison.innerHTML = ('I would wear one of these around your neck at a businuss meeting.');break;
     case 20: alison.innerHTML = ('Just in case you wanted to write an essay, here\'s my newest cartridge, Times New Roman!');break;
@@ -997,7 +1163,7 @@ function update() {
     case 23: alison.innerHTML = ('Another day, another carttridge, there\'s more to come.');break;
     case 24: alison.innerHTML = ('If we were to land a man on a planet this would be the closest and first.');break;
     case 25: alison.innerHTML = ('Good for your bones.');break;
-    case 26: alison.innerHTML = ('Hopefully this new cartridge will make an impact. I hope you\'re having as much fun as I am');break;
+    case 26: alison.innerHTML = ('Here\' a special cartridge, this bold cartridge will set any font into bold!');break;
     case 27: alison.innerHTML = ('The Legend of __');break;
     case 28: alison.innerHTML = ('__ duper.');break;
     case 29: alison.innerHTML = ('Hehehe, gonna have a bad time with Comic sans MS.');break;
@@ -1015,7 +1181,7 @@ function update() {
     if(ali>=15){if(font.face=='Verdana'){verdana.innerHTML=('Verdana (Equipped)')}else{verdana.innerHTML=('Verdana')}}else{verdana.innerHTML=('')};
     if(ali>=20){if(font.face=='Times New Roman'){timesnewroman.innerHTML=('Times New Roman (Equipped)')}else{timesnewroman.innerHTML=('Times New Roman')}}else{timesnewroman.innerHTML=('')};
     if(ali>=23){if(font.face=='Courier'){courier.innerHTML=('Courier (Equipped)')}else{courier.innerHTML=('Courier')}}else{courier.innerHTML=('')};
-    if(ali>=26){if(font.face=='Impact'){impact.innerHTML=('Impact (Equipped)')}else{impact.innerHTML=('Impact')}}else{impact.innerHTML=('')};
+    if(ali>=26){if(font.style.fontWeight == '1000'){impact.innerHTML=('Bold (Equipped)')}else{impact.innerHTML=('Bold')}}else{impact.innerHTML=('')};
     if(ali>=29){if(font.face=='Comic sans MS'){comicsansms.innerHTML=('Comic sans MS (Equipped)')}else{comicsansms.innerHTML=('Comic sans MS')}}else{comicsansms.innerHTML=('')};
 
 
@@ -1027,9 +1193,57 @@ function update() {
     po.innerHTML = ('p:'+points);
     hi.innerHTML = ('Highscore:'+high);
 
+    if(duplo11!='0'&&duplo12!='0'){
+        duplo1view.innerHTML = ((duplo11.toUpperCase())+(duplo12.toUpperCase()));
+    }
+    if(duplo21!='0'&&duplo22!='0'){
+        duplo2view.innerHTML = ((duplo21.toUpperCase())+(duplo22.toUpperCase()));
+    }
+    if(duplo31!='0'&&duplo32!='0'){
+        duplo3view.innerHTML = ((duplo31.toUpperCase())+(duplo32.toUpperCase()));
+    }
 
+    if (duplo1b){
+        if (duploSe=='1'){
+            duplo1.innerHTML = 'Duplo 1 (selected)';
+        }
+        else{
+            duplo1.innerHTML = 'Duplo 1';
+        }
+    }
+    else{
+        duplo1.innerHTML = '$20 Duplo 1';
+    }
+    
+    if (duplo1b){
+        if(duplo2b){
+        if (duploSe=='2'){
+            duplo2.innerHTML = 'Duplo 2 (selected)';
+        }
+        else{
+            duplo2.innerHTML = 'Duplo 2';
+        }
+        }
+        else{duplo2.innerHTML = '$70 Duplo 2'}
+    }
+    else{
+        duplo2.innerHTML = '';
+    }
 
-
+    if (duplo2b){
+        if(duplo3b){
+        if (duploSe=='3'){
+            duplo3.innerHTML = 'Duplo 3 (selected)';
+        }
+        else{
+            duplo3.innerHTML = 'Duplo 3';
+        }
+        }
+        else{duplo3.innerHTML = '$150 Duplo 3'}
+    }
+    else{
+        duplo3.innerHTML = '';
+    }
     
 
 
@@ -1306,14 +1520,14 @@ function update() {
         case 'z': pk.innerHTML = ('Z');break;
     }
 
-    if(firbought){b1.innerHTML = ('OUT')}else{'$4: 1st place clear'};
-    if(secbought){b2.innerHTML = ('OUT')}else{'$4: 2nd place clear'};
-    if(thibought){b3.innerHTML = ('OUT')}else{'$4: 3rd place clear'};
-    if(foubought){b4.innerHTML = ('OUT')}else{'$4: 4th place clear'};
-    if(fifbought){b5.innerHTML = ('OUT')}else{'$4: 5th place clear'};
-    if(sixbought){b6.innerHTML = ('OUT')}else{'$4: 6th place clear'};
-    if(sevbought){b7.innerHTML = ('OUT')}else{'$4: 7th place clear'};
-    if(eigbought){b8.innerHTML = ('OUT')}else{'$4: 8th place clear'};
+    if(firbought){b1.innerHTML = ('OUT')}else{b1.innerHTML = '$4: 1st place clear'};
+    if(secbought){b2.innerHTML = ('OUT')}else{b2.innerHTML = '$4: 2nd place clear'};
+    if(thibought){b3.innerHTML = ('OUT')}else{b3.innerHTML = '$4: 3rd place clear'};
+    if(foubought){b4.innerHTML = ('OUT')}else{b4.innerHTML = '$4: 4th place clear'};
+    if(fifbought){b5.innerHTML = ('OUT')}else{b5.innerHTML = '$4: 5th place clear'};
+    if(sixbought){b6.innerHTML = ('OUT')}else{b6.innerHTML = '$4: 6th place clear'};
+    if(sevbought){b7.innerHTML = ('OUT')}else{b7.innerHTML = '$4: 7th place clear'};
+    if(eigbought){b8.innerHTML = ('OUT')}else{b8.innerHTML = '$4: 8th place clear'};
 
     if(randombought) {
         bra.innerHTML = ('OUT')
@@ -1326,7 +1540,7 @@ function update() {
         brav.innerHTML = ('OUT')
     }
     else{
-        brav,innerHTML = ('$5: Randomize selected (vowel)')
+        brav.innerHTML = ('$5: Randomize selected (vowel)')
     }
 
     if (letterpers<5){
@@ -1397,7 +1611,8 @@ function update() {
     }
 
 
-}
+};
+font.style.fontWeight = '500'
 update();
-//The timing system wroks! We just need to find out when it should get timed(now it's whenever win is), how long it should go, and broadcasting it to the screen.
+console.log('Version: 1.0');
 </script>
