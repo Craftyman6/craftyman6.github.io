@@ -7,6 +7,45 @@
     
     <body>
         <br>
+        <h id='ruleclick' onclick='rulesfun()'>Rules (Click to view)</h>
+        <br>
+        <h id='rules'>
+                So in Duplex, you have 8 spaces in which you can place letters, you click on the arrows to place the letter, the goal is to get the most points without filling the letters over the 8 spaces. There is gravity that pulls the letters down.
+                <br>
+                <br>
+                The way to remove letters is to find matches that spell two-letter words (ex: BE, MY, HE, HI) from up to down. You can remove those words by clicking on the currently held letter (it should turn into a plus) and click on the arrow between the letters of the word. If it works the two letters will disappear, if not then you lose a point and have to try next time. 
+                <br>
+                <br>
+                After you hit 25 points a timer will appear, and if you do not place your current letter in time, it will be placed automatically at the top (if a plus is equipped when the timer runs out, it counts as a wrong spell). The timer gets thinner over time but stops thinning at a certain point.
+                <br>
+                <br>
+                Every time you make a combination you gain a point and a buck. With bucks, you can purchase items from the shop. The items and points will reset after the game is lost, not your money.
+                <br>
+                <br>
+                Items:
+                <br>
+                Pause lets you pause the timer, it starts at three dollars but every time you purchase it the price gets 2 times bigger
+                <br>
+                <br>
+                Letters allow you to buy and equip a certain letter. You have five to purchase in total. 
+                <br>
+                <br>
+                Randomizing just selects a random letter, and it can be a vowel. 
+                <br>
+                <br>
+                Clearing a place deletes the letter in the said place. The first clear would be at the bottom and eighth would be at the top.
+                <br>
+                <br>
+                Duplos: You can buy up to three of them and they do not reset after you lose. You can equip a certain word to each of the duplos by clicking and equipping the duplo, then combine a word. That word that was just combined is now equipped to that duplo and you can see the words at the top of the screen, and if you were to ever combine that word that’s equipped to the duplo again, you will earn 2 points. Use it if you notice you combine a certain word frequently and want to take advantage of it by equipping that word.
+
+
+
+
+
+
+
+        </h>
+        <br>
         <br>
         <h id='duplo1view'></h>
         <br>
@@ -208,22 +247,16 @@
         <h id='comicsansms'onclick="comicsansmsfun()"></h>
         <br>
         <br>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
+        <h id='workbookclick' onclick='workbookfun()'>Alisons Workbook (Click to view)</h>
+        <br>
+        <h id='workbook'>
+        I need to gather words for intel, so I am going to need you to create a word that will solve my puzzle. The more words you can gather for me, the more things I can do!  
+        <br>
+        <br>
+        When you come across a message that can’t be progressed by clicking, it needs to be solved. In order to solve it, you must figure out the word that would answer the puzzle, and create it at the top. Once you have created the word, click the first letter of the word, and check and see if the message has changed. 
+        </h>
+        <br>
+        <br>
         </h>
         <br>
         <br>
@@ -232,6 +265,9 @@
 </html>
 
 <script>
+
+    var workclick = document.getElementById('workbookclick');
+    var workbook = document.getElementById('workbook')
 
     var pk = document.getElementById('p8');
     var pm = document.getElementById('p75');
@@ -298,6 +334,9 @@
     var alison = document.getElementById('alisont');
     var font = document.getElementById('font');
 
+    var ruleclick = document.getElementById('ruleclick');
+    var rules = document.getElementById('rules');
+
     var glasses = document.getElementById('glasses');
     var arial = document.getElementById('arial');
     var verdana = document.getElementById('verdana');
@@ -357,6 +396,25 @@
     var duplo2view = document.getElementById('duplo2view');
     var duplo3view = document.getElementById('duplo3view');
 
+function rulesfun(){
+    if (ruleclick.innerHTML=='Rules (Click to view)'){
+        rules.style.display = "block"; ruleclick.innerHTML='Rules (Click to hide)'
+    }
+    else {rules.style.display = "none"; ruleclick.innerHTML='Rules (Click to view)'}
+}
+
+rules.style.display = "none"
+
+workbook.style.display = "none"
+
+function workbookfun() {
+    if (workclick.innerHTML=='Alisons Workbook (Click to view)') {
+        workbook.style.display = "block"; workclick.innerHTML ='Alisons Workbook (Click to hide)'
+    }
+    else{
+        workbook.style.display = "none"; workclick.innerHTML ='Alisons Workbook (Click to view)'
+    }
+}
 
 
 
@@ -1135,13 +1193,14 @@ update();
 
 function update() {
 
+    if (ali>3){workbookclick.style.display = "block"} else {workbookclick.style.display = "none"}
 
     switch (ali){
     case 0: alison.innerHTML = ('psssst');break;
     case 1: alison.innerHTML = ('hey you');break;
     case 2: alison.innerHTML = ('You seem like a hard working man, wouldn\'t you like to work for me?');break;
     case 3: alison.innerHTML = ('The name\'s Alison, but you can call me Ali, if you do a few chores for me, I can give you a few things lying around.');break;
-    case 4: alison.innerHTML = ('For more info, refer to my workbook under the case of "ali is great", use that to gain access.');break;
+    case 4: alison.innerHTML = ('For more info, refer to my workbook, you don\'t wanna miss a thing');break;
     case 5: alison.innerHTML = ('First up: In __ begining');break;
     case 6: alison.innerHTML = ('Nice! you\'ve got the idea. Next time you\'re getting a reward.');break;
     case 7: alison.innerHTML = ('Next one: I stated earlier that you could call me what?');break;
@@ -1614,5 +1673,5 @@ function update() {
 };
 font.style.fontWeight = '500'
 update();
-console.log('Version: 1.0');
+console.log('Version: 1.1');
 </script>
