@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <title>Google</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <form name="f1">
+      <h4 align="center">
+        <sub><font color="grey">Joke</font></sub>
+        <font color="blue" size="20">G</font>
+        <font color="red" size="20">o</font>
+        <font color="yellow" size="20">o</font>
+        <font color="blue" size="20">g</font>
+        <font color="green" size="20">l</font>
+        <font color="red" size="20">e</font>
+      </h4>
+    </form>
+  </body>
+  <h4 align="center">
+    <input type="text" id="typer" />
+    <button onclick="submit()">Submit</button>
+	</h4>
+  <script>
+     function submit() {
+			 let test = document.getElementById("typer").value;
+			 test = test.toLowerCase();
+       let arra = test.split(" ");
+			 if (arra[0]=='what'&&arra[1]=='time'&&arra[2]=='is'&&arra[3]=='it'&&arra.length==4){timegen()}
+			 
+			 
+			 
+			 
+			 else if (test=='colin schaffner'){alert('A mastermind of the computer, also invented electricity')}
+			 else if (test=='lee painter'){alert('god of wisdom, kindness, and arragance')}
+			 else if (test=='donald riordan'||test=='donnie riordan'){alert('set world record for lognest time without sleeping after he proved eyes needed to be closed in order for sleeping to count')}
+			 else if (test=='tyler delinger'){alert('known for his psychic abilities, he can not care more than anyone else')}
+			 else if (test=='jeremy kent'){alert('known for visiting the entire world, or at least where he considers should be part of the world')}
+			 else if (test=='kayden mcintosh'){alert('breeds dogs for a living')}
+			 else if (test=='curtis swick'){alert('animated an movie describing every moment of his life. world record for shortest movie')}
+
+			 else if(arra[0] == "how" && arra[1] == "many") {
+         numbergen();
+       } else if (arra[0] == "how" && arra[1] == "much") {
+         numbergen();
+       } else if (
+         arra[0] == "how" &&
+         arra[1] == "are" &&
+         arra[2] == "you" &&
+         arra.length == 3
+       ) {
+         alert("None of your beeswax, what's it to you?");
+		}
+		else if(arra[0] == "close" && arra[1] == "tab" && arra.length==2) {
+         alert('finally, you\'re listening'); window.close();}
+		else if(arra.length==1){definegen()}
+    else if(
+    	arra[0] == "how"
+    )
+    {withgen()}
+		else if(arra[0]=='when') {whengen()}
+		else if(arra[0]=='who') {whogen()}
+		else if(arra[0]=='where') {wheregen()}
+		else if(arra[0]=='do'||arra[0]=='does'||arra[0]=='did'||arra[0]=='will'||arra[0]=='is'||arra[0]=='are'||arra[0]=='can'){boolgen()}
+    else {alert('try asking a question or look for a word')};
+		document.getElementById("typer").value='';
+		 
+
+		function definegen() {
+			switch (Math.floor(Math.random() * (+5 - +1)) + +1) {
+				case 1: alert(test+' is used to described a nimrod, I wonder why you need to look it up'); break;
+				case 2: alert(test+' goes best with a cup of tea'); break;
+				case 3: alert('I even don\'t know what '+test+'is, and I know everything');break;
+				case 4: alert(test+' is recently popular after the statue that was made for it in Montreal');break;
+
+			}
+		}
+
+
+		function wheregen() {
+			switch (Math.floor(Math.random() * (+8 - +1)) + +1) {
+				case 1: alert('it is everywhere');break;
+				case 2: alert('aproximately 2.7 miles away');break;
+				case 3: alert('behind you');break;
+				case 4: alert('in another country');break;
+				case 5: alert('on the same planet as you');break;
+				case 6: alert('behind this tab, try closing it');break;
+				case 7: alert('in the lost city of atlantis');break;
+					}
+		}
+
+		function timegen() {
+			let q = 'p.m.';
+			let d = new Date();
+			let h = d.getHours();
+			if (h > 12) {h -= 12; q='a.m.'} else if (h === 0) {h = 12;}
+			let m = d.getMinutes();
+			alert(h+':'+m+' '+q);
+		}
+
+		function boolgen() {
+			switch (Math.floor(Math.random() * (+11 - +1)) + +1) {
+				case 1: alert('yup');break;
+				case 2: alert('nope');break;
+				case 3: alert('probably');break;
+				case 4: alert('haha no');break;
+				case 5: alert('definatelly');break;
+				case 6: alert('yeah, if this tab gets closed');break;
+				case 7: alert('not a flipping chance');break;
+				case 8: alert('what, are you dumb or testing me? of course not');break;
+				case 9: alert('i\'m not sure, ask my brother, fake google');break;
+				case 10: alert('yes if it\'s snowing, no if it\'s raining');break;
+		}
+		}
+
+		function whogen() {
+			switch (Math.floor(Math.random() * (+11 - +1)) + +1) {
+				case 1: alert('me');break;
+				case 2: alert('you');break;
+				case 3: alert('that guy behind you');break;
+				case 4: alert('your mom');break;
+				case 5: alert('shrek');break;
+				case 6: alert('barry bee benson');break;
+				case 7: alert('homer simpson');break;
+				case 8: alert('elmo');break;
+				case 9: alert('whoever closes this tab');break;
+				case 10: alert('peter griffin');break;
+		}
+	}
+
+		function whengen() {
+			switch (Math.floor(Math.random() * (+11 - +1)) + +1) {
+				case 1: alert('right now');break;
+				case 2: alert('yesterday');break;
+				case 3: alert('once you close this tab');break;
+				case 4: alert('in five years');break;
+				case 5: alert('five years ago');break;
+				case 6: alert('never');break;
+				case 7: alert('it\'s always happening');break;
+				case 8: alert('during WWII');break;
+				case 9: alert('every 7 seconds');break;
+				case 10: alert('go check your clock');break;
+			}
+		}
+
+       function numbergen() {
+         switch (Math.floor(Math.random() * (+6 - +1)) + +1) {
+           case 1:
+             alert("69");
+             break;
+           case 2:
+             alert("337");
+             break;
+           case 3:
+    		alert(Math.floor(Math.random() * (+101 - +1)) + +1);
+             break;
+           case 4:
+             alert("it's over 9,000!");
+             break;
+           case 5:
+             alert(Math.floor(Math.random() * (+101 - +1)) + +1);
+             break;
+         }
+    }
+    function withgen() {
+    	switch (Math.floor(Math.random() * (+11 - +1)) + +1) {
+    		case 1: alert('with a wrench');break;
+    		case 2: alert('with a spoon');break;
+    		case 3: alert('with a fork');break;
+    		case 4: alert('with a tv remote');break;
+    		case 5: alert('with kindness');break;
+    		case 6: alert('with a gnome');break;
+    		case 7: alert('with the bible');break;
+    		case 8: alert('with the right key');break;
+    		case 9: alert('with a cat');break;
+    		case 10: alert('with a sword');break;
+
+    	}
+    }
+		 }
+		 console.log('Beta');
+  </script>
+</html>
