@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <input type="text" id="typer" />
+ <button onclick="submit()">Submit</button>
+ <br/>
+ <br/>
+ <script>
+   var i = 0;
+   function submit() {
+     let text = document.getElementById("typer").value;
+     text=text.toUpperCase();
+     let length=text.length;
+     i=0;
+    //alert('text:'+text+' length:'+length);
+     while (i < length) {
+       //single digits
+       if(text[i]=='B'||text[i]=='C'||text[i]=='N'||text[i]=='O'||text[i]=='F'||text[i]=='P'||text[i]=='S'||text[i]=='V'||text[i]=='Y'||text[i]=='H'||text[i]=='K'||text[i]=='I'||text[i]=='U'||text[i]=='W'){
+       document.write('<p>'+text[i]+'</p>')};
+ 
+       //double digits
+       if(text[i]=='A'){if(text[i+1]=='L'||text[i+1]=='R'||text[i+1]=='S'||text[i+1]=='G'||text[i+1]=='U'||text[i+1]=='T'||text[i+1]=='C'||text[i+1]=='M'){
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+      
+       if(text[i]=='B'){if(text[i+1]=='R'||text[i+1]=='A'||text[i+1]=='I'||text[i+1]=='H'||text[i+1]=='K'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='C'){if(text[i+1]=='R'||text[i+1]=='A'||text[i+1]=='L'||text[i+1]=='O'||text[i+1]=='U'||text[i+1]=='D'||text[i+1]=='S'||text[i+1]=='N'||text[i+1]=='M'||text[i+1]=='F'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>');}};
+      
+       if(text[i]=='D'){if(text[i+1]=='B'||text[i+1]=='S'||text[i+1]=='Y'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='E'){if(text[i+1]=='R'||text[i+1]=='U'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='F'){if(text[i+1]=='E'||text[i+1]=='L'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='G'){if(text[i+1]=='E'||text[i+1]=='A'||text[i+1]=='D'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='H'){if(text[i+1]=='E'||text[i+1]=='F'||text[i+1]=='G'||text[i+1]=='S'||text[i+1]=='O'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='I'){if(text[i+1]=='R'||text[i+1]=='N'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='K'){if(text[i+1]=='R'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='L'){if(text[i+1]=='I'||text[i+1]=='A'||text[i+1]=='U'||text[i+1]=='V'||text[i+1]=='R'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='M'){if(text[i+1]=='G'||text[i+1]=='N'||text[i+1]=='T'||text[i+1]=='C'||text[i+1]=='D'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='N'){if(text[i+1]=='B'||text[i+1]=='A'||text[i+1]=='I'||text[i+1]=='H'||text[i+1]=='D'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='O'){if(text[i+1]=='S'||text[i+1]=='G'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='P'){if(text[i+1]=='D'||text[i+1]=='T'||text[i+1]=='B'||text[i+1]=='O'||text[i+1]=='R'||text[i+1]=='M'||text[i+1]=='A'||text[i+1]=='U'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='R'){if(text[i+1]=='B'||text[i+1]=='U'||text[i+1]=='H'||text[i+1]=='E'||text[i+1]=='N'||text[i+1]=='A'||text[i+1]=='F'||text[i+1]=='G'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='S'){if(text[i+1]=='R'||text[i+1]=='C'||text[i+1]=='I'||text[i+1]=='N'||text[i+1]=='E'||text[i+1]=='B'||text[i+1]=='G'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='T'){if(text[i+1]=='I'||text[i+1]=='M'||text[i+1]=='L'||text[i+1]=='S'||text[i+1]=='H'||text[i+1]=='E'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='X'){if(text[i+1]=='E'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='Y'){if(text[i+1]=='B'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+       if(text[i]=='Z'){if(text[i+1]=='N'){ 
+       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+
+
+    i = i + 1;
+       }
+      
+ 
+ 
+       
+     }
+    
+   
+ </script>
+</html>
+ 
