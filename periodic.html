@@ -1,96 +1,201 @@
 <!DOCTYPE html>
 <html>
- <input type="text" id="typer" />
- <button onclick="submit()">Submit</button>
- <br/>
- <br/>
- <script>
-   var i = 0;
-   function submit() {
-     let text = document.getElementById("typer").value;
-     text=text.toUpperCase();
-     let length=text.length;
-     i=0;
-    //alert('text:'+text+' length:'+length);
-     while (i < length) {
-       //single digits
-       if(text[i]=='B'||text[i]=='C'||text[i]=='N'||text[i]=='O'||text[i]=='F'||text[i]=='P'||text[i]=='S'||text[i]=='V'||text[i]=='Y'||text[i]=='H'||text[i]=='K'||text[i]=='I'||text[i]=='U'||text[i]=='W'){
-       document.write('<p>'+text[i]+'</p>')};
- 
-       //double digits
-       if(text[i]=='A'){if(text[i+1]=='L'||text[i+1]=='R'||text[i+1]=='S'||text[i+1]=='G'||text[i+1]=='U'||text[i+1]=='T'||text[i+1]=='C'||text[i+1]=='M'){
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-      
-       if(text[i]=='B'){if(text[i+1]=='R'||text[i+1]=='A'||text[i+1]=='I'||text[i+1]=='H'||text[i+1]=='K'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+  <body style="background-color:black;">
+    <font color="green" size=5 face='Courier New'>
+  <h id='1'></h><br>
+  <h id='2'></h><br>
+  <h id='3'></h><br>
+  <h id='4'></h><br>
+  <h id='5'></h><br>
+  <h id='6'></h><br>
+  <h id='7'></h><br>
+  <h id='8'></h><br>
+  <h id='9'></h><br>
+  <h id='10'></h><br>
+  <h id='11'></h><br>
+  <h id='12'></h><br>
+  <h id='13'></h><br>
+  <h id='14'></h><br>
+  <h id='15'></h><br>
+  <h id='16'></h><br>
+  <h id='17'></h><br>
+  <h id='18'></h><br>
+  <h id='19'></h><br>
+  <h id='20'></h><br>
+  <h id='21'></h><br>
+  <h id='22'></h><br>
+  <h id='23'></h><br>
+  <h id='24'></h><br>
+  <h id='25'></h><br>
+  <h id='26'></h><br>
+  <h id='27'></h><br>
+  <h id='28'></h><br>
+  <h id='29'></h><br>
+  <h id='30'></h><br>
+  <h id='31'></h><br>
+  <h id='32'></h><br>
+  </font>
+</body>
+<script>
 
-       if(text[i]=='C'){if(text[i+1]=='R'||text[i+1]=='A'||text[i+1]=='L'||text[i+1]=='O'||text[i+1]=='U'||text[i+1]=='D'||text[i+1]=='S'||text[i+1]=='N'||text[i+1]=='M'||text[i+1]=='F'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>');}};
-      
-       if(text[i]=='D'){if(text[i+1]=='B'||text[i+1]=='S'||text[i+1]=='Y'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+var timer = setInterval(randomgen,100);
 
-       if(text[i]=='E'){if(text[i+1]=='R'||text[i+1]=='U'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+function randomgen(){
+  
 
-       if(text[i]=='F'){if(text[i+1]=='E'||text[i+1]=='L'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='G'){if(text[i+1]=='E'||text[i+1]=='A'||text[i+1]=='D'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='H'){if(text[i+1]=='E'||text[i+1]=='F'||text[i+1]=='G'||text[i+1]=='S'||text[i+1]=='O'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='I'){if(text[i+1]=='R'||text[i+1]=='N'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='K'){if(text[i+1]=='R'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='L'){if(text[i+1]=='I'||text[i+1]=='A'||text[i+1]=='U'||text[i+1]=='V'||text[i+1]=='R'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='M'){if(text[i+1]=='G'||text[i+1]=='N'||text[i+1]=='T'||text[i+1]=='C'||text[i+1]=='D'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='N'){if(text[i+1]=='B'||text[i+1]=='A'||text[i+1]=='I'||text[i+1]=='H'||text[i+1]=='D'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='O'){if(text[i+1]=='S'||text[i+1]=='G'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='P'){if(text[i+1]=='D'||text[i+1]=='T'||text[i+1]=='B'||text[i+1]=='O'||text[i+1]=='R'||text[i+1]=='M'||text[i+1]=='A'||text[i+1]=='U'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='R'){if(text[i+1]=='B'||text[i+1]=='U'||text[i+1]=='H'||text[i+1]=='E'||text[i+1]=='N'||text[i+1]=='A'||text[i+1]=='F'||text[i+1]=='G'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='S'){if(text[i+1]=='R'||text[i+1]=='C'||text[i+1]=='I'||text[i+1]=='N'||text[i+1]=='E'||text[i+1]=='B'||text[i+1]=='G'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='T'){if(text[i+1]=='I'||text[i+1]=='M'||text[i+1]=='L'||text[i+1]=='S'||text[i+1]=='H'||text[i+1]=='E'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='X'){if(text[i+1]=='E'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='Y'){if(text[i+1]=='B'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
-
-       if(text[i]=='Z'){if(text[i+1]=='N'){ 
-       document.write('<p>'+text[i]+text[i+1].toLowerCase()+'</p>')}};
+  document.getElementById('32').innerHTML=document.getElementById('31').innerHTML;
+  document.getElementById('31').innerHTML=document.getElementById('30').innerHTML;
+  document.getElementById('30').innerHTML=document.getElementById('29').innerHTML;
+  document.getElementById('29').innerHTML=document.getElementById('28').innerHTML;
+  document.getElementById('28').innerHTML=document.getElementById('27').innerHTML;
+  document.getElementById('27').innerHTML=document.getElementById('26').innerHTML;
+  document.getElementById('26').innerHTML=document.getElementById('25').innerHTML;
+  document.getElementById('25').innerHTML=document.getElementById('24').innerHTML;
+  document.getElementById('24').innerHTML=document.getElementById('23').innerHTML;
+  document.getElementById('23').innerHTML=document.getElementById('22').innerHTML;
+  document.getElementById('22').innerHTML=document.getElementById('21').innerHTML;
+  document.getElementById('21').innerHTML=document.getElementById('20').innerHTML;
+  document.getElementById('20').innerHTML=document.getElementById('19').innerHTML;
+  document.getElementById('19').innerHTML=document.getElementById('18').innerHTML;
+  document.getElementById('18').innerHTML=document.getElementById('17').innerHTML;
+  document.getElementById('17').innerHTML=document.getElementById('16').innerHTML;
+  document.getElementById('16').innerHTML=document.getElementById('15').innerHTML;
+  document.getElementById('15').innerHTML=document.getElementById('14').innerHTML;
+  document.getElementById('14').innerHTML=document.getElementById('13').innerHTML;
+  document.getElementById('13').innerHTML=document.getElementById('12').innerHTML;
+  document.getElementById('12').innerHTML=document.getElementById('11').innerHTML;
+  document.getElementById('11').innerHTML=document.getElementById('10').innerHTML;
+  document.getElementById('10').innerHTML=document.getElementById('9').innerHTML;
+  document.getElementById('9').innerHTML=document.getElementById('8').innerHTML;
+  document.getElementById('8').innerHTML=document.getElementById('7').innerHTML;
+  document.getElementById('7').innerHTML=document.getElementById('6').innerHTML;
+  document.getElementById('6').innerHTML=document.getElementById('5').innerHTML;
+  document.getElementById('5').innerHTML=document.getElementById('4').innerHTML;
+  document.getElementById('4').innerHTML=document.getElementById('3').innerHTML;
+  document.getElementById('3').innerHTML=document.getElementById('2').innerHTML;
+  document.getElementById('2').innerHTML=document.getElementById('1').innerHTML;
 
 
-    i = i + 1;
-       }
-      
- 
- 
-       
-     }
-    
-   
- </script>
+  
+  var thing =
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString()+
+  Math.floor(Math.random()*2).toString();
+
+  console.log(thing);
+
+  document.getElementById('1').innerHTML=thing;
+}
+
+
+
+
+
+
+</script>
 </html>
- 
