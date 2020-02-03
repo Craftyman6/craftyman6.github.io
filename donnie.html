@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+ 
+ <style>
+ .black {
+ background-color: rgb(0, 0, 0);
+ border: none;
+ color: white;
+ padding: 5px 5px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+.red {
+ background-color: rgb(216, 65, 19);
+ border: none;
+ color: white;
+ padding: 5px 5px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+.mint {
+ background-color: rgb(30, 212, 185);
+ border: none;
+ color: black;
+ padding: 5px 5px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
+}
+ </style>
+ <font face='OCR A Std'>
+   <center>
+ <h id="dialog"></h>
+ <br><button class='mint' id='continue' onclick="heck()">Continue</button>
+ <br>
+ 
+ <font id="game" face="Courier New">
+ <button id='11' class='red' onclick="check(1,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='12' class='red' onclick="check(1,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='13' class='red' onclick="check(1,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='14' class='red' onclick="check(1,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='15' class='red' onclick="check(1,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='16' class='red' onclick="check(1,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='17' class='red' onclick="check(1,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <br>
+ <button id='21' class='red' onclick="check(2,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='22' class='red' onclick="check(2,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='23' class='red' onclick="check(2,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='24' class='red' onclick="check(2,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='25' class='red' onclick="check(2,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='26' class='red' onclick="check(2,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='27' class='red' onclick="check(2,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <br>
+ <button id='31' class='red' onclick="check(3,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='32' class='red' onclick="check(3,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='33' class='red' onclick="check(3,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='34' class='red' onclick="check(3,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='35' class='red' onclick="check(3,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='36' class='red' onclick="check(3,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='37' class='red' onclick="check(3,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <br>
+ <button id='41' class='red' onclick="check(4,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='42' class='red' onclick="check(4,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='43' class='red' onclick="check(4,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='44' class='red' onclick="check(4,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='45' class='red' onclick="check(4,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='46' class='red' onclick="check(4,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='47' class='red' onclick="check(4,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <br>
+ <button id='51' class='red' onclick="check(5,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='52' class='red' onclick="check(5,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='53' class='red' onclick="check(5,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='54' class='red' onclick="check(5,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='55' class='red' onclick="check(5,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='56' class='red' onclick="check(5,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='57' class='red' onclick="check(5,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <br>
+ <button id='61' class='red' onclick="check(6,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='62' class='red' onclick="check(6,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='63' class='red' onclick="check(6,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='64' class='red' onclick="check(6,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='65' class='red' onclick="check(6,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='66' class='red' onclick="check(6,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='67' class='red' onclick="check(6,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <br>
+ <button id='71' class='red' onclick="check(7,1)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='72' class='red' onclick="check(7,2)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='73' class='red' onclick="check(7,3)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='74' class='red' onclick="check(7,4)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='75' class='red' onclick="check(7,5)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='76' class='red' onclick="check(7,6)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ <button id='77' class='red' onclick="check(7,7)">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ 
+ <br>
+ <h id='darkex'>I see that you are having a tad bit of trouble, but I can help, a Donnie is usually impatient. After this every 40 seconds I'll give you a blank space that you can put on the board</h>
+ <br>
+ <button id='darkdone' class='mint' onclick="darkreadfun()">Continue</button>
+ <h id='timeshow'></h>
+ <br>
+ <button id='equipper' class='black' onclick="equipfun()">&nbsp;&nbsp;&nbsp;&nbsp;</button>
+ 
+</center>
+</font>
+ </font>
+ <script>
+  
+ 
+   function wincheck()
+   {
+   if(
+   document.getElementById('11').className!='red'&&
+   document.getElementById('12').className!='red'&&
+   document.getElementById('13').className!='red'&&
+   document.getElementById('14').className!='red'&&
+   document.getElementById('15').className!='red'&&
+   document.getElementById('16').className!='red'&&
+   document.getElementById('17').className!='red'&&
+ 
+   document.getElementById('21').className!='red'&&
+   document.getElementById('22').className!='red'&&
+   document.getElementById('23').className!='red'&&
+   document.getElementById('24').className!='red'&&
+   document.getElementById('25').className!='red'&&
+   document.getElementById('26').className!='red'&&
+   document.getElementById('27').className!='red'&&
+ 
+   document.getElementById('31').className!='red'&&
+   document.getElementById('32').className!='red'&&
+   document.getElementById('33').className!='red'&&
+   document.getElementById('34').className!='red'&&
+   document.getElementById('35').className!='red'&&
+   document.getElementById('36').className!='red'&&
+   document.getElementById('37').className!='red'&&
+ 
+   document.getElementById('41').className!='red'&&
+   document.getElementById('42').className!='red'&&
+   document.getElementById('43').className!='red'&&
+   document.getElementById('44').className!='red'&&
+   document.getElementById('45').className!='red'&&
+   document.getElementById('46').className!='red'&&
+   document.getElementById('47').className!='red'&&
+ 
+   document.getElementById('51').className!='red'&&
+   document.getElementById('52').className!='red'&&
+   document.getElementById('53').className!='red'&&
+   document.getElementById('54').className!='red'&&
+   document.getElementById('55').className!='red'&&
+   document.getElementById('56').className!='red'&&
+   document.getElementById('57').className!='red'&&
+ 
+   document.getElementById('61').className!='red'&&
+   document.getElementById('62').className!='red'&&
+   document.getElementById('63').className!='red'&&
+   document.getElementById('64').className!='red'&&
+   document.getElementById('65').className!='red'&&
+   document.getElementById('66').className!='red'&&
+   document.getElementById('67').className!='red'&&
+ 
+   document.getElementById('71').className!='red'&&
+   document.getElementById('72').className!='red'&&
+   document.getElementById('73').className!='red'&&
+   document.getElementById('74').className!='red'&&
+   document.getElementById('75').className!='red'&&
+   document.getElementById('76').className!='red'&&
+   document.getElementById('77').className!='red'
+   )
+   {
+     ++level;
+     switch(level){
+       case 1:
+   document.getElementById('dialog').innerHTML='Alright, you\'ve got the idea, I\'ll get  you a few more questions, and for each one I\'ll let you have a present';
+   document.getElementById('dialog').style.display='block';
+   document.getElementById('continue').style.display='block';
+   document.getElementById('game').style.display='none';
+   clear();
+     //CANDY BAR
+   document.getElementById('11').className='black';
+   document.getElementById('12').className='black';
+   document.getElementById('13').className='black';
+   document.getElementById('14').className='black';
+   document.getElementById('15').className='black';
+   document.getElementById('16').className='black';
+   document.getElementById('17').className='black';
+ 
+   document.getElementById('21').className='red';
+   document.getElementById('22').className='black';
+   document.getElementById('23').className='black';
+   document.getElementById('24').className='black';
+   document.getElementById('25').className='black';
+   document.getElementById('26').className='black';
+   document.getElementById('27').className='mint';
+ 
+   document.getElementById('31').className='mint';
+   document.getElementById('32').className='red';
+   document.getElementById('33').className='red';
+   document.getElementById('34').className='mint';
+   document.getElementById('35').className='mint';
+   document.getElementById('36').className='red';
+   document.getElementById('37').className='mint';
+ 
+   document.getElementById('41').className='red';
+   document.getElementById('42').className='red';
+   document.getElementById('43').className='mint';
+   document.getElementById('44').className='red';
+   document.getElementById('45').className='red';
+   document.getElementById('46').className='red';
+   document.getElementById('47').className='mint';
+ 
+   document.getElementById('51').className='mint';
+   document.getElementById('52').className='red';
+   document.getElementById('53').className='red';
+   document.getElementById('54').className='mint';
+   document.getElementById('55').className='red';
+   document.getElementById('56').className='mint';
+   document.getElementById('57').className='red';
+ 
+   document.getElementById('61').className='red';
+   document.getElementById('62').className='black';
+   document.getElementById('63').className='black';
+   document.getElementById('64').className='black';
+   document.getElementById('65').className='black';
+   document.getElementById('66').className='black';
+   document.getElementById('67').className='red';
+ 
+   document.getElementById('71').className='black';
+   document.getElementById('72').className='black';
+   document.getElementById('73').className='black';
+   document.getElementById('74').className='black';
+   document.getElementById('75').className='black';
+   document.getElementById('76').className='black';
+   document.getElementById('77').className='black';break;
+     case 2:
+    document.getElementById('dialog').innerHTML='I hope you like Kit Kats, and a lot of them!';
+  document.getElementById('dialog').style.display='block';
+  document.getElementById('continue').style.display='block';
+  document.getElementById('game').style.display='none';
+  clear();
+    //SHREK
+  document.getElementById('11').className='red';
+  document.getElementById('12').className='black';
+  document.getElementById('13').className='mint';
+  document.getElementById('14').className='mint';
+  document.getElementById('15').className='red';
+  document.getElementById('16').className='black';
+  document.getElementById('17').className='mint';
+
+  document.getElementById('21').className='red';
+  document.getElementById('22').className='mint';
+  document.getElementById('23').className='mint';
+  document.getElementById('24').className='red';
+  document.getElementById('25').className='red';
+  document.getElementById('26').className='red';
+  document.getElementById('27').className='mint';
+
+  document.getElementById('31').className='red';
+  document.getElementById('32').className='black';
+  document.getElementById('33').className='mint';
+  document.getElementById('34').className='red';
+  document.getElementById('35').className='mint';
+  document.getElementById('36').className='black';
+  document.getElementById('37').className='red';
+
+  document.getElementById('41').className='black';
+  document.getElementById('42').className='black';
+  document.getElementById('43').className='red';
+  document.getElementById('44').className='mint';
+  document.getElementById('45').className='mint';
+  document.getElementById('46').className='black';
+  document.getElementById('47').className='black';
+
+  document.getElementById('51').className='black';
+  document.getElementById('52').className='mint';
+  document.getElementById('53').className='red';
+  document.getElementById('54').className='mint';
+  document.getElementById('55').className='mint';
+  document.getElementById('56').className='red';
+  document.getElementById('57').className='black';
+
+  document.getElementById('61').className='mint';
+  document.getElementById('62').className='mint';
+  document.getElementById('63').className='red';
+  document.getElementById('64').className='red';
+  document.getElementById('65').className='mint';
+  document.getElementById('66').className='red';
+  document.getElementById('67').className='mint';
+
+  document.getElementById('71').className='mint';
+  document.getElementById('72').className='red';
+  document.getElementById('73').className='red';
+  document.getElementById('74').className='mint';
+  document.getElementById('75').className='red';
+  document.getElementById('76').className='mint';
+  document.getElementById('77').className='mint';break;
+  case 3:
+    document.getElementById('dialog').innerHTML='SOMEBODY ONCE TOLD ME THE WORLD IS GONNA ROLL ME I AIN\'T THE SHARPEST TOOL IN THE SHED SHE WAS LOOKING KIND OF DUMB WITH HER FINGER AND HER THUMB IN THE SHAPE OF AN L ON HER FOREHEAD WELL, THE YEARS START COMING AND THEY DON\'T STOP COMING  FED TO THE RULES AND I HIT THE GROUND RUNNING DIDN\'T MAKE SENSE NOT TO LIVE FOR FUN YOUR BRAIN GETS SMART BUT YOUR HEAD GETS DUMB SO MUCH TO DO, SO MUCH TO SEE SO WHAT\'S WRONG WITH TAKING THE BACKSTREETS? YOU\'LL NEVER KNOW IF YOU DON\'T GO YOU\'LL NEVER SHINE IF YOU DON\'T GLOW HEY NOW, YOU\'RE AN ALL-STAR GET YOUR GAME ON, GO PLAY HEY NOW, YOU\'RE A ROCK STAR GET THE SHOW ON, GET PAID AND ALL THAT GLITTERS IS GOLD ONLY SHOOTING STARS BREAK THE MOLD IT\'S A COOL PLACE, AND THEY SAY IT GETS COLDER YOU\'RE BUNDLED UP NOW, WAIT \'TIL YOU GET OLDER BUT THE METEOR MEN BEG TO DIFFER JUDGING BY THE HOLE IN THE SATELLITE PICTURE THE ICE WE SKATE IS GETTING PRETTY THIN THE WATER\'S GETTING WARM SO YOU MIGHT AS WELL SWIM MY WORLD\'S ON FIRE, HOW \'BOUT YOURS? THAT\'S THE WAY I LIKE IT AND I\'LL NEVER GET BORED';
+  document.getElementById('dialog').style.display='block';
+  document.getElementById('continue').style.display='block';
+  document.getElementById('game').style.display='none';
+  clear();
+    //SWISS
+  document.getElementById('11').className='mint';
+  document.getElementById('12').className='mint';
+  document.getElementById('13').className='black';
+  document.getElementById('14').className='black';
+  document.getElementById('15').className='black';
+  document.getElementById('16').className='black';
+  document.getElementById('17').className='black';
+
+  document.getElementById('21').className='red';
+  document.getElementById('22').className='mint';
+  document.getElementById('23').className='mint';
+  document.getElementById('24').className='red';
+  document.getElementById('25').className='black';
+  document.getElementById('26').className='black';
+  document.getElementById('27').className='mint';
+
+  document.getElementById('31').className='black';
+  document.getElementById('32').className='black';
+  document.getElementById('33').className='mint';
+  document.getElementById('34').className='red';
+  document.getElementById('35').className='mint';
+  document.getElementById('36').className='red';
+  document.getElementById('37').className='black';
+
+  document.getElementById('41').className='black';
+  document.getElementById('42').className='black';
+  document.getElementById('43').className='black';
+  document.getElementById('44').className='mint';
+  document.getElementById('45').className='red';
+  document.getElementById('46').className='red';
+  document.getElementById('47').className='black';
+
+  document.getElementById('51').className='black';
+  document.getElementById('52').className='black';
+  document.getElementById('53').className='mint';
+  document.getElementById('54').className='red';
+  document.getElementById('55').className='mint';
+  document.getElementById('56').className='black';
+  document.getElementById('57').className='red';
+
+  document.getElementById('61').className='black';
+  document.getElementById('62').className='red';
+  document.getElementById('63').className='mint';
+  document.getElementById('64').className='red';
+  document.getElementById('65').className='black';
+  document.getElementById('66').className='black';
+  document.getElementById('67').className='black';
+
+  document.getElementById('71').className='mint';
+  document.getElementById('72').className='red';
+  document.getElementById('73').className='mint';
+  document.getElementById('74').className='black';
+  document.getElementById('75').className='black';
+  document.getElementById('76').className='black';
+  document.getElementById('77').className='black';break;
+
+      case 4: document.getElementById('dialog').innerHTML='So you spent lots of tiring work fixing cars and doing sketchy deals, so I might as well encourage this behavoir, and help you out with a swiss army knife, fixes everything and can do anything. It also makes cotton candy (cotton candy machine not included). But I will say that I am fully convinced that you are Donnie, and Happy Birthday!';
+  document.getElementById('dialog').style.display='block';
+  document.getElementById('game').style.display='none';
+     }
+   }
+   }
+ 
+   document.getElementById('dialog').innerHTML='Oh crap, it\'s you. I wasn\'t expecting visitors, well I kind of was, and it was you. Happy Birthday, or is it? How do we know that you are actually Donnie? An impostor could have easily just walked through the door, so my job is to make sure that you are legit. I know Donnie is great with logistics, so I will be testing you through puzzles.';
+   document.getElementById('game').style.display='none';
+   document.getElementById('darkex').style.display='none';
+   document.getElementById('darkdone').style.display='none';
+   document.getElementById('equipper').style.display='none';
+ 
+ var level=0;
+ var darkready = false;
+ var darktime = 39;
+ var clickcount = 0;
+ var timey = setInterval(timer,1000);
+ var placable = false;
+ var equiped = false;
+ 
+   function check(y,x){
+   if(equiped){
+    document.getElementById(y.toString()+x.toString()).className='black';
+    placable=false;
+    equiped=false;
+    darktime=39;
+   }
+   if(document.getElementById(y.toString()+x.toString()).className!='black'){
+   change(y,x);
+   change(y+1,x);
+   change(y-1,x);
+   change(y,x+1);
+   change(y,x-1);
+   ++clickcount;
+   if(!darkready&&clickcount>=50){
+       document.getElementById('darkex').style.display='block';
+       document.getElementById('darkdone').style.display='block'
+   }
+   }
+   wincheck();
+   console.log(clickcount);
+   }
+
+   function darkreadfun(){darkready=true;
+    document.getElementById('darkex').style.display='none';
+    document.getElementById('darkdone').style.display='none';
+    document.getElementById('timeshow').style.display='block';}
+
+   function timer(){
+   if(darkready&&darktime>0){--darktime;document.getElementById('timeshow').innerHTML=darktime}
+   if(darktime<=0){placable=true;if(!equiped){document.getElementById('equipper').style.display='block';}}
+   }
+
+   function equipfun(){equiped=true;document.getElementById('equipper').style.display='none';}
+   
+   function change(y,x){
+   if(x>0&&x<8&&y>0&&y<8){
+     if(document.getElementById(y.toString()+x.toString()).className=='red'){
+       document.getElementById(y.toString()+x.toString()).className='mint'
+     }
+     else if(document.getElementById(y.toString()+x.toString()).className=='mint'){
+       document.getElementById(y.toString()+x.toString()).className='red'
+     }
+    
+   }
+
+   function darkcont(){
+
+   }
+
+   }
+   function heck(){
+     document.getElementById('dialog').style.display='none';
+     document.getElementById('continue').style.display='none';
+     document.getElementById('game').style.display='block';
+     console.log('level: '+level);
+     if(level==0){
+         console.log('called the craptacular');
+ 
+        document.getElementById('11').className='black';
+        document.getElementById('12').className='black';
+        document.getElementById('13').className='black';
+        document.getElementById('14').className='black';
+        document.getElementById('15').className='black';
+        document.getElementById('16').className='black';
+        document.getElementById('17').className='black';
+ 
+        document.getElementById('21').className='black';
+         document.getElementById('22').className='black';
+        document.getElementById('23').className='black';
+        document.getElementById('24').className='black';
+        document.getElementById('25').className='black';
+        document.getElementById('26').className='black';
+        document.getElementById('27').className='black';
+ 
+        document.getElementById('31').className='black';
+        document.getElementById('32').className='black';
+        document.getElementById('33').className='red';
+        document.getElementById('34').className='red';
+        document.getElementById('35').className='mint';
+        document.getElementById('36').className='black';
+        document.getElementById('37').className='black';
+ 
+        document.getElementById('41').className='black';
+        document.getElementById('42').className='black';
+        document.getElementById('43').className='mint';
+        document.getElementById('44').className='red';
+        document.getElementById('45').className='red';
+        document.getElementById('46').className='black';
+        document.getElementById('47').className='black';
+ 
+        document.getElementById('51').className='black';
+        document.getElementById('52').className='black';
+        document.getElementById('53').className='red';
+        document.getElementById('54').className='mint';
+        document.getElementById('55').className='mint';
+        document.getElementById('56').className='black';
+        document.getElementById('57').className='black';
+ 
+        document.getElementById('61').className='black';
+        document.getElementById('62').className='black';
+        document.getElementById('63').className='black';
+        document.getElementById('64').className='black';
+        document.getElementById('65').className='black';
+        document.getElementById('66').className='black';
+        document.getElementById('67').className='black';
+ 
+        document.getElementById('71').className='black';
+        document.getElementById('72').className='black';
+        document.getElementById('73').className='black';
+        document.getElementById('74').className='black';
+        document.getElementById('75').className='black';
+        document.getElementById('76').className='black';
+        document.getElementById('77').className='black';
+ 
+     }
+ 
+   }
+ 
+   function clear(){
+ 
+     document.getElementById('11').removeAttribute('class');
+     document.getElementById('12').removeAttribute('class');
+     document.getElementById('13').removeAttribute('class');
+     document.getElementById('14').removeAttribute('class');
+     document.getElementById('15').removeAttribute('class');
+     document.getElementById('16').removeAttribute('class');
+     document.getElementById('17').removeAttribute('class');
+ 
+     document.getElementById('21').removeAttribute('class');
+     document.getElementById('22').removeAttribute('class');
+     document.getElementById('23').removeAttribute('class');
+     document.getElementById('24').removeAttribute('class');
+     document.getElementById('25').removeAttribute('class');
+     document.getElementById('26').removeAttribute('class');
+     document.getElementById('27').removeAttribute('class');
+ 
+     document.getElementById('31').removeAttribute('class');
+     document.getElementById('32').removeAttribute('class');
+     document.getElementById('33').removeAttribute('class');
+     document.getElementById('34').removeAttribute('class');
+     document.getElementById('35').removeAttribute('class');
+     document.getElementById('36').removeAttribute('class');
+     document.getElementById('37').removeAttribute('class');
+ 
+     document.getElementById('41').removeAttribute('class');
+     document.getElementById('42').removeAttribute('class');
+     document.getElementById('43').removeAttribute('class');
+     document.getElementById('44').removeAttribute('class');
+     document.getElementById('45').removeAttribute('class');
+     document.getElementById('46').removeAttribute('class');
+     document.getElementById('47').removeAttribute('class');
+ 
+     document.getElementById('51').removeAttribute('class');
+     document.getElementById('52').removeAttribute('class');
+     document.getElementById('53').removeAttribute('class');
+     document.getElementById('54').removeAttribute('class');
+     document.getElementById('55').removeAttribute('class');
+     document.getElementById('56').removeAttribute('class');
+     document.getElementById('57').removeAttribute('class');
+ 
+     document.getElementById('61').removeAttribute('class');
+     document.getElementById('62').removeAttribute('class');
+     document.getElementById('63').removeAttribute('class');
+     document.getElementById('64').removeAttribute('class');
+     document.getElementById('65').removeAttribute('class');
+     document.getElementById('66').removeAttribute('class');
+     document.getElementById('67').removeAttribute('class');
+ 
+     document.getElementById('71').removeAttribute('class');
+     document.getElementById('72').removeAttribute('class');
+     document.getElementById('73').removeAttribute('class');
+     document.getElementById('74').removeAttribute('class');
+     document.getElementById('75').removeAttribute('class');
+     document.getElementById('76').removeAttribute('class');
+     document.getElementById('77').removeAttribute('class');
+   }
+ </script>
+</html>
+
+
