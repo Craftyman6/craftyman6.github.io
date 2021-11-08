@@ -1,0 +1,58 @@
+<html>
+<h1 id="happy">Happy Birthday Harry!</h1>
+<br>
+<img id="dab" src="https://lh3.googleusercontent.com/9rVqPkM53aBEGaFtYirT5Et281lIYyj8DFAAToimCmLNajhtCr0j3WWnPtPdvV8UTB5Q=s120">
+</img>
+</html>
+
+<style>
+body {
+  font-family: OCR A Std, monospace;
+  background: #9ac8d9;
+  color: black;
+  text-align: center;
+}
+
+img {
+  width:50%;
+  height:50%;
+}
+</style>
+
+<script>
+document.getElementById("happy").style.fontSize = "6vw";
+
+var imgtime = 1;
+
+var timer = setInterval(timing, 200);
+
+function timing() {
+  switch (imgtime) {
+    case 1:
+      document.getElementById("dab").src =
+        "https://previews.dropbox.com/p/thumb/ABUw82hTQvGTLV4UBSOINcDEhnYcsdlzBo7lguKcm4rJ6uWu7XeYafF0yUTkITrwGwEUJQm3yD9e3glQVNBW6Me60ag4WYLocqBdBWEShZsMPawLZ-teCCyHjpsEzDs_843e6zRTv2JevY4bs6tnLnWM8_mTZn5jBVyIDG4pwE8LIVASIxEqsepz0iLG-LEoHooVbT0aJmbI6wqPTnwDgVy5OVqPoXZOG4r8YX7SlYy6YUecJDplvdFCnX2Fq0Uoqcwqt8QjDZPBarIEgZDOV0RTQFZgUx0N3yH-5Oo8rcI1WFvkfImi8lt5coEL8mPIvR5HeCELSt_wm64DMSuFDrBt3rr2tLlFwYt0_9II-z2OPw/p.png";
+      imgtime = 2;
+      break;
+
+    case 2:
+      document.getElementById("dab").src =
+        "https://previews.dropbox.com/p/thumb/ABVFlmg2sNjr-b8ctCIeZzpcT_tn5OSLzdE4gfG6D4C24J4k5WKJyp6sq6imSif64IWCVYu2OzwUd9_IDu-tsQut86E0fQoEQ2VrmZ-pHh3JnZRDnDCCS1s10jDFKFK1kvIkgKVarUtLvJukUpEYOPmnLiPkjl6gRfYoLwqJ18Txy9TrpPYb1VpCg68oVJsuxUyo1xFYhMD20-_AeqyiR_PpBfUQojxU-s_t2b1NSBrI4El57k8MflFL478AJx1MFsC6oNLeujeBRfu9S04SL8IHdIUgmlk-BxqUQMSpzs5OZrh4Z_ntG56btOBswscjz3c8TdQVd2e2rWhl2uYMOySjKrTAzixOwkH_JMOnzsDraw/p.png";
+      imgtime = 3;
+      break;
+
+    case 3:
+      document.getElementById("dab").src =
+        "https://previews.dropbox.com/p/thumb/ABVCKVatf3-w3ltBeHDRKnOTLC7KtS17Z2SUppbrNBzPMU3x8KOvVFkcaD3WujsK4m1PYK_1GT6yCCM0scTJcH98d2N95TelqYDFmzItTRio_bcHkB3Dx_0x9cF7XJRlfPJlN03NAOrYhDPUONIwGCUaMjvyW_XP8z7B0ivqGf39BpGjkiseDYMS7obqMYRxSPsqtQtbVAejGFmJ96m0fxxU_TqC-BwFSK2_xA6pf1vSfNNd_PMMdy0Ois56RrVKJ_4CPuX5XszIi4lK2lUeuwU8FItXOVkrDQ1TrfeOvujuHHNz0_S1hzySsV3q8Cl1ft2y2VwOxATGMloqq0TI5dCBjQnIWL5oMq7e6fWdl5KmnA/p.png";
+      imgtime = 4;
+      break;
+
+    case 4:
+      document.getElementById("dab").src =
+        "https://previews.dropbox.com/p/thumb/ABW7j6aP4fZhSYSWmXj6-5xqAOHUg1eZujDH1FPKLrV0y01-Vq1AexdL20hZlVA0OdjahQzSgeRVujo6XwL33_0kvAY0AQRf5Mvi8Ha-dkyCsJpVZFqkxQv2O2ippQLhejgWm-ajd3bHNZ6V3Has7UKt3zYnAAaCck710pSF_Bvsur-6xHYvdFOR4Ua6v9FpRS23bLlFIiJZAGq8Bukw-4Yz14jC2fS7m5KFr8SKBlhRsp4iSMw2jDq5-psoUrbJ6HgwAiOD9YcXb3LaSh_u7uZebAiSjw6wf-Id86vgzJyLJnnsd4YFeZsdFZxpGFskSkpDkKckBafiqvLcewKEV0Q1BOz2OFs-90i_no8t4PYmzg/p.png";
+      imgtime = 1;
+      break;
+  }
+}
+
+
+</script>
