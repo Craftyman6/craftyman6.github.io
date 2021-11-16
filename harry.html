@@ -1,19 +1,44 @@
 <html>
+  
   <br>
 <h1 id="happy">Happy Birthday Harry!</h1>
 <br>
 <img id="dab">
-<br><br><br><br><br><br><br><br>
-<h2 id="intro">
+<br><br><br><br><br><br>
+<h2 style="font-family: FreeMono" id="intro">
   Zamn!
 </h2>
 <br><br>
-<h2 id="introText">
-  &nbsp;&nbsp;Would you look at that! The time has come again! I can't believe our little boi is getting older once again reaching the big number of 17 years old. According to terminix.com, the longest recorded lifespan of a Spider is 20 years old, so if I were you, I'd spend your precious remaining days working on the 50th video, cause it's really hard to say if that's giving you enough time to finish it.
+<h2 style="font-family: Didot" id="introText">
+  &nbsp;&nbsp;Would you look at that! The time has come again! I can't believe our little boi is getting older once again reaching the big number of 17 years old. According to terminix.com, the longest recorded lifespan of a Spider is 20 years old, so if I were you, I'd spend your precious remaining days getting your merch out there. You'll make bank and will finally be able to afford your lifelong wanted addition to your gaming collection:
 </h2>
+<br><br>
+<img id="cory" src="https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/cory.jpeg">
+<br><br>
+<h2 style="font-family: Didot" id="introText">
+  &nbsp;&nbsp;Unfortunetely, due to the game's emmence demand, vast story, and incredible gameplay, it was too expensive for me to get you, but what I did get you, was </h2>
+<h2 style="color:red" id="introText">something better!</h2>
+<br><br>
+<img src="https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/funny.png" style="border: 5px solid white; width: 75%; height: 75%">
+<br><br>
+<h2 id="bodies" style="font-family: Didot">
+  &nbsp;&nbsp;I've always heard that you wanted to be funny, so now you are given the chance! So why do you deserve to be funny, you may be asking? Well let's take a look at how you've grown through this whole year.
+</h2>
+<br><br>
+<h2 id="bodies" style="font-family: Didot">
+  &nbsp;&nbsp;Luckly for me I found a collection of audio and video files of our beloved harry present his essay projects, I forget where I got these, but it went something along the lines of <code>https://www.youtube.com/c/GSpider/videos</code>, or something like that I could be wrong. So I was generous enough to create a lovely photo album using an image from each of these, "videos", from the past year.
+</h2>
+<br><br>
+<button id="leftbutton" onClick="swap(-1)">&lt;</button>
+<h2 id="videotext" style="display:inline-block">PS5 vs. Xbox Series X</h2>
+<button id="rightbutton" onClick="swap(1)">&gt;</button>
+<br>
+<img id="imgshot" src="https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g01.png?raw=true">
+  
 </html>
 
 <style>
+  
   body {
   font-family: OCR A Std, monospace;
   background: #9ac8d9;
@@ -25,42 +50,257 @@ img {
   width: 50%;
   height: 50%;
 }
+
 </style>
 
 <script>
   
+  document.getElementById("happy").style.fontSize = "6vw";
 
-document.getElementById("happy").style.fontSize = "6vw";
-
-document.getElementById("intro").style.fontSize = "4vw";
+document.getElementById("intro").style.fontSize = "5vw";
 
 document.getElementById("introText").style.textAlign = "left";
+
+document.getElementById("bodies").style.textAlign = "center";
 
 var imgtime = 1;
 
 var timer = setInterval(timing, 200);
 
+var shot = 1;
+
+function swap(dir) {
+  if (!(dir == -1 && shot == 1) && !(dir == 1 && shot == 31)) {
+    shot = shot + dir;
+    change();
+  }
+}
+
 function timing() {
   switch (imgtime) {
     case 1:
-      document.getElementById("dab").src ="https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/left-down.png";
+      document.getElementById("dab").src =
+        "https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/left-down.png";
       imgtime = 2;
       break;
 
     case 2:
-      document.getElementById("dab").src ="https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/left-up.png";
+      document.getElementById("dab").src =
+        "https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/left-up.png";
       imgtime = 3;
       break;
 
     case 3:
-      document.getElementById("dab").src ="https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/right-down.png";
+      document.getElementById("dab").src =
+        "https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/right-down.png";
       imgtime = 4;
       break;
 
     case 4:
-      document.getElementById("dab").src ="https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/right-up.png";
+      document.getElementById("dab").src =
+        "https://raw.githubusercontent.com/Craftyman6/craftyman6.github.io/master/docs/assets/right-up.png";
       imgtime = 1;
       break;
   }
 }
+
+function change() {
+  switch (shot) {
+    case 1:
+      titleChange("PS5 vs. Xbox Series X");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g01.png?raw=true"
+      );
+      break;
+    case 2:
+      titleChange("Katana Zero Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g02.png?raw=true"
+      );
+      break;
+    case 3:
+      titleChange("My Favourite Games of 2020");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g03.png?raw=true"
+      );
+      break;
+    case 4:
+      titleChange("Deathloop and what we want");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g04.png?raw=true"
+      );
+      break;
+    case 5:
+      titleChange("Sprout Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g05.png?raw=true"
+      );
+      break;
+    case 6:
+      titleChange("My Game Collection");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g06.png?raw=true"
+      );
+      break;
+    case 7:
+      titleChange("Best VR Experiences");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g07.png?raw=true"
+      );
+      break;
+    case 8:
+      titleChange("The Wii U and why it failed");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g08.png?raw=true"
+      );
+      break;
+    case 9:
+      titleChange("My Predictions about Nintendo in 2021");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g09.png?raw=true"
+      );
+      break;
+    case 10:
+      titleChange("Rocket League 2020 Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g10.png?raw=true"
+      );
+      break;
+    case 11:
+      titleChange("Best Cheap Indie Games on Nintendo Switch");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g11.png?raw=true"
+      );
+      break;
+    case 12:
+      titleChange("Cave Story+ Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g12.png?raw=true"
+      );
+      break;
+    case 13:
+      titleChange("How Game Design Evolved");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g13.png?raw=true"
+      );
+      break;
+    case 14:
+      titleChange("Best Portable Games on Switch");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g14.png?raw=true"
+      );
+      break;
+    case 15:
+      titleChange("Donut County Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g15.png?raw=true"
+      );
+      break;
+    case 16:
+      titleChange("The History of 3D Platformers");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g16.png?raw=true"
+      );
+      break;
+    case 17:
+      titleChange("Spirit Farer Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g17.png?raw=true"
+      );
+      break;
+    case 18:
+      titleChange("Spirit Farer Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g18.png?raw=true"
+      );
+      break;
+    case 19:
+      titleChange("Is the Playstation Classic worth playing today?");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g19.png?raw=true"
+      );
+      break;
+    case 20:
+      titleChange("Fun Couch Co-op Puzzle Games");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g20.png?raw=true"
+      );
+      break;
+    case 21:
+      titleChange("I don't like Hollow Knight...");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g21.png?raw=true"
+      );
+      break;
+    case 22:
+      titleChange("Are Video Games Becoming Too Easy?");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g22.png?raw=true"
+      );
+      break;
+    case 23:
+      titleChange("Why 3rd party support was absent from the 3DS");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g23.png?raw=true"
+      );
+      break;
+    case 24:
+      titleChange("Undertale: The New Golden Standard");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g24.png?raw=true"
+      );
+      break;
+    case 25:
+      titleChange("Xbox 360 was Microsoft's Worst Best Console");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g25.png?raw=true"
+      );
+      break;
+    case 26:
+      titleChange("Skyward Sword: the game you NEED to play");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g26.png?raw=true"
+      );
+      break;
+    case 27:
+      titleChange("The Best Video Games for Summertime");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g27.png?raw=true"
+      );
+      break;
+    case 28:
+      titleChange("My Top Ten Indie Games ft. GSpider");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g28.png?raw=true"
+      );
+      break;
+    case 29:
+      titleChange("Flower Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g29.png?raw=true"
+      );
+      break;
+    case 30:
+      titleChange("Lumoine's Demo is FILLED with potential");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g30.png?raw=true"
+      );
+      break;
+    case 31:
+      titleChange("OMORI Review");
+      imageChange(
+        "https://github.com/Craftyman6/craftyman6.github.io/blob/master/docs/assets/g31.png?raw=true"
+      );
+      break;
+  }
+}
+
+function titleChange(ttl) {
+  document.getElementById("videotext").innerHTML = ttl;
+}
+
+function imageChange(img) {
+  document.getElementById("imgshot").src = img;
+}
+
 </script>
