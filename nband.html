@@ -6,15 +6,16 @@
     
     .text{
   font-family: 'Trebuchet MS', sans-serif;
-  color:#2f1f18
+  color:#1a402d
 }
 
 .button{
   font-family: 'Trebuchet MS', sans-serif;
-  color:#2f1f18;
-  font-size:20px;
+  color:#1a402d;
+  font-size:40px;
   font-weight:bold;
   background-color:#e1977a;
+  border: 4px solid #1a402d;
 }
     
   </style>
@@ -42,7 +43,7 @@ function press(){
    
      document.getElementById("image").src="https://cdn.discordapp.com/attachments/781566541862010891/999449829639987200/sunset.png"
     
-    document.getElementById("image").style.border="4px solid #2f1f18";
+    document.getElementById("image").style.border="4px solid #1a402d";
     
     document.getElementById("text2").innerHTML = "If there was anything that I would be drawing for ya, you know it's gotta be a sunset like this. Had to pass back your handed down artistic inspiration, this setting was too great not to bring to life. Buuuuuut..";
     
@@ -59,7 +60,7 @@ function press(){
    
      document.getElementById("image").src="https://cdn.discordapp.com/attachments/781566541862010891/999449770424807514/Drawing.png"
     
-    document.getElementById("image").style.border="4px solid #2f1f18";
+    document.getElementById("image").style.border="4px solid ##1a402d";
     
     document.getElementById("text2").innerHTML = "Oh my goodness I have no words for this I hope you like it as much as I do, even Gabby herself was impressed at how well it turned out, it's everything that I could have wanted in a portrait of you. I know I'm, like, fanboying over you sm rn but, come on you can't tell me that it wasn't worth it, right?<br>Okaaay well keep in touch and I'm looking forward to Thursday! Have a nice time working 24/7, love you!";
     
@@ -73,12 +74,12 @@ function press(){
   
   
   <center>
-    <font size="+2">
+    <font size="+5">
     <b>
     <br>
     <a id="text1" class="text">Hiiiii I hope you had a lot of fun punching in the characters for this website (oh yeah and band camp that must have been fun too)</a>
     <br>
-    <img id="image" class="image" src="" style="width:340px;">
+    <img id="image" class="image" src="" style="width:680px;">
     <div id="text2" class="text"></div>
     <br>
     <input type="button" onclick="press()" id="button" class="button" value="Next">
