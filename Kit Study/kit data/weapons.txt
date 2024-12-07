@@ -1,0 +1,143 @@
+.52 Gal,Splash Wall,Killer Wail 5.1,Shooter
+.52 Gal Deco,Curling Bomb,Splattercolor Screen,Shooter
+.96 Gal,Sprinkler,Ink Vac,Shooter
+.96 Gal Deco,Splash Wall,Kraken Royale,Shooter
+Aerospray MG,Fizzy Bomb,Reefslider,Shooter
+Aerospray RG,Sprinkler,Booyah Bomb,Shooter
+Annaki Splattershot Nova,Ink Mine,Inkjet,Shooter
+Ballpoint Splatling,Fizzy Bomb,Inkjet,Splatling
+Ballpoint Splatling Nouveau,Ink Mine,Ink Vac,Splatling
+Bamboozler 14 Mk I,Autobomb,Killer Wail 5.1,Charger
+Bamboozler 14 Mk II,Fizzy Bomb,Super Chump,Charger
+Big Swig Roller,Splash Wall,Ink Vac,Roller
+Big Swig Roller Express,Angle Shooter,Ink Storm,Roller
+Blaster,Autobomb,Big Bubbler,Blaster
+Bloblobber,Sprinkler,Ink Storm,Slosher
+Bloblobber Deco,Angle Shooter,Kraken Royale,Slosher
+Carbon Roller,Autobomb,Zipcaster,Roller
+Carbon Roller Deco,Burst Bomb,Trizooka,Roller
+Charcoal Decavitator,Splash Wall,Inkjet,Splatana
+Clash Blaster,Splat Bomb,Trizooka,Blaster
+Clash Blaster Neo,Curling Bomb,Super Chump,Blaster
+Classic Squiffer,Point Sensor,Big Bubbler,Charger
+Custom Blaster,Point Sensor,Triple Splashdown,Blaster
+Custom Douser Dualies FF,Burst Bomb,Triple Inkstrike,Dualie
+Custom Dualie Squelchers,Squid Beakon,Super Chump,Dualie
+Custom E-liter 4K,Squid Beakon,Kraken Royale,Charger
+Custom E-liter 4K Scope,Squid Beakon,Kraken Royale,Charger
+Custom Explosher,Splash Wall,Triple Splashdown,Slosher
+Custom Goo Tuber,Fizzy Bomb,Ultra Stamp,Charger
+Custom Hydra Splatling,Ink Mine,Splattercolor Screen,Hydra
+Custom Jet Squelcher,Toxic Mist,Ink Storm,Shooter
+Custom Range Blaster,Splat Bomb,Kraken Royale,Blaster
+Custom Splattershot Jr.,Torpedo,Wave Breaker,Shooter
+Custom Wellstring V,Point Sensor,Wave Breaker,Stringer
+Dapple Dualies,Squid Beakon,Tacticooler,Dualie
+Dapple Dualies Nouveau,Torpedo,Reefslider,Dualie
+Dark Tetra Dualies,Autobomb,Reefslider,Dualie
+Douser Dualies FF,Ink Mine,Killer Wail 5.1,Dualie
+Dread Wringer,Suction Bomb,Reefslider,Slosher
+Dread Wringer D,Squid Beakon,Wave Breaker,Slosher
+Dualie Squelchers,Splat Bomb,Wave Breaker,Dualie
+Dynamo Roller,Sprinkler,Tacticooler,Roller
+E-liter 4K,Ink Mine,Wave Breaker,Charger
+E-liter 4K Scope,Ink Mine,Wave Breaker,Charger
+Enperry Splat Dualies,Curling Bomb,Triple Splashdown,Dualie
+Explosher,Point Sensor,Ink Storm,Slosher
+Flingza Roller,Ink Mine,Tenta Missiles,Roller
+Foil Flingza Roller,Suction Bomb,Splattercolor Screen,Roller
+Foil Squeezer,Autobomb,Splattercolor Screen,Shooter
+Forge Splattershot Pro,Suction Bomb,Booyah Bomb,Shooter
+Glooga Dualies,Splash Wall,Booyah Bomb,Dualie
+Glooga Dualies Deco,Point Sensor,Trizooka,Dualie
+Goo Tuber,Torpedo,Tenta Missiles,Charger
+Gold Dynamo Roller,Splat Bomb,Super Chump,Roller
+H-3 Nozzlenose,Point Sensor,Tacticooler,Shooter
+H-3 Nozzlenose D,Splash Wall,Big Bubbler,Shooter
+Heavy Edit Splatling,Curling Bomb,Tacticooler,Splatling
+Heavy Edit Splatling Nouveau,Splat Bomb,Crab Tank,Splatling
+Heavy Splatling,Sprinkler,Wave Breaker,Splatling
+Heavy Splatling Deco,Point Sensor,Kraken Royale,Splatling
+Hero Shot Replica,Suction Bomb,Trizooka,Shooter
+Hydra Splatling,Autobomb,Booyah Bomb,Splatling
+Inkbrush,Splat Bomb,Killer Wail 5.1,Brush
+Inkbrush Nouveau,Ink Mine,Ultra Stamp,Brush
+Inkline Tri-Stringer,Sprinkler,Super Chump,Stringer
+Jet Squelcher,Angle Shooter,Ink Vac,Shooter
+Krak-On Splat Roller,Squid Beakon,Kraken Royale,Roller
+L-3 Nozzlenose,Curling Bomb,Crab Tank,Shooter
+L-3 Nozzlenose D,Burst Bomb,Ultra Stamp,Shooter
+Light Tetra Dualies,Sprinkler,Zipcaster,Dualie
+Luna Blaster,Splat Bomb,Zipcaster,Blaster
+Luna Blaster Neo,Fizzy Bomb,Ultra Stamp,Blaster
+Mini Splatling,Burst Bomb,Ultra Stamp,Splatling
+Mint Decavitator,Suction Bomb,Big Bubbler,Splatana
+N-ZAP '85,Suction Bomb,Tacticooler,Shooter
+N-ZAP '89,Autobomb,Super Chump,Shooter
+Nautilus 47,Point Sensor,Ink Storm,Splatling
+Nautilus 79,Suction Bomb,Triple Splashdown,Splatling
+Neo Splash-o-matic,Suction Bomb,Triple Inkstrike,Shooter
+Neo Sploosh-o-matic,Squid Beakon,Killer Wail 5.1,Shooter
+New Squiffer,Autobomb,Zipcaster,Charger
+Octo Shot Replica,Splat Bomb,Triple Inkstrike,Shooter
+Octobrush,Suction Bomb,Zipcaster,Brush
+Octobrush Nouveau,Squid Beakon,Ink Storm,Brush
+Order Blaster Replica,Splat Bomb,Zipcaster,Blaster
+Order Brella Replica,Sprinkler,Triple Inkstrike,Brella
+Order Charger Replica,Splat Bomb,Ink Vac,Charger
+Order Dualie Replicas,Suction Bomb,Crab Tank,Dualie
+Order Roller Replica,Curling Bomb,Big Bubbler,Roller
+Order Shot Replica,Suction Bomb,Trizooka,Shooter
+Order Slosher Replica,Splat Bomb,Triple Inkstrike,Slosher
+Order Splatana Replica,Burst Bomb,Zipcaster,Splatana
+Order Splatling Replica,Sprinkler,Wave Breaker,Splatling
+Order Stringer Replica,Toxic Mist,Killer Wail 5.1,Stringer
+Orderbrush Replica,Suction Bomb,Zipcaster,Brush
+Painbrush,Curling Bomb,Wave Breaker,Brush
+Painbrush Nouveau,Point Sensor,Tenta Missiles,Brush
+Range Blaster,Suction Bomb,Wave Breaker,Blaster
+Rapid Blaster,Ink Mine,Triple Inkstrike,Blaster
+Rapid Blaster Deco,Torpedo,Inkjet,Blaster
+Rapid Blaster Pro,Toxic Mist,Ink Vac,Blaster
+Rapid Blaster Pro Deco,Angle Shooter,Killer Wail 5.1,Blaster
+Recycled Brella 24 Mk I,Angle Shooter,Big Bubbler,Brella
+Recycled Brella 24 Mk II,Toxic Mist,Triple Splashdown,Brella
+REEF-LUX 450,Curling Bomb,Tenta Missiles,Stringer
+REEF-LUX 450 Deco,Splash Wall,Reefslider,Stringer
+S-BLAST '91,Burst Bomb,Booyah Bomb,Blaster
+S-BLAST '92,Sprinkler,Reefslider,Blaster
+Slosher,Splat Bomb,Triple Inkstrike,Slosher
+Slosher Deco,Angle Shooter,Zipcaster,Slosher
+Sloshing Machine,Fizzy Bomb,Booyah Bomb,Slosher
+Sloshing Machine Neo,Point Sensor,Trizooka,Slosher
+Snipewriter 5B,Splash Wall,Ink Storm,Charger
+Snipewriter 5H,Sprinkler,Tacticooler,Charger
+Sorella Brella,Autobomb,Inkjet,Brella
+Splash-o-matic,Burst Bomb,Crab Tank,Shooter
+Splat Brella,Sprinkler,Triple Inkstrike,Brella
+Splat Charger,Splat Bomb,Ink Vac,Charger
+Splat Dualies,Suction Bomb,Crab Tank,Dualie
+Splat Roller,Curling Bomb,Big Bubbler,Roller
+Splatana Stamper,Burst Bomb,Zipcaster,Splatana
+Splatana Stamper Nouveau,Toxic Mist,Crab Tank,Splatana
+Splatana Wiper,Torpedo,Ultra Stamp,Splatana
+Splatana Wiper Deco,Squid Beakon,Tenta Missiles,Splatana
+Splatterscope,Splat Bomb,Ink Vac,Charger
+Splattershot,Suction Bomb,Trizooka,Shooter
+Splattershot Jr.,Splat Bomb,Big Bubbler,Shooter
+Splattershot Nova,Point Sensor,Killer Wail 5.1,Shooter
+Splattershot Pro,Angle Shooter,Crab Tank,Shooter
+Sploosh-o-matic,Curling Bomb,Ultra Stamp,Shooter
+Squeezer,Splash Wall,Trizooka,Shooter
+Tenta Brella,Squid Beakon,Ink Vac,Brella
+Tenta Sorella Brella,Ink Mine,Trizooka,Brella
+Tentatek Splattershot,Splat Bomb,Triple Inkstrike,Shooter
+Tri-Slosher,Toxic Mist,Inkjet,Slosher
+Tri-Slosher Nouveau,Fizzy Bomb,Tacticooler,Slosher
+Tri-Stringer,Toxic Mist,Killer Wail 5.1,Stringer
+Undercover Brella,Ink Mine,Reefslider,Brella
+Undercover Sorella Brella,Torpedo,Splattercolor Screen,Brella
+Wellstring V,Autobomb,Ultra Stamp,Stringer
+Z+F Splat Charger,Splash Wall,Triple Inkstrike,Charger
+Z+F Splatterscope,Splash Wall,Triple Inkstrike,Charger
+Zink Mini Splatling,Toxic Mist,Big Bubbler,Splatling
