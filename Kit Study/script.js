@@ -1,1 +1,1 @@
-document.getElementById("title").innerHTML = `Script Run`;
+document.getElementById("title").textContent="Sample Text";
