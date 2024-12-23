@@ -1,21 +1,21 @@
 export const weapons = [
 
-	{name: ".52 Gal",
+	{name: "52 Gal",
 	sub: "Splash Wall",
 	special: "Killer Wail 5.1",
 	wclass: "Shooter"},
 
-	{name: ".52 Gal Deco",
+	{name: "52 Gal Deco",
 	sub: "Curling Bomb",
 	special: "Splattercolor Screen",
 	wclass: "Shooter"},
 
-	{name: ".96 Gal",
+	{name: "96 Gal",
 	sub: "Sprinkler",
 	special: "Ink Vac",
 	wclass: "Shooter"},
 
-	{name: ".96 Gal Deco",
+	{name: "96 Gal Deco",
 	sub: "Splash Wall",
 	special: "Kraken Royale",
 	wclass: "Shooter"},
@@ -148,7 +148,7 @@ export const weapons = [
 	{name: "Custom Hydra Splatling",
 	sub: "Ink Mine",
 	special: "Splattercolor Screen",
-	wclass: "Hydra"},
+	wclass: "Splatling"},
 
 	{name: "Custom Jet Squelcher",
 	sub: "Toxic Mist",
@@ -160,7 +160,7 @@ export const weapons = [
 	special: "Kraken Royale",
 	wclass: "Blaster"},
 
-	{name: "Custom Splattershot Jr.",
+	{name: "Custom Splattershot Jr",
 	sub: "Torpedo",
 	special: "Wave Breaker",
 	wclass: "Shooter"},
@@ -370,12 +370,12 @@ export const weapons = [
 	special: "Big Bubbler",
 	wclass: "Splatana"},
 
-	{name: "N-ZAP '85",
+	{name: "N-ZAP 85",
 	sub: "Suction Bomb",
 	special: "Tacticooler",
 	wclass: "Shooter"},
 
-	{name: "N-ZAP '89",
+	{name: "N-ZAP 89",
 	sub: "Autobomb",
 	special: "Super Chump",
 	wclass: "Shooter"},
@@ -530,12 +530,12 @@ export const weapons = [
 	special: "Reefslider",
 	wclass: "Stringer"},
 
-	{name: "S-BLAST '91",
+	{name: "S-BLAST 91",
 	sub: "Burst Bomb",
 	special: "Booyah Bomb",
 	wclass: "Blaster"},
 
-	{name: "S-BLAST '92",
+	{name: "S-BLAST 92",
 	sub: "Sprinkler",
 	special: "Reefslider",
 	wclass: "Blaster"},
@@ -700,12 +700,12 @@ export const weapons = [
 	special: "Ultra Stamp",
 	wclass: "Stringer"},
 
-	{name: "Z+F Splat Charger",
+	{name: "ZF Splat Charger",
 	sub: "Splash Wall",
 	special: "Triple Inkstrike",
 	wclass: "Charger"},
 
-	{name: "Z+F Splatterscope",
+	{name: "ZF Splatterscope",
 	sub: "Splash Wall",
 	special: "Triple Inkstrike",
 	wclass: "Charger"},
@@ -715,3 +715,56 @@ export const weapons = [
 	special: "Big Bubbler",
 	wclass: "Splatling"}
 ];
+
+export const subs = [
+	"Angle Shooter",
+	"Autobomb",
+	"Burst Bomb",
+	"Curling Bomb",
+	"Fizzy Bomb",
+	"Ink Mine",
+	"Point Sensor",
+	"Splash Wall",
+	"Splat Bomb",
+	"Sprinkler",
+	"Squid Beakon",
+	"Suction Bomb",
+	"Torpedo",
+	"Toxic Mist"
+]
+
+export const specials = [
+	"Big Bubbler",
+	"Booyah Bomb",
+	"Crab Tank",
+	"Ink Storm",
+	"Ink Vac",
+	"Inkjet",
+	"Killer Wail 5.1",
+	"Kraken Royale",
+	"Reefslider",
+	"Splattercolor Screen",
+	"Super Chump",
+	"Tacticooler",
+	"Tenta Missiles",
+	"Triple Inkstrike",
+	"Triple Splashdown",
+	"Trizooka",
+	"Ultra Stamp",
+	"Wave Breaker",
+	"Zipcaster"
+]
+
+export const wclasses = [
+	"Blaster",
+	"Brella",
+	"Brush",
+	"Charger",
+	"Dualie",
+	"Roller",
+	"Shooter",
+	"Slosher",
+	"Splatana",
+	"Splatling",
+	"Stringer"
+]
