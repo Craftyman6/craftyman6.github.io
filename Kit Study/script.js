@@ -13,6 +13,7 @@ class Sub{
     constructor(name) {
         this.name = name;
         this.imgSrc = "img/Sub Weapons/"+name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"subClick('"+this.name+"')\">";
     }
 
     //get name function
@@ -20,6 +21,9 @@ class Sub{
 
     //get imgSrc function
     getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
 
     //an equals function that returns whether a sub weapons object is
     //equal to this one
@@ -34,6 +38,7 @@ class Special{
     constructor(name) {
         this.name = name;
         this.imgSrc = "img/Special Weapons/"+name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"specialClick('"+this.name+"')\">"
     }
 
     //get name function
@@ -41,6 +46,9 @@ class Special{
 
     //get imgSrc function
     getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
 
     //an equals function that returns whether a special weapon object is
     //equal to this one
@@ -55,6 +63,7 @@ class WClass{
     constructor(name) {
         this.name = name;
         this.imgSrc = "img/Weapon Classes/"+name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"wclassClick('"+this.name+"')\">"
     }
 
     //get name function
@@ -62,6 +71,9 @@ class WClass{
 
     //get imgSrc function
     getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
 
     //equals function that returns whether a weapon class object is
     //equal to this one
@@ -80,6 +92,7 @@ class Weapon {
         this.special = new Special(arr.special);
         this.wclass = new WClass(arr.wclass);
         this.imgSrc = "img/Main Weapons/"+arr.name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"weaponClick("+arr.id+")\">";
     }
 
     //get name function
@@ -96,6 +109,9 @@ class Weapon {
 
     //get imgSrc function
     getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
 
     //equals function the returns whether a weapon object is
     //equal to this one
@@ -128,6 +144,46 @@ for (const wclass of wclasses) {
     allWClasses.push(new WClass(wclass));
 }
 
+//FUNCTIONS
+
+//for when a weapon image from a list is clicked
+function weaponClick(id) {
+    const weapon = allWeapons[id];
+    //do things with clicked weapon
+    console.log("You clicked the "+weapon.name+"!");
+}
+window.weaponClick = weaponClick;
+
+//for when a sub weapon image from a list is clicked
+function subClick(name) {
+    const sub = new Sub(name);
+    //do things with clicked sub weapon
+    console.log("You clicked a "+sub.name+"!");
+}
+window.subClick = subClick;
+
+//for when a special weapon image from a list is clicked
+function specialClick(name) {
+    const special = new Special(name);
+    //do things with clicked special weapon
+    console.log("You clicked the "+special.name+"!");
+}
+window.specialClick = specialClick;
+
+//for when a weapon class image from a list is clicked
+function wclassClick(name) {
+    const wclass = new WClass(name);
+    //do things with clicked weapon class
+    console.log("This is a "+wclass.name+"!");
+}
+window.wclassClick = wclassClick
+
+//***A test function for show that alerts and onclicks work properly
+function testAlert(str) {
+    console.log(str);
+}
+
+window.testAlert = testAlert;
 
 //SCRIPT
 
@@ -136,10 +192,10 @@ for (const wclass of wclasses) {
 for (const weapon of allWeapons) {
     document.getElementById("weaponListTestDisplay").innerHTML=
     document.getElementById("weaponListTestDisplay").innerHTML+
-    "<img src=\""+weapon.getImgSrc()+"\">"+
-    "<img src=\""+weapon.getSub().getImgSrc()+"\">"+
-    "<img src=\""+weapon.getSpecial().getImgSrc()+"\">"+
-    "<img src=\""+weapon.getWClass().getImgSrc()+"\"><br><p>"+
+    weapon.getImgHTML()+
+    weapon.getSub().getImgHTML()+
+    weapon.getSpecial().getImgHTML()+
+    weapon.getWClass().getImgHTML()+"<br>"+
     weapon.getName()+"<p><br>";
 }
 
