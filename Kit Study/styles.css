@@ -1,0 +1,39 @@
+@import url("https://use.typekit.net/fmj3umn.css");
+*{
+    font-family: "piepie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-size: 3em;
+}
+body{
+    text-align: center;
+    margin: 0;
+}
+.buffer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#weaponTypeScroll{
+    display: inline-flex;
+    width: 1125px;
+    justify-content: center;
+    background-color: rgb(36, 175, 255);
+    border-radius: 35px;
+}
+#weaponTypeScroll>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+#weaponTypeScroll img {
+    width: 100px;
+}
+#specWeaponMenu{
+    display: inline-flex;
+}
+#specWeaponMenu img{
+    width: 100px;
+}
