@@ -144,13 +144,27 @@ for (const wclass of wclasses) {
     allWClasses.push(new WClass(wclass));
 }
 
+//VARIABLES
+
+//integer variable for the current page that's being displayed
+let page=0;
+//current weapon being tested for the kit tester
+let kitTesterWeapon;
+//current wepaon being tested for the weapon tester
+let weaponTesterWeapon;
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
 function weaponClick(id) {
     const weapon = allWeapons[id];
     //do things with clicked weapon
-    console.log("You clicked the "+weapon.name+"!");
+    console.log("Here are the weapons that share a kit with "+weapon.getName()+":");
+    for (const searchedWeapon of getWeaponsOf(weapon.getSub(),weapon.getSpecial())) {
+        if (!searchedWeapon.equals(weapon)) {
+            console.log(searchedWeapon.getName());
+        }
+    }
 }
 window.weaponClick = weaponClick;
 
@@ -158,7 +172,8 @@ window.weaponClick = weaponClick;
 function subClick(name) {
     const sub = new Sub(name);
     //do things with clicked sub weapon
-    console.log("You clicked a "+sub.name+"!");
+    console.log("Here's a random weapon with "+sub.getName()+":");
+    console.log(getRandomWeaponOf(getWeaponsOf(sub)).getName());
 }
 window.subClick = subClick;
 
@@ -166,7 +181,8 @@ window.subClick = subClick;
 function specialClick(name) {
     const special = new Special(name);
     //do things with clicked special weapon
-    console.log("You clicked the "+special.name+"!");
+    console.log("Here's a completely random weapon:");
+    console.log(getRandomWeapon().getName());
 }
 window.specialClick = specialClick;
 
@@ -178,12 +194,51 @@ function wclassClick(name) {
 }
 window.wclassClick = wclassClick
 
-//***A test function for show that alerts and onclicks work properly
-function testAlert(str) {
-    console.log(str);
+//returns a list of weapons that have the given parameter
+//Can take one parameter to search for a weapon of given sub, special or wclass
+//Can take two parameters to serch for a weapon of given sub and special
+function getWeaponsOf() {
+    if (arguments.length === 1) {
+        const search = arguments[0];
+        let found = [];
+        for (const weapon of allWeapons) {
+            if (search instanceof Sub) {
+                if (weapon.getSub().equals(search)) {
+                    found.push(weapon);
+                }
+            } else if (search instanceof Special) {
+                if (weapon.getSpecial().equals(search)) {
+                    found.push(weapon);
+                }
+            } else if (search instanceof WClass) {
+                if (weapon.getwClass().equals(search)) {
+                    found.push(weapon);
+                }
+            }
+        }
+        return found;
+    } else if (arguments.length === 2) {
+        const sub = arguments[0];
+        const special = arguments[1];
+        let found = [];
+        for (const weapon of getWeaponsOf(sub)) {
+            if (weapon.getSpecial().equals(special)) {
+                found.push(weapon);
+            }
+        }
+        return found;
+    } else {return []}
 }
 
-window.testAlert = testAlert;
+//returns a random weapon from all the weapons
+function getRandomWeapon() {
+    return allWeapons[Math.floor(Math.random() * allWeapons.length)];
+}
+
+//returns a random weapon from a given array of weapons
+function getRandomWeaponOf(arr) {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
 
 //SCRIPT
 
