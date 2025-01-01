@@ -191,6 +191,7 @@ function wclassClick(name) {
     const wclass = new WClass(name);
     //do things with clicked weapon class
     console.log("This is a "+wclass.name+"!");
+    listClick('specWeaponMenu', getWeaponsOf(wclass));
 }
 window.wclassClick = wclassClick
 
@@ -211,7 +212,7 @@ function getWeaponsOf() {
                     found.push(weapon);
                 }
             } else if (search instanceof WClass) {
-                if (weapon.getwClass().equals(search)) {
+                if (weapon.getWClass().equals(search)) {
                     found.push(weapon);
                 }
             }
@@ -242,16 +243,45 @@ function getRandomWeaponOf(arr) {
 
 //SCRIPT
 
-//***This is purely for test purposes to show all images and objects are functional
-//for each weapon, append images of its elements and a title to the test display block
-for (const weapon of allWeapons) {
-    document.getElementById("weaponListTestDisplay").innerHTML=
-    document.getElementById("weaponListTestDisplay").innerHTML+
-    weapon.getImgHTML()+
-    weapon.getSub().getImgHTML()+
-    weapon.getSpecial().getImgHTML()+
-    weapon.getWClass().getImgHTML()+"<br>"+
-    weapon.getName()+"<p><br>";
+// Render weapon classes in a scrollable menu
+function renderWeaponTypes(containerId, weaponClasses) {
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.error(`Container with ID "${containerId}" not found.`);
+        return;
+    }
+
+    // Clear the container to prevent duplication
+    container.innerHTML = '';
+
+    // Add each weapon class as a child to the container
+    weaponClasses.forEach(wclass => {
+        const listItem = document.createElement('div');
+        listItem.innerHTML = wclass.getImgHTML();
+        container.appendChild(listItem);
+    });
 }
+// Call the function to render weapon classes
+renderWeaponTypes('weaponTypeScroll', allWClasses);
+
+
+function listClick(containerId, weaponType){
+    //functions the same as the last function (renderWeaponTypes), but NEEDS to only render the category of weapons clicked.
+    //prob another for each loop or something related to that to sort arrays and go from there. I'm just too tired to do it rn. A mimir - CMS
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.error(`Container with ID "${containerId}" not found.`);
+        return;
+    }
+
+    container.innerHTML = '';
+
+    weaponType.forEach(weapon => {
+        const listItem = document.createElement('div');
+        listItem.innerHTML = weapon.getImgHTML();
+        container.appendChild(listItem);
+    });
+}
+window.listClick = listClick;
 
 
