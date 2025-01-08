@@ -1,7 +1,7 @@
 //IMPORTS
 
 //import the arrays of strings containing data of Splatoon weapons elements
-import { weapons,subs,specials,wclasses } from './weapons.js';
+import { weapons,subs,specials,wclasses } from './kitdata.js';
 
 //CLASSES
 

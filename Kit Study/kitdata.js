@@ -1,4 +1,4 @@
-export const weapons = [
+const weapons = [
 
 	{name: "52 Gal",
 	sub: "Splash Wall",
@@ -859,7 +859,7 @@ export const weapons = [
 	id: 142}
 ]
 
-export const subs = [
+const subs = [
 	"Angle Shooter",
 	"Autobomb",
 	"Burst Bomb",
@@ -876,7 +876,7 @@ export const subs = [
 	"Toxic Mist"
 ]
 
-export const specials = [
+const specials = [
 	"Big Bubbler",
 	"Booyah Bomb",
 	"Crab Tank",
@@ -898,7 +898,7 @@ export const specials = [
 	"Zipcaster"
 ]
 
-export const wclasses = [
+const wclasses = [
 	"Blaster",
 	"Brella",
 	"Brush",
@@ -911,3 +911,172 @@ export const wclasses = [
 	"Splatling",
 	"Stringer"
 ]
+
+//CLASSES
+
+//
+//Sub weapon object used to represent a sub weapon
+//
+export class Sub{
+    //constructor filled with a name of string
+    constructor(name) {
+        this.name = name;
+        this.imgSrc = "img/Sub Weapons/"+name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"subClick('"+this.name+"')\">";
+    }
+
+	static allSubs = subs.map(sub => new Sub(sub));
+
+    //get name function
+    getName() {return this.name;}
+
+    //get imgSrc function
+    getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
+
+    //an equals function that returns whether a sub weapons object is
+    //equal to this one
+    equals(sub) {return sub.getName() == this.name;}
+}
+
+//
+//Special weapon object used to represent a special weapon
+//
+export class Special{
+    //constructor filled with a name of string
+    constructor(name) {
+        this.name = name;
+        this.imgSrc = "img/Special Weapons/"+name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"specialClick('"+this.name+"')\">"
+    }
+
+	static allSpecials = specials.map(special => new Special(special));
+
+    //get name function
+    getName() {return this.name;}
+
+    //get imgSrc function
+    getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
+
+    //an equals function that returns whether a special weapon object is
+    //equal to this one
+    equals(special) {return special.getName() == this.name;}
+}
+
+//
+//Weapon class object used to represent a weapon class
+//
+export class WClass{
+    //constructor filled with a name of string
+    constructor(name) {
+        this.name = name;
+        this.imgSrc = "img/Weapon Classes/"+name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"wclassClick('"+this.name+"')\">"
+    }
+
+	static allWClasses = wclasses.map(wclass => new WClass(wclass));
+
+    //get name function
+    getName() {return this.name;}
+
+    //get imgSrc function
+    getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
+
+    //equals function that returns whether a weapon class object is
+    //equal to this one
+    equals(wclass) {return wclass.getName() == this.name;}
+}
+
+//
+//Weapon object used to represent a weapon
+//
+export class Weapon {
+    //constructor fille with array of weapon name, sub name, special name,
+    //and weapon class name
+    constructor(arr) {
+        this.name = arr.name;
+        this.sub = new Sub(arr.sub);
+        this.special = new Special(arr.special);
+        this.wclass = new WClass(arr.wclass);
+        this.imgSrc = "img/Main Weapons/"+arr.name+".png";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"weaponClick("+arr.id+")\">";
+    }
+
+	static allWeapons = weapons.map(weapon => new Weapon(weapon));
+
+	//returns a list of weapons that have the given parameter
+	//Can take one parameter to search for a weapon of given sub, special or wclass
+	//Can take two parameters to serch for a weapon of given sub and special
+	static getWeaponsOf() {
+		if (arguments.length === 1) {
+			const search = arguments[0];
+			let found = [];
+			for (const weapon of Weapon.allWeapons) {
+				if (search instanceof Sub) {
+					if (weapon.getSub().equals(search)) {
+						found.push(weapon);
+					}
+				} else if (search instanceof Special) {
+					if (weapon.getSpecial().equals(search)) {
+						found.push(weapon);
+					}
+				} else if (search instanceof WClass) {
+					if (weapon.getWClass().equals(search)) {
+						found.push(weapon);
+					}
+				}
+			}
+			return found;
+		} else if (arguments.length === 2) {
+			const sub = arguments[0];
+			const special = arguments[1];
+			let found = [];
+			for (const weapon of Weapon.getWeaponsOf(sub)) {
+				if (weapon.getSpecial().equals(special)) {
+					found.push(weapon);
+				}
+			}
+			return found;
+		} else {return []}
+	}
+
+	//returns a random weapon from all the weapons
+	static getRandomWeapon() {
+		return Weapon.getAllWeapons()[Math.floor(Math.random() * allWeapons.length)];
+	}
+
+	//returns a random weapon from a given array of weapons
+	static getRandomWeaponOf(arr) {
+		return arr[Math.floor(Math.random() * arr.length)];
+	}
+
+    //get name function
+    getName() {return this.name;}
+
+    //get sub function
+    getSub() {return this.sub;}
+
+    //get special function
+    getSpecial() {return this.special;}
+
+    //get weapon class function
+    getWClass() {return this.wclass;}
+
+    //get imgSrc function
+    getImgSrc() {return this.imgSrc;}
+
+    //get imgHTML function
+    getImgHTML() {return this.imgHTML;}
+
+    //equals function the returns whether a weapon object is
+    //equal to this one
+    equals(weapon) {return weapon.getName() == this.name;}
+}

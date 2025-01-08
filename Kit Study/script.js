@@ -1,9 +1,13 @@
 //IMPORTS
 
 //import the arrays of strings containing data of Splatoon weapons elements
-import { weapons,subs,specials,wclasses } from './weapons.js';
+import { Weapon,Sub,Special,WClass } from './kitdata.js';
+console.log(Sub.allSubs[0].getName());
 
+console.log(Sub.allSubs[0].getName());
 //CLASSES
+
+/*
 
 //
 //Sub weapon object used to represent a sub weapon
@@ -144,6 +148,8 @@ for (const wclass of wclasses) {
     allWClasses.push(new WClass(wclass));
 }
 
+*/
+
 //VARIABLES
 
 //integer variable for the current page that's being displayed
@@ -159,10 +165,10 @@ document.getElementById('specWeaponMenu').style.display="none";
 
 //for when a weapon image from a list is clicked
 function weaponClick(id) {
-    const weapon = allWeapons[id];
+    const weapon = Weapon.allWeapons[id];
     //do things with clicked weapon
     console.log("Here are the weapons that share a kit with "+weapon.getName()+":");
-    for (const searchedWeapon of getWeaponsOf(weapon.getSub(),weapon.getSpecial())) {
+    for (const searchedWeapon of Weapon.getWeaponsOf(weapon.getSub(),weapon.getSpecial())) {
         if (!searchedWeapon.equals(weapon)) {
             console.log(searchedWeapon.getName());
         }
@@ -175,7 +181,7 @@ function subClick(name) {
     const sub = new Sub(name);
     //do things with clicked sub weapon
     console.log("Here's a random weapon with "+sub.getName()+":");
-    console.log(getRandomWeaponOf(getWeaponsOf(sub)).getName());
+    console.log(Weapon.getRandomWeaponOf(Weapon.getWeaponsOf(sub)).getName());
 }
 window.subClick = subClick;
 
@@ -184,7 +190,7 @@ function specialClick(name) {
     const special = new Special(name);
     //do things with clicked special weapon
     console.log("Here's a completely random weapon:");
-    console.log(getRandomWeapon().getName());
+    console.log(Weapon.getRandomWeapon().getName());
 }
 window.specialClick = specialClick;
 
@@ -193,10 +199,12 @@ function wclassClick(name) {
     const wclass = new WClass(name);
     //do things with clicked weapon class
     console.log("This is a "+wclass.name+"!");
-    listClick('specWeaponMenu', getWeaponsOf(wclass));
+    listClick('specWeaponMenu', Weapon.getWeaponsOf(wclass));
     document.getElementById('specWeaponMenu').style.display="inline-flex";
 }
 window.wclassClick = wclassClick
+
+/*
 
 //returns a list of weapons that have the given parameter
 //Can take one parameter to search for a weapon of given sub, special or wclass
@@ -244,6 +252,8 @@ function getRandomWeaponOf(arr) {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
+*/
+
 //SCRIPT
 
 // Render weapon classes
@@ -265,7 +275,7 @@ function renderWeaponTypes(containerId, weaponClasses) {
     });
 }
 // Call the function to render weapon classes
-renderWeaponTypes('weaponTypeScroll', allWClasses);
+renderWeaponTypes('weaponTypeScroll', WClass.allWClasses);
 
 
 function listClick(containerId, weaponType){
