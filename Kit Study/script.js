@@ -153,6 +153,8 @@ let kitTesterWeapon;
 //current wepaon being tested for the weapon tester
 let weaponTesterWeapon;
 
+document.getElementById('specWeaponMenu').style.display="none";
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
@@ -192,6 +194,7 @@ function wclassClick(name) {
     //do things with clicked weapon class
     console.log("This is a "+wclass.name+"!");
     listClick('specWeaponMenu', getWeaponsOf(wclass));
+    document.getElementById('specWeaponMenu').style.display="inline-flex";
 }
 window.wclassClick = wclassClick
 
@@ -243,7 +246,7 @@ function getRandomWeaponOf(arr) {
 
 //SCRIPT
 
-// Render weapon classes in a scrollable menu
+// Render weapon classes
 function renderWeaponTypes(containerId, weaponClasses) {
     const container = document.getElementById(containerId);
     if (!container) {
@@ -283,5 +286,3 @@ function listClick(containerId, weaponType){
     });
 }
 window.listClick = listClick;
-
-
