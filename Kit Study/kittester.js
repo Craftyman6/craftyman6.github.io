@@ -9,6 +9,7 @@ document.getElementById('specWeaponMenu').style.display="none";
 //VARIABLES
 
 //pool of weapons for correct weapon to chose from
+//starts as list of every weapon, and removes the correct one after each try
 let weaponPool = [];
 weaponPool.push(...Weapon.allWeapons);
 
