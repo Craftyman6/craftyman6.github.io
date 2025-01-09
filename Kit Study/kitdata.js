@@ -1079,4 +1079,10 @@ export class Weapon {
     //equals function the returns whether a weapon object is
     //equal to this one
     equals(weapon) {return weapon.getName() == this.name;}
+
+	//returns whether weapon object has same sub and special
+	sameKit(weapon) {
+		return weapon.getSub().equals(this.sub) &&
+		weapon.getSpecial().equals(this.special);
+	}
 }

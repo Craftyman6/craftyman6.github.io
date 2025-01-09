@@ -24,7 +24,7 @@ alert('What weapon has '+getCorrectWeapon().getSub().getName()+
 function weaponClick(id) {
     const weapon = Weapon.allWeapons[id];
     //do things with clicked weapon
-    alert(getCorrectWeapon().equals(weapon) ? "Correct!" : "Incorrect");
+    alert(getCorrectWeapon().sameKit(weapon) ? "Correct!" : "Incorrect");
 }
 window.weaponClick = weaponClick;
 
