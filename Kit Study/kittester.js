@@ -9,7 +9,8 @@ document.getElementById('specWeaponMenu').style.display="none";
 //VARIABLES
 
 //pool of weapons for correct weapon to chose from
-let weaponPool = Weapon.allWeapons;
+let weaponPool = [];
+weaponPool.push(...Weapon.allWeapons);
 
 //current correct weapon of tester as an index of the weapon pool
 let correctWeaponID = Math.floor(Math.random() * weaponPool.length);
@@ -57,9 +58,9 @@ window.answerClick = answer;
 
 //reset correct weapon and hide weapon list
 function resetCorrectWeapon() {
-    weaponPool.splice(correctWeaponID);
+    weaponPool.splice(correctWeaponID,1);
     if (weaponPool.length == 0) {
-        weaponPool = Weapon.allWeapons;
+        weaponPool.push(...Weapon.allWeapons);
     }
     correctWeaponID = Math.floor(Math.random() * weaponPool.length);
     document.getElementById('specWeaponMenu').style.display="none";
