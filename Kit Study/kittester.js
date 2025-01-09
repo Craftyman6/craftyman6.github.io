@@ -1,6 +1,6 @@
 //IMPORTS
 
-//import the arrays of strings containing data of Splatoon weapons elements
+//import classes pertaining to kit data
 import { Weapon,Sub,Special,WClass } from './kitdata.js';
 
 //hide weapon display on boot
@@ -48,6 +48,12 @@ function wclassClick(name) {
     document.getElementById('specWeaponMenu').style.display="inline-flex";
 }
 window.wclassClick = wclassClick;
+
+//show correct answer
+function answer() {
+    alert(getCorrectWeapon().getName());
+}
+window.answerClick = answer;
 
 //reset correct weapon and hide weapon list
 function resetCorrectWeapon() {
