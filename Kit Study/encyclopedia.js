@@ -12,6 +12,10 @@ document.getElementById('specWeaponMenu').style.display="none";
 function weaponClick(id) {
     const weapon = Weapon.allWeapons[id];
     //do things with clicked weapon
+    console.log(weapon.getName()+" is a dupe kit of the following weapons:")
+    weapon.getWeaponsOfDupeKit().forEach( weapon => {
+        console.log(weapon.getName());
+    })
 }
 window.weaponClick = weaponClick;
 

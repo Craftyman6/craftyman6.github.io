@@ -1,0 +1,111 @@
+@import url("https://use.typekit.net/fmj3umn.css");
+*{
+    font-family: "piepie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-size: 3em;
+}
+body{
+    text-align: center;
+    margin: 0;
+}
+.buffer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Info Window */
+#infoWindow{
+    width: 60em;
+    height: 30em;
+    background-color: blanchedalmond;
+    display: flex;
+    margin: 0 auto 2% auto;
+}
+
+/* Sub Menu */
+#subMenu{
+    display: inline-flex;
+    width: 1000px;
+    justify-content: center;
+    background-color: rgb(36, 175, 255);
+    border-radius: 35px;
+}
+#subMenu>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+#subMenu img {
+    width: 70px;
+}
+
+/* Webkit Browsers */
+#subMenu::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height for horizontal scrolling */
+}
+
+#subMenu::-webkit-scrollbar-button {
+    display: none; /* Hides the scrollbar arrows */
+}
+
+#subMenu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#subMenu::-webkit-scrollbar-thumb {
+    background: rgb(141, 81, 33);
+    border-radius: 8px;
+}
+
+#subMenu::-webkit-scrollbar-thumb:hover {
+    background: rgb(119, 59, 24);
+}
+
+#subMenu::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* Special Menu */
+#specialMenu{
+    display: inline-flex;
+    width: 1350px;
+    justify-content: center;
+    background-color: rgb(36, 175, 255);
+    border-radius: 35px;
+}
+#specialMenu>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+#specialMenu img {
+    width: 70px;
+}
+
+/* Webkit Browsers */
+#specialMenu::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height for horizontal scrolling */
+}
+
+#specialMenu::-webkit-scrollbar-button {
+    display: none; /* Hides the scrollbar arrows */
+}
+
+#specialMenu::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#specialMenu::-webkit-scrollbar-thumb {
+    background: rgb(141, 81, 33);
+    border-radius: 8px;
+}
+
+#specialMenu::-webkit-scrollbar-thumb:hover {
+    background: rgb(119, 59, 24);
+}
+
+#specialMenu::-webkit-scrollbar-corner {
+    background: transparent;
+}

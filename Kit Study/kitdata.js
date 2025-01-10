@@ -1080,9 +1080,29 @@ export class Weapon {
     //equal to this one
     equals(weapon) {return weapon.getName() == this.name;}
 
-	//returns whether weapon object has same sub and special
-	sameKit(weapon) {
-		return weapon.getSub().equals(this.sub) &&
-		weapon.getSpecial().equals(this.special);
+	//takes either a weapon or both a sub and a special
+	//tests if the weapon's kit matches the provided kit
+	sameKit() {
+		if (arguments.length === 1) {
+			const weapon = arguments[0];
+			return weapon.getSub().equals(this.sub) &&
+			weapon.getSpecial().equals(this.special);
+		} else if (arguments.length === 2) {
+			const sub = arguments[0];
+			const special = arguments[1];
+			return sub.equals(this.sub) &&
+			special.equals(this.special);
+		}
+	}
+
+	//returns an array of weapon objects that have the same kit as this weapon
+	getWeaponsOfDupeKit() {
+		let ret = [];
+		Weapon.allWeapons.forEach( weapon => {
+			if (weapon.sameKit(this) && !weapon.equals(this)) {
+				ret.push(weapon);
+			}
+		})
+		return ret;
 	}
 }

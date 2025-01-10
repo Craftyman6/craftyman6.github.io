@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weapon Tester - WIP/DEV</title>
+    <script defer src="weapontester.js" type="module"></script>
+    <link rel="stylesheet" href="weapontester.css">
+</head>
+<body>
+    <h1>Weapon Tester</h1>
+    <main>
+        <div id="infoWindow">
+            <img id="selectedSub">
+            <img id="selectedSpecial">
+        </div> <!--css applied is to visualize where the div is-->
+        <div class="buffer">
+            <div id="subMenu" class="scrollMenu">
+            </div>
+        </div>
+        <br>
+        <div class="buffer">
+            <div id="specialMenu" class="scrollMenu">
+            </div>
+        </div>
+        <br>
+        <button onclick="answerClick()">Answer</button>
+        <button onclick="resetClick()">Reset</button>
+    </main>
+</body>
+</html>
