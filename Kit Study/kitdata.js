@@ -1050,7 +1050,7 @@ export class Weapon {
 
 	//returns a random weapon from all the weapons
 	static getRandomWeapon() {
-		return Weapon.getAllWeapons()[Math.floor(Math.random() * allWeapons.length)];
+		return Weapon.allWeapons[Math.floor(Math.random() * Weapon.allWeapons.length)];
 	}
 
 	//returns a random weapon from a given array of weapons
@@ -1079,6 +1079,16 @@ export class Weapon {
     //equals function the returns whether a weapon object is
     //equal to this one
     equals(weapon) {return weapon.getName() == this.name;}
+
+	//returns whether a weapon object has a given sub or special
+	has() {
+		const search = arguments[0];
+		if (search instanceof Sub) {
+			return this.sub.equals(search);
+		} else if (search instanceof Special) {
+			return this.special.equals(search);
+		} else {return false;}
+	}
 
 	//takes either a weapon or both a sub and a special
 	//tests if the weapon's kit matches the provided kit

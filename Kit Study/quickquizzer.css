@@ -1,0 +1,45 @@
+@import url("https://use.typekit.net/fmj3umn.css");
+*{
+    font-family: "piepie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    font-size: 3em;
+}
+body{
+    text-align: center;
+    margin: 0;
+}
+.buffer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#weaponChoices{
+    display: inline-flex;
+    width: 490px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+    background-color: rgb(255, 153, 0);
+    border-radius: 30px;
+    border: rgb(255, 153, 0), 10px solid;
+}
+#weaponChoices img{
+    width: 100px;
+    margin: 0 10px 10px;
+}
+#weaponChoices>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+
+#infoWindow{
+    width: 60em;
+    height: 30em;
+    background-color: blanchedalmond;
+    display: flex;
+    margin: 0 auto 2% auto;
+}
