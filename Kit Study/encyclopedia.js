@@ -3,47 +3,81 @@
 //import classes pertaining to kit data
 import { Weapon,Sub,Special,WClass } from './kitdata.js';
 
-//hide weapon display on boot
-document.getElementById('specWeaponMenu').style.display="none";
-
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
 function weaponClick(id) {
-    const weapon = Weapon.allWeapons[id];
-    //do things with clicked weapon
-    console.log(weapon.getName()+" is a dupe kit of the following weapons:")
-    weapon.getWeaponsOfDupeKit().forEach( weapon => {
-        console.log(weapon.getName());
-    })
+    updateWeaponDisplay(Weapon.allWeapons[id]);
 }
 window.weaponClick = weaponClick;
 
 //for when a sub weapon image from a list is clicked (not needed)
 function subClick(name) {
-
+    renderListItems('weaponList', Weapon.getWeaponsOf(new Sub(name)));
 }
 window.subClick = subClick;
 
 //for when a special weapon image from a list is clicked (not needed)
 function specialClick(name) {
-
+    renderListItems('weaponList', Weapon.getWeaponsOf(new Special(name)));
 }
 window.specialClick = specialClick;
 
 //for when a weapon class image from a list is clicked
 function wclassClick(name) {
-    const wclass = new WClass(name);
-    //do things with clicked weapon class
-    listClick('specWeaponMenu', Weapon.getWeaponsOf(wclass));
-    document.getElementById('specWeaponMenu').style.display="inline-flex";
+    renderListItems('weaponList', Weapon.getWeaponsOf(new WClass(name)));
 }
 window.wclassClick = wclassClick;
 
-//SCRIPT
+//updates the display with the selected weapon's name, kit, and dupes
+function updateWeaponDisplay(weapon) {
+    document.getElementById("infoWindow").style.display="block";
 
-// Render weapon classes
-function renderWeaponTypes(containerId, weaponClasses) {
+    document.getElementById("weaponName").textContent=weapon.getName();
+
+    const weaponImg=document.getElementById("weaponImg");
+    weaponImg.style.display="block";
+    weaponImg.innerHTML='';
+    const newImage = document.createElement("div");
+    newImage.innerHTML=weapon.getImgHTML();
+    weaponImg.appendChild(newImage);
+
+    let utilityGroup=document.getElementById("utilityGroup");
+    utilityGroup.innerHTML='';
+    
+    const subImg = document.createElement('div');
+    subImg.innerHTML = weapon.getSub().getImgHTML();
+    utilityGroup.appendChild(subImg);
+    
+    const specialImg = document.createElement('div');
+    specialImg.innerHTML = weapon.getSpecial().getImgHTML();
+    utilityGroup.appendChild(specialImg);
+
+    let dupes=weapon.getWeaponsOfDupeKit();
+    const dupeKitTitle=document.getElementById("dupeKitTitle");
+    const dupeKitList=document.getElementById("dupeKitList");
+    const infoWindow=document.getElementById("infoWindow");
+    if (dupes.length == 0) {
+        dupeKitTitle.style.display="none";
+        dupeKitList.style.display="none";
+        infoWindow.style.height="12em"
+    } else {
+        dupeKitTitle.style.display="block";
+        dupeKitList.style.display="inline-flex";
+        infoWindow.style.height="17em"
+
+        dupeKitList.innerHTML='';
+        dupeKitList.style.width=(dupes.length*70).toString()+'px';
+        dupes.forEach(weapon => {
+            const dupeWeapon = document.createElement('div');
+            dupeWeapon.innerHTML = weapon.getImgHTML();
+            dupeKitList.appendChild(dupeWeapon);
+        })
+    }
+}
+
+// Render list images
+function renderListItems(containerId, items) {
     const container = document.getElementById(containerId);
     if (!container) {
         console.error(`Container with ID "${containerId}" not found.`);
@@ -53,32 +87,20 @@ function renderWeaponTypes(containerId, weaponClasses) {
     // Clear the container to prevent duplication
     container.innerHTML = '';
 
-    // Add each weapon class as a child to the container
-    weaponClasses.forEach(wclass => {
+    // Add each item as a child to the container
+    items.forEach(item => {
         const listItem = document.createElement('div');
-        listItem.innerHTML = wclass.getImgHTML();
+        listItem.innerHTML = item.getImgHTML();
         container.appendChild(listItem);
     });
+
+    //Make sure list is displayed
+    document.getElementById(containerId).style.display="inline-flex";
 }
-// Call the function to render weapon classes
-renderWeaponTypes('weaponTypeScroll', WClass.allWClasses);
 
+//SCRIPT
 
-function listClick(containerId, weaponType){
-    //functions the same as the last function (renderWeaponTypes), but NEEDS to only render the category of weapons clicked.
-    //prob another for each loop or something related to that to sort arrays and go from there. I'm just too tired to do it rn. A mimir - CMS
-    const container = document.getElementById(containerId);
-    if (!container) {
-        console.error(`Container with ID "${containerId}" not found.`);
-        return;
-    }
-
-    container.innerHTML = '';
-
-    weaponType.forEach(weapon => {
-        const listItem = document.createElement('div');
-        listItem.innerHTML = weapon.getImgHTML();
-        container.appendChild(listItem);
-    });
-}
-window.listClick = listClick;
+//Render all sort lists on boot
+renderListItems('wclassList', WClass.allWClasses);
+renderListItems('subList', Sub.allSubs);
+renderListItems('specialList', Special.allSpecials);

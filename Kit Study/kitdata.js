@@ -922,7 +922,7 @@ export class Sub{
     constructor(name) {
         this.name = name;
         this.imgSrc = "img/Sub Weapons/"+name+".png";
-        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"subClick('"+this.name+"')\">";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"subClick('"+this.name+"')\" title=\""+this.name+"\">";
     }
 
 	static allSubs = subs.map(sub => new Sub(sub));
@@ -949,7 +949,7 @@ export class Special{
     constructor(name) {
         this.name = name;
         this.imgSrc = "img/Special Weapons/"+name+".png";
-        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"specialClick('"+this.name+"')\">"
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"specialClick('"+this.name+"')\" title=\""+this.name+"\">"
     }
 
 	static allSpecials = specials.map(special => new Special(special));
@@ -976,7 +976,7 @@ export class WClass{
     constructor(name) {
         this.name = name;
         this.imgSrc = "img/Weapon Classes/"+name+".png";
-        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"wclassClick('"+this.name+"')\">"
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"wclassClick('"+this.name+"')\" title=\""+this.name+"\">"
     }
 
 	static allWClasses = wclasses.map(wclass => new WClass(wclass));
@@ -1007,7 +1007,7 @@ export class Weapon {
         this.special = new Special(arr.special);
         this.wclass = new WClass(arr.wclass);
         this.imgSrc = "img/Main Weapons/"+arr.name+".png";
-        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"weaponClick("+arr.id+")\">";
+        this.imgHTML = "<img src=\""+this.imgSrc+"\" onclick=\"weaponClick("+arr.id+")\" title=\""+this.name+"\">";
     }
 
 	static allWeapons = weapons.map(weapon => new Weapon(weapon));

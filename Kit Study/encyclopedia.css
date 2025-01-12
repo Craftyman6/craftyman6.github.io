@@ -11,29 +11,139 @@ body{
     text-align: center;
     margin: 0;
 }
-.buffer{
-    display: flex;
+#sortList{
+    display: block;
     justify-content: center;
     align-content: center;
 }
 
-#weaponTypeScroll{
-    display: inline-flex;
-    width: 1125px;
-    justify-content: center;
-    background-color: rgb(36, 175, 255);
-    border-radius: 35px;
+/* Info Window */
+#infoWindow{
+    width: 60em;
+    height: 12em;
+    display: none;
+    margin: 0 auto 2% auto;
+    float: none;
 }
-#weaponTypeScroll>div:hover{
+
+/* Weapon Name */
+#weaponName{
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+/* Weapon Image */
+#weaponImg{
+    display: none;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+#weaponImg img{
+    width: 150px;
+    height: 150px;
+}
+#weaponImg>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
 }
-#weaponTypeScroll img {
-    width: 100px;
+
+/* Utility Group */
+#utilityGroup{
+    display: inline-flex;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(148, 203, 235);
+    border-radius: 35px;
+    margin: auto;
+    padding: 10px;
+}
+#utilityGroup img{
+    width: 50px;
+    margin: 0 10px 10px;
+}
+#utilityGroup>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
 }
 
-#specWeaponMenu{
+/* Dupe Kit Title */
+#dupeKitTitle{
+    display: none;
+}
+
+/* Dupe Kit List */
+#dupeKitList{
+    display: none;
+    background-color: rgb(253, 154, 192);
+    border-radius: 15px;
+    height: 50px;
+}
+#dupeKitList img{
+    width: 50px;
+    margin: 0 10px 10px;
+}
+#dupeKitList>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+
+/* WClass list */
+#wclassList{
     display: inline-flex;
+    width: 700px;
+    justify-content: center;
+    background-color: rgb(36, 175, 255);
+    border-radius: 35px;
+    margin: 10px 4px 10px;
+}
+#wclassList>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+#wclassList img {
+    width: 60px;
+}
+
+/* Sub list */
+#subList{
+    display: inline-flex;
+    width: 860px;
+    justify-content: center;
+    background-color: rgb(36, 175, 255);
+    border-radius: 35px;
+    margin: 10px 4px 10px;
+}
+#subList>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+#subList img {
+    width: 50px;
+    margin: 5px;
+}
+
+/* Special list */
+#specialList{
+    display: inline-flex;
+    width: 1155px;
+    justify-content: center;
+    background-color: rgb(36, 175, 255);
+    border-radius: 35px;
+    margin: 10px 4px 10px;
+}
+#specialList>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+#specialList img {
+    width: 50px;
+    margin: 5px;
+}
+
+/* Weapon list */
+#weaponList{
+    display: none;
     width: 750px;
     overflow-x: auto;
     overflow-y: hidden;
@@ -41,45 +151,37 @@ body{
     border-radius: 30px;
     border: rgb(255, 153, 0), 10px solid;
 }
-#specWeaponMenu img{
+#weaponList img{
     width: 100px;
     margin: 0 10px 10px;
 }
-#specWeaponMenu>div:hover{
+#weaponList>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
 }
 
-#infoWindow{
-    width: 60em;
-    height: 30em;
-    background-color: blanchedalmond;
-    display: flex;
-    margin: 0 auto 2% auto;
-}
-
 /* Webkit Browsers */
-#specWeaponMenu::-webkit-scrollbar {
+#weaponList::-webkit-scrollbar {
     height: 8px; /* Adjust scrollbar height for horizontal scrolling */
 }
 
-#specWeaponMenu::-webkit-scrollbar-button {
+#weaponList::-webkit-scrollbar-button {
     display: none; /* Hides the scrollbar arrows */
 }
 
-#specWeaponMenu::-webkit-scrollbar-track {
+#weaponList::-webkit-scrollbar-track {
     background: transparent;
 }
 
-#specWeaponMenu::-webkit-scrollbar-thumb {
+#weaponList::-webkit-scrollbar-thumb {
     background: rgb(141, 81, 33);
     border-radius: 8px;
 }
 
-#specWeaponMenu::-webkit-scrollbar-thumb:hover {
+#weaponList::-webkit-scrollbar-thumb:hover {
     background: rgb(119, 59, 24);
 }
 
-#specWeaponMenu::-webkit-scrollbar-corner {
+#weaponList::-webkit-scrollbar-corner {
     background: transparent;
 }
