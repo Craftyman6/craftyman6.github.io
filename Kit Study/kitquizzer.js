@@ -15,6 +15,9 @@ let correctWeaponID;
 //whether or not the answer has been revealed
 let revealed = false;
 
+//How many times you've gotten the weapon wrong
+let nopeStreak = 0;
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
@@ -26,15 +29,24 @@ function weaponClick(id) {
             correctWeapons.push(weapon);
             correctWeapons.push(...weapon.getWeaponsOfDupeKit());
             const textResponse=document.getElementById("textResponse");
+            textResponse.textContent='';
             textResponse.textContent=textResponse.textContent+"Correct!";
-            for (let i=0;i<correctWeapons.length+1;i++) {
+            for (let i=0;i<correctWeapons.length;i++) {
                 textResponse.textContent=textResponse.textContent+
                 (i==0?" ":" & ")+
-                weapon.getName()+
-                (i==correctWeapons.length?".":"");
+                correctWeapons[i].getName()+
+                (i+1==correctWeapons.length?".":"");
             }
-        } else {
+            document.getElementById("weaponResponse").style.width=(correctWeapons.length*140).toString()+'px';
+            renderListItems('weaponResponse',correctWeapons);
+            document.getElementById("responseWindow").style.height='10em';
 
+            revealed=true;
+        } else {
+            nopeStreak++;
+            document.getElementById("responseWindow").style.height='3em';
+            document.getElementById("textResponse").textContent=
+            "Nope!"+(nopeStreak>1?" x"+nopeStreak:"");
         }
     }   
 }
@@ -75,7 +87,11 @@ function resetCorrectWeapon() {
     kitHintGroup.appendChild(specialImg);
 
     //hide answer text and images
+    document.getElementById("textResponse").textContent='';
+    document.getElementById("weaponResponse").innerHTML='';
+    document.getElementById("responseWindow").style.height='0em';
     revealed=false;
+    nopeStreak=0;
 }
 window.newWeaponClick = resetCorrectWeapon;
 
@@ -91,11 +107,11 @@ function fillWeaponPool() {
 
 //choose new weapon from the weapon pool
 function pickNewWeapon() {
-    //assign id of current weapon to new weapon of pool options
-    correctWeaponID = Math.floor(Math.random() * weaponPool.length);
-
     //remove chosen weapon from weapon pool
     weaponPool.splice(correctWeaponID,1);
+
+    //assign id of current weapon to new weapon of pool options
+    correctWeaponID = Math.floor(Math.random() * weaponPool.length);
 
     //fill weapon pool if it's been depleted
     if (weaponPool.length == 0) {fillWeaponPool();}

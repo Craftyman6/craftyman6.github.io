@@ -19,7 +19,7 @@ body{
 
 /* Info Window */
 #infoWindow{
-    width: 60em;
+    width: 70em;
     height: 10em;
     display: block;
     margin: 0 auto 2% auto;
@@ -88,8 +88,7 @@ body{
 /* Response Window */
 #responseWindow{
     width: 60em;
-    height: 10em;
-    background-color: rgb(233, 219, 200);
+    height: 0em;
     display: block;
     margin: 0 auto 2% auto;
 }
@@ -97,23 +96,23 @@ body{
 /* Response Text */
 #textResponse{
     font-size: 30px;
-    /*margin-bottom: 0px;*/
+    margin-bottom: 0px;
 }
 
 /* Response Weapon Group*/
 #weaponResponse{
     display: inline-flex;
-    width: 140px;
+    width: 1000px;
     height: 50px;
     border-radius: 35px;
     margin: auto;
     padding: 10px;
 }
-#kitHintGroup img{
-    width: 50px;
+#weaponResponse img{
+    width: 120px;
     margin: 0 10px 10px;
 }
-#kitHintGroup>div:hover{
+#weaponResponse>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
 }
