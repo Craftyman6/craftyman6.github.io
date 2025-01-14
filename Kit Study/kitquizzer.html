@@ -9,17 +9,24 @@
 <body>
     <h1>Kit Quizzer</h1>
     <main>
-        <div id="infoWindow"></div> <!--css applied is to visualize where the div is-->
+        <div id="infoWindow">
+            <p id="textHint"></p>
+            <div id="kitHintGroup"></div>
+        </div> <!--css applied is to visualize where the div is-->
         <div class="buffer">
-            <div id="weaponTypeScroll" class="scrollMenu">
+            <div id="wclassList" class="scrollMenu">
             </div>
         </div>
         <br>
-        <div id="specWeaponMenu"></div>
+        <div id="weaponList"></div>
         <br>
+        <div id="responseWindow">
+            <p id="textResponse"></p>
+            <div id="weaponResponse"></div>
+        </div>
         <!-- placeholder buttons for testing functionality-->
-        <button onclick='answerClick()'>Answer</button>
-        <button onclick='resetClick()'>Reset</button>
+        <button onclick='revealAnswerClick()'>Reveal Answer</button>
+        <button onclick='newWeaponClick()'>New Weapon</button>
     </main>
 </body>
 </html>

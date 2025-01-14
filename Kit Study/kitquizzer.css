@@ -17,22 +17,57 @@ body{
     align-content: center;
 }
 
-#weaponTypeScroll{
+/* Info Window */
+#infoWindow{
+    width: 60em;
+    height: 10em;
+    display: block;
+    margin: 0 auto 2% auto;
+}
+
+/* Hint Text */
+#textHint{
+    font-size: 30px;
+    /*margin-bottom: 0px;*/
+}
+
+/* Utility Group */
+#kitHintGroup{
     display: inline-flex;
+    width: 140px;
+    height: 50px;
+    background-color: rgb(148, 203, 235);
+    border-radius: 35px;
+    margin: auto;
+    padding: 10px;
+}
+#kitHintGroup img{
+    width: 50px;
+    margin: 0 10px 10px;
+}
+#kitHintGroup>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+
+/* WClass List */
+#wclassList{
+    display: none;
     width: 1125px;
     justify-content: center;
     background-color: rgb(36, 175, 255);
     border-radius: 35px;
 }
-#weaponTypeScroll>div:hover{
+#wclassList>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
 }
-#weaponTypeScroll img {
+#wclassList img {
     width: 100px;
 }
 
-#specWeaponMenu{
+/* Weapon List */
+#weaponList{
     display: inline-flex;
     width: 750px;
     overflow-x: auto;
@@ -41,45 +76,46 @@ body{
     border-radius: 30px;
     border: rgb(255, 153, 0), 10px solid;
 }
-#specWeaponMenu img{
+#weaponList img{
     width: 100px;
     margin: 0 10px 10px;
 }
-#specWeaponMenu>div:hover{
+#weaponList>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
 }
 
-#infoWindow{
+/* Response Window */
+#responseWindow{
     width: 60em;
-    height: 30em;
-    background-color: blanchedalmond;
-    display: flex;
+    height: 10em;
+    background-color: rgb(233, 219, 200);
+    display: block;
     margin: 0 auto 2% auto;
 }
 
 /* Webkit Browsers */
-#specWeaponMenu::-webkit-scrollbar {
+#weaponList::-webkit-scrollbar {
     height: 8px; /* Adjust scrollbar height for horizontal scrolling */
 }
 
-#specWeaponMenu::-webkit-scrollbar-button {
+#weaponList::-webkit-scrollbar-button {
     display: none; /* Hides the scrollbar arrows */
 }
 
-#specWeaponMenu::-webkit-scrollbar-track {
+#weaponList::-webkit-scrollbar-track {
     background: transparent;
 }
 
-#specWeaponMenu::-webkit-scrollbar-thumb {
+#weaponList::-webkit-scrollbar-thumb {
     background: rgb(141, 81, 33);
     border-radius: 8px;
 }
 
-#specWeaponMenu::-webkit-scrollbar-thumb:hover {
+#WeaponList::-webkit-scrollbar-thumb:hover {
     background: rgb(119, 59, 24);
 }
 
-#specWeaponMenu::-webkit-scrollbar-corner {
+#weaponsList::-webkit-scrollbar-corner {
     background: transparent;
 }

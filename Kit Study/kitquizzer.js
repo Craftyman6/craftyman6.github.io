@@ -3,22 +3,14 @@
 //import classes pertaining to kit data
 import { Weapon,Sub,Special,WClass } from './kitdata.js';
 
-//hide weapon display on boot
-document.getElementById('specWeaponMenu').style.display="none";
-
 //VARIABLES
 
 //pool of weapons for correct weapon to chose from
 //starts as list of every weapon, and removes the correct one after each try
 let weaponPool = [];
-weaponPool.push(...Weapon.allWeapons);
 
 //current correct weapon of tester as an index of the weapon pool
-let correctWeaponID = Math.floor(Math.random() * weaponPool.length);
-
-//eventually replace this alert with display of kit
-alert('What weapon has '+getCorrectWeapon().getSub().getName()+
-' and '+getCorrectWeapon().getSpecial().getName()+'?');
+let correctWeaponID;
 
 //FUNCTIONS
 
@@ -44,42 +36,63 @@ window.specialClick = specialClick;
 
 //for when a weapon class image from a list is clicked
 function wclassClick(name) {
-    const wclass = new WClass(name);
-    //do things with clicked weapon class
-    listClick('specWeaponMenu', Weapon.getWeaponsOf(wclass));
-    document.getElementById('specWeaponMenu').style.display="inline-flex";
+    renderListItems('weaponList', Weapon.getWeaponsOf(new WClass(name)));
 }
 window.wclassClick = wclassClick;
 
 //show correct answer
-function answer() {
+function revealAnswer() {
     alert(getCorrectWeapon().getName());
 }
-window.answerClick = answer;
+window.revealAnswerClick = revealAnswer;
 
 //reset correct weapon and hide weapon list
 function resetCorrectWeapon() {
-    weaponPool.splice(correctWeaponID,1);
-    if (weaponPool.length == 0) {
-        weaponPool.push(...Weapon.allWeapons);
-    }
-    correctWeaponID = Math.floor(Math.random() * weaponPool.length);
-    document.getElementById('specWeaponMenu').style.display="none";
-    //eventually replace this alert with display of kit
-    alert('What weapon has '+getCorrectWeapon().getSub().getName()+
-    ' and '+getCorrectWeapon().getSpecial().getName()+'?');
+    //chose new weapon
+    pickNewWeapon();
+    //hide weapon list
+    document.getElementById('weaponList').style.display="none";
+    
+    //display hint text
+    document.getElementById("textHint").textContent='What weapon has '+getCorrectWeapon().getSub().getName()+
+    ' and '+getCorrectWeapon().getSpecial().getName()+'?';
+
+    //display hint images
+    const kitHintGroup=document.getElementById("kitHintGroup");
+    kitHintGroup.innerHTML='';
+    const subImg = document.createElement('div');
+    subImg.innerHTML = getCorrectWeapon().getSub().getImgHTML();
+    kitHintGroup.appendChild(subImg);
+    const specialImg = document.createElement('div');
+    specialImg.innerHTML = getCorrectWeapon().getSpecial().getImgHTML();
+    kitHintGroup.appendChild(specialImg);
 }
-window.resetClick = resetCorrectWeapon;
+window.newWeaponClick = resetCorrectWeapon;
 
 //returns correct weapon as Weapon object
 function getCorrectWeapon() {
     return weaponPool[correctWeaponID];
 }
 
-//SCRIPT
+//refills the weapon pool with every weapon
+function fillWeaponPool() {
+    weaponPool.push(...Weapon.allWeapons);
+}
 
-// Render weapon classes
-function renderWeaponTypes(containerId, weaponClasses) {
+//choose new weapon from the weapon pool
+function pickNewWeapon() {
+    //assign id of current weapon to new weapon of pool options
+    correctWeaponID = Math.floor(Math.random() * weaponPool.length);
+
+    //remove chosen weapon from weapon pool
+    weaponPool.splice(correctWeaponID,1);
+
+    //fill weapon pool if it's been depleted
+    if (weaponPool.length == 0) {fillWeaponPool();}
+}
+
+// Render list images
+function renderListItems(containerId, items) {
     const container = document.getElementById(containerId);
     if (!container) {
         console.error(`Container with ID "${containerId}" not found.`);
@@ -89,32 +102,24 @@ function renderWeaponTypes(containerId, weaponClasses) {
     // Clear the container to prevent duplication
     container.innerHTML = '';
 
-    // Add each weapon class as a child to the container
-    weaponClasses.forEach(wclass => {
+    // Add each item as a child to the container
+    items.forEach(item => {
         const listItem = document.createElement('div');
-        listItem.innerHTML = wclass.getImgHTML();
+        listItem.innerHTML = item.getImgHTML();
         container.appendChild(listItem);
     });
+
+    //Make sure list is displayed
+    document.getElementById(containerId).style.display="inline-flex";
 }
-// Call the function to render weapon classes
-renderWeaponTypes('weaponTypeScroll', WClass.allWClasses);
 
+//SCRIPT
 
-function listClick(containerId, weaponType){
-    //functions the same as the last function (renderWeaponTypes), but NEEDS to only render the category of weapons clicked.
-    //prob another for each loop or something related to that to sort arrays and go from there. I'm just too tired to do it rn. A mimir - CMS
-    const container = document.getElementById(containerId);
-    if (!container) {
-        console.error(`Container with ID "${containerId}" not found.`);
-        return;
-    }
+//render wclass list on boot
+renderListItems('wclassList',WClass.allWClasses);
 
-    container.innerHTML = '';
+//start with fresh weapon pool
+fillWeaponPool();
 
-    weaponType.forEach(weapon => {
-        const listItem = document.createElement('div');
-        listItem.innerHTML = weapon.getImgHTML();
-        container.appendChild(listItem);
-    });
-}
-window.listClick = listClick;
+//chose weapon on start
+resetCorrectWeapon();
