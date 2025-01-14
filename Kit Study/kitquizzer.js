@@ -12,27 +12,33 @@ let weaponPool = [];
 //current correct weapon of tester as an index of the weapon pool
 let correctWeaponID;
 
+//whether or not the answer has been revealed
+let revealed = false;
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
 function weaponClick(id) {
-    const weapon = Weapon.allWeapons[id];
-    //do things with clicked weapon
-    alert(getCorrectWeapon().sameKit(weapon) ? "Correct!" : "Incorrect");
+    if (!revealed) {
+        const weapon = Weapon.allWeapons[id];
+        if (weapon.sameKit(getCorrectWeapon())) {
+            let correctWeapons = [];
+            correctWeapons.push(weapon);
+            correctWeapons.push(...weapon.getWeaponsOfDupeKit());
+            const textResponse=document.getElementById("textResponse");
+            textResponse.textContent=textResponse.textContent+"Correct!";
+            for (let i=0;i<correctWeapons.length+1;i++) {
+                textResponse.textContent=textResponse.textContent+
+                (i==0?" ":" & ")+
+                weapon.getName()+
+                (i==correctWeapons.length?".":"");
+            }
+        } else {
+
+        }
+    }   
 }
 window.weaponClick = weaponClick;
-
-//for when a sub weapon image from a list is clicked (not needed)
-function subClick(name) {
-
-}
-window.subClick = subClick;
-
-//for when a special weapon image from a list is clicked (not needed)
-function specialClick(name) {
-    
-}
-window.specialClick = specialClick;
 
 //for when a weapon class image from a list is clicked
 function wclassClick(name) {
@@ -54,6 +60,7 @@ function resetCorrectWeapon() {
     document.getElementById('weaponList').style.display="none";
     
     //display hint text
+    console.log(correctWeaponID+"\t"+weaponPool.length);
     document.getElementById("textHint").textContent='What weapon has '+getCorrectWeapon().getSub().getName()+
     ' and '+getCorrectWeapon().getSpecial().getName()+'?';
 
@@ -66,6 +73,9 @@ function resetCorrectWeapon() {
     const specialImg = document.createElement('div');
     specialImg.innerHTML = getCorrectWeapon().getSpecial().getImgHTML();
     kitHintGroup.appendChild(specialImg);
+
+    //hide answer text and images
+    revealed=false;
 }
 window.newWeaponClick = resetCorrectWeapon;
 
