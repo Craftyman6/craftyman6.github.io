@@ -25,23 +25,7 @@ function weaponClick(id) {
     if (!revealed) {
         const weapon = Weapon.allWeapons[id];
         if (weapon.sameKit(getCorrectWeapon())) {
-            let correctWeapons = [];
-            correctWeapons.push(weapon);
-            correctWeapons.push(...weapon.getWeaponsOfDupeKit());
-            const textResponse=document.getElementById("textResponse");
-            textResponse.textContent='';
-            textResponse.textContent=textResponse.textContent+"Correct!";
-            for (let i=0;i<correctWeapons.length;i++) {
-                textResponse.textContent=textResponse.textContent+
-                (i==0?" ":" & ")+
-                correctWeapons[i].getName()+
-                (i+1==correctWeapons.length?".":"");
-            }
-            document.getElementById("weaponResponse").style.width=(correctWeapons.length*140).toString()+'px';
-            renderListItems('weaponResponse',correctWeapons);
-            document.getElementById("responseWindow").style.height='10em';
-
-            revealed=true;
+            revealAnswer(weapon);
         } else {
             nopeStreak++;
             document.getElementById("responseWindow").style.height='3em';
@@ -58,9 +42,38 @@ function wclassClick(name) {
 }
 window.wclassClick = wclassClick;
 
-//show correct answer
+//show correct answer with given selected weapon
 function revealAnswer() {
-    alert(getCorrectWeapon().getName());
+    //first weapon displayed
+    let weapon;
+    //get whether this was called from getting it correct or the button
+    let congradulate=arguments.length === 1
+    //set first weapon to either chosen one or default one
+    if (congradulate) {
+        weapon=arguments[0];
+    } else {
+        weapon=getCorrectWeapon();
+    }
+    let correctWeapons = [];
+    correctWeapons.push(weapon);
+    correctWeapons.push(...weapon.getWeaponsOfDupeKit());
+    const textResponse=document.getElementById("textResponse");
+    textResponse.textContent='';
+    textResponse.textContent=textResponse.textContent+
+    (congradulate?"Correct!":"");
+    for (let i=0;i<correctWeapons.length;i++) {
+        textResponse.textContent=textResponse.textContent+
+        (i==0?" ":" & ")+
+        correctWeapons[i].getName()+
+        (i+1==correctWeapons.length?".":"");
+    }
+    document.getElementById("weaponResponse").style.width=(correctWeapons.length*140).toString()+'px';
+    renderListItems('weaponResponse',correctWeapons);
+    document.getElementById("responseWindow").style.height='10em';
+
+    revealed=true;
+    document.getElementById("revealButton").style.display="none";
+    document.getElementById("revealButton").style.display="none";
 }
 window.revealAnswerClick = revealAnswer;
 
@@ -86,10 +99,12 @@ function resetCorrectWeapon() {
     specialImg.innerHTML = getCorrectWeapon().getSpecial().getImgHTML();
     kitHintGroup.appendChild(specialImg);
 
-    //hide answer text and images
+    //hide answer text and images and show reveal button
     document.getElementById("textResponse").textContent='';
     document.getElementById("weaponResponse").innerHTML='';
+    document.getElementById("weaponResponse").style.height='0em';
     document.getElementById("responseWindow").style.height='0em';
+    document.getElementById("revealButton").style.display='inline-block';
     revealed=false;
     nopeStreak=0;
 }
