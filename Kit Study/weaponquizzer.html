@@ -10,9 +10,11 @@
     <h1>Weapon Quizzer</h1>
     <main>
         <div id="infoWindow">
-            <img id="selectedSub">
-            <img id="selectedSpecial">
-        </div> <!--css applied is to visualize where the div is-->
+            <p id="textHint"></p>
+            <div id="imgHint"></div><br>
+            <div id="selectedGroup"></div>
+            <p id="textAnswer"></p>
+        </div>
         <div class="buffer">
             <div id="subMenu" class="scrollMenu">
             </div>
@@ -23,8 +25,10 @@
             </div>
         </div>
         <br>
-        <button onclick="answerClick()">Answer</button>
-        <button onclick="resetClick()">Reset</button>
+        <div id="buttonGroup">
+            <button id='answerButton' onclick="answerClick()">Reveal Answer</button>
+            <button onclick="resetClick()">Reset Weapon</button>
+        </div>
     </main>
 </body>
 </html>
