@@ -25,7 +25,11 @@ function weaponClick(id) {
     if (!revealed) {
         const weapon = Weapon.allWeapons[id];
         if (weapon.sameKit(getCorrectWeapon())) {
-            revealAnswer(weapon);
+            if (document.getElementById('automaticReset').checked) {
+                resetCorrectWeapon();
+            } else {
+                revealAnswer(weapon);
+            }
         } else {
             nopeStreak++;
             document.getElementById("responseWindow").style.height='3em';

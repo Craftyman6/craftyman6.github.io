@@ -57,6 +57,9 @@ window.specialClick = specialClick;
 function answer() {
     displayAnswer(getCorrectWeapon().getSub().getName()+' and '+getCorrectWeapon().getSpecial().getName());
     answered=true;
+    selectedSub=getCorrectWeapon().getSub();
+    selectedSpecial=getCorrectWeapon().getSpecial();
+    renderSelectedGroup();
     document.getElementById('answerButton').style.display='none';
 }
 window.answerClick = answer;
@@ -88,10 +91,14 @@ function getCorrectWeapon() {
 //run when user has selected both a sub and a special
 function guessAttempt() {
     const correct=getCorrectWeapon().sameKit(selectedSub,selectedSpecial);
-    displayAnswer(correct ? "Correct! "+getCorrectWeapon().getSub().getName()+' and '+getCorrectWeapon().getSpecial().getName() : "Incorrect");
+    displayAnswer(correct ? "Correct! "+getCorrectWeapon().getSub().getName()+' and '+getCorrectWeapon().getSpecial().getName() : "Nope!");
     if (correct) {
-        answered=true;
-        document.getElementById('answerButton').style.display='none';
+        if (document.getElementById('automaticReset').checked) {
+            resetCorrectWeapon();
+        } else {
+            answered=true;
+            document.getElementById('answerButton').style.display='none';
+        }
     }
 }
 
