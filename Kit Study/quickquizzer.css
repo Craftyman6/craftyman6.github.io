@@ -17,6 +17,48 @@ body{
     align-content: center;
 }
 
+/* Info Window */
+#infoWindow{
+    width: 60em;
+    height: 8em;
+    display: block;
+    margin: 0 auto 2% auto;
+}
+
+/* Hint Text */
+#textHint{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* Hint Image */
+#imgHint{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(148, 203, 235);
+    border-radius: 20px;
+    margin: auto;
+}
+#imgHint img{
+    width: 50px;
+    margin: 10px 10px 0px;
+}
+#imgHint>div:hover{
+    transition: transform 0.2s ease;
+    transform: scale(1.2);
+}
+
+/* Answer Text */
+#textAnswer{
+    margin-bottom: 5px;
+}
+
+/* Answer Imame */
+#imgAnswer img{
+    width: 100px;
+}
+
+/* Weapon Choices Group */
 #weaponChoices{
     display: inline-flex;
     width: 490px;
@@ -34,12 +76,4 @@ body{
 #weaponChoices>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
-}
-
-#infoWindow{
-    width: 60em;
-    height: 30em;
-    background-color: blanchedalmond;
-    display: flex;
-    margin: 0 auto 2% auto;
 }

@@ -9,15 +9,19 @@
 <body>
     <h1>Quick Quizzer</h1>
     <main>
-        <div id="infoWindow"></div> <!--css applied is to visualize where the div is-->
+        <div id="infoWindow">
+            <p id="textHint"></p>
+            <div id="imgHint"></div>
+            <p id="textAnswer"></p>
+            <div id="imgAnswer"></div>
+        </div>
         <div class="buffer">
             <div id="weaponChoices" class="scrollMenu">
             </div>
         </div>
         <br>
-        <!-- placeholder buttons for testing functionality-->
-        <button onclick='answerClick()'>Answer</button>
-        <button onclick='resetClick()'>Reset</button>
+        <button id="revealButton" onclick='answerClick()'>Reveal Answer</button>
+        <button onclick='resetClick()'>Reset Weapon</button>
         <br>
         <p><input type="checkbox" id="automaticReset">Reset automatically after correct answer</p>
     </main>

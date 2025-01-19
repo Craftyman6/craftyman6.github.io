@@ -1,36 +1,54 @@
 //IMPORTS
 
 //import classes pertaining to kit data
-import { Weapon,Sub,Special,WClass } from './kitdata.js';
+import { Weapon,Sub,Special,WClass,renderListItems } from './kitdata.js';
 
 //VARIABLES
 
-let weaponChoices = getNewChoices();
+let weaponChoices;
 
-let correctWeapon = weaponChoices[Math.floor(Math.random()*4)];
+let correctWeapon;
 
-let hint = getHint();
+let hint;
 
-let correctWeapons = getCorrectWeapons();
+let correctWeapons;
 
-//eventually replace this alert with display of kit
-alert('Who used the '+hint.getName()+'?');
+let answered = false;
 
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
 function weaponClick(id) {
-    const clickedWeapon = Weapon.allWeapons[id];
-    let correct = false;
-    correctWeapons.forEach(weapon => {
-        if (clickedWeapon.equals(weapon)) {
-            correct = true;
+    if (!answered) {
+        const clickedWeapon = Weapon.allWeapons[id];
+        let correct = false;
+        correctWeapons.forEach(weapon => {
+            if (clickedWeapon.equals(weapon)) {
+                correct = true;
+            }
+        })
+        //eventually replace this alert with display
+        if (correct) { 
+            if (document.getElementById('automaticReset').checked){
+                resetCorrectWeapon();
+            } else {
+                const textAnswer=document.getElementById('textAnswer');
+                textAnswer.textContent='Correct! ';
+                for (let i=0;i<correctWeapons.length;i++) {
+                    textAnswer.textContent=textAnswer.textContent+
+                    (i==0?" ":" or ")+
+                    correctWeapons[i].getName();
+                }
+                answered=true;
+                document.getElementById('revealButton').style.display='none';
+                renderListItems('imgAnswer',correctWeapons);
+                document.getElementById('infoWindow').style.height='16em';
+
+            }
+        } else {
+            document.getElementById('textAnswer').textContent='Nope!';
+            document.getElementById('infoWindow').style.height='10em';
         }
-    })
-    //eventually replace this alert with display
-    alert(correct ? 'Correct!' : 'Incorrect');
-    if (correct && document.getElementById('automaticReset').checked) {
-        resetCorrectWeapon();
     }
 }
 window.weaponClick = weaponClick;
@@ -82,27 +100,23 @@ function getCorrectWeapons() {
     return ret;
 }
 
-//sets the weapon choice display with the new weapon choices
-function updateWeaponChoiceDisplay() {
-    const container = document.getElementById("weaponChoices")
-
-    container.innerHTML = '';
-
-    weaponChoices.forEach(weapon => {
-        const listItem = document.createElement('div');
-        listItem.innerHTML = weapon.getImgHTML();
-        container.appendChild(listItem);
-    })
-}
-updateWeaponChoiceDisplay();
-
 //show correct answer(s)
 function answer() {
     let al = '';
     correctWeapons.forEach(weapon => {
         al=al.concat(weapon.getName());
     })
-    alert(al);
+    const textAnswer=document.getElementById('textAnswer');
+    textAnswer.textContent='';
+    for (let i=0;i<correctWeapons.length;i++) {
+        textAnswer.textContent=textAnswer.textContent+
+        (i==0?" ":" or ")+
+        correctWeapons[i].getName();
+    }
+    answered=true;
+    renderListItems('imgAnswer',correctWeapons);
+    document.getElementById('revealButton').style.display='none';
+    document.getElementById('infoWindow').style.height='16em';
 }
 window.answerClick = answer;
 
@@ -112,12 +126,21 @@ function resetCorrectWeapon() {
     correctWeapon = weaponChoices[Math.floor(Math.random()*4)];
     hint = getHint();
     correctWeapons = getCorrectWeapons();
+    answered=false;
+    document.getElementById('revealButton').style.display='inline-block';
 
-    updateWeaponChoiceDisplay();
+    renderListItems('weaponChoices',weaponChoices)
+    
+    document.getElementById('textHint').textContent=
+    'Who used the '+hint.getName()+'?';
+    renderListItems('imgHint',[hint]);
 
-    //eventually replace this alert with display of kit
-    alert('Who used the '+hint.getName()+'?');
+    document.getElementById('infoWindow').style.height='8em';
+    document.getElementById('textAnswer').textContent='';
+    renderListItems('imgAnswer',[]);
 }
 window.resetClick = resetCorrectWeapon;
 
 //SCRIPT
+resetCorrectWeapon();
+renderListItems('weaponChoices',weaponChoices)

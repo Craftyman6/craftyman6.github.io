@@ -1116,3 +1116,25 @@ export class Weapon {
 		return ret;
 	}
 }
+
+//function that fills a div element with images of given splatoon objects
+export function renderListItems(containerId, items) {
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.error(`Container with ID "${containerId}" not found.`);
+        return;
+    }
+
+    // Clear the container to prevent duplication
+    container.innerHTML = '';
+
+    // Add each item as a child to the container
+    items.forEach(item => {
+        const listItem = document.createElement('div');
+        listItem.innerHTML = item.getImgHTML();
+        container.appendChild(listItem);
+    });
+
+    //Make sure list is displayed
+    document.getElementById(containerId).style.display="inline-flex";
+}
