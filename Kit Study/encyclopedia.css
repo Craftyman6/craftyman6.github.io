@@ -5,7 +5,7 @@
     font-style: normal;
 }
 
-/* NAV PANEL CSS (NEEDS TO BE ON EVERY PAGE */
+/* Navigation Panel */
 nav{
     display: flex;
     justify-content: center;
@@ -39,6 +39,8 @@ body{
     text-align: center;
     margin: 0;
 }
+
+/* Sort List */
 #sortList{
     display: block;
     justify-content: center;
