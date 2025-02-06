@@ -38,11 +38,14 @@ h1{
 body{
     text-align: center;
     margin: 0;
+    background-image: url("img/Background_Wrap.png");
 }
 .buffer{
     display: flex;
     justify-content: center;
     align-content: center;
+}
+main{
 }
 
 /* Info Window */
@@ -118,6 +121,7 @@ body{
     height: 0em;
     display: block;
     margin: 0 auto 2% auto;
+    margin-top: -30px;
 }
 
 /* Response Text */
@@ -142,6 +146,32 @@ body{
 #weaponResponse>div:hover{
     transition: transform 0.2s ease;
     transform: scale(1.2);
+}
+
+/* Buttons */
+#buttonGroup{
+}
+button{
+    background-color: rgb(166, 164, 253);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: 100;
+    font-style: italic;
+}
+button:hover{
+    transition: transform 0.1s ease;
+    transform: scale(1.1);
+}
+
+/* Checkbox */
+input:hover{
+    transition: transform 0.1s ease;
+    transform: scale(1.1);
 }
 
 /* Webkit Browsers */

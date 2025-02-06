@@ -34,8 +34,32 @@ nav a:hover{
 /* css cont */
 h1{
     font-size: 3em;
+    background-color: rgb(156, 148, 245);
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
+}
+h2{
+    font-size: 2.5em;
+    background-color: rgb(186, 181, 243);
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
 }
 body{
     text-align: center;
-    margin: 0;
+    margin: auto;
+    background-image: url("img/Background_Wrap.png");
+}
+p{
+    font-weight: 900;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Marker Felt';
+    color:rgb(0, 0, 0);
+    max-width:1500px;
+    margin: auto;
+    margin-bottom: 20px;
 }

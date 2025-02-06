@@ -38,6 +38,7 @@ h1{
 body{
     text-align: center;
     margin: 0;
+    background-image: url("img/Background_Wrap.png");
 }
 
 /* Sort List */
