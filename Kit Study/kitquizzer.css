@@ -45,8 +45,6 @@ body{
     justify-content: center;
     align-content: center;
 }
-main{
-}
 
 /* Info Window */
 #infoWindow{
@@ -149,8 +147,6 @@ main{
 }
 
 /* Buttons */
-#buttonGroup{
-}
 button{
     background-color: rgb(166, 164, 253);
     border-radius: 10px;
