@@ -9,7 +9,7 @@
 nav{
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(251, 255, 0);
     margin-top: -8px
 }
 nav a{
@@ -21,12 +21,12 @@ nav a{
     padding-top: 8px;
     width: 20%;
     font-size: large;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(251, 255, 0);
     border-radius: 0 0 10px 10px;
     transition: transform 0.15s ease, color 0.15s, background-color 0.15s;
 }
 nav a:hover{
-    background-color: rgb(141, 81, 33) ;
+    background-color: rgb(188, 190, 19) ;
     color:aliceblue;
     transform: translateY(5px);
 }
@@ -34,6 +34,12 @@ nav a:hover{
 /* css cont */
 h1{
     font-size: 3em;
+    background-color: rgb(124, 34, 226);
+    color:aliceblue;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
 }
 body{
     text-align: center;
@@ -64,7 +70,7 @@ body{
     display: inline-flex;
     width: 140px;
     height: 50px;
-    background-color: rgb(148, 203, 235);
+    background-color: rgb(148, 203, 235, .5);
     border-radius: 35px;
     margin: auto;
     padding: 10px;
@@ -83,7 +89,8 @@ body{
     display: none;
     width: 1125px;
     justify-content: center;
-    background-color: rgb(36, 175, 255);
+    background-color: rgba(36, 175, 255, 0.5);
+    border-color:rgb(0, 0, 0);
     border-radius: 35px;
 }
 #wclassList>div:hover{
@@ -100,7 +107,7 @@ body{
     width: 750px;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(255, 153, 0, .5);
     border-radius: 30px;
     border: rgb(255, 153, 0), 10px solid;
 }
@@ -148,7 +155,7 @@ body{
 
 /* Buttons */
 button{
-    background-color: rgb(166, 164, 253);
+    background-color: rgb(110, 144, 255, .5);
     border-radius: 10px;
     border: none;
     padding: 5px;

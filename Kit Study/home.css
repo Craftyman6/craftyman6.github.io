@@ -34,7 +34,8 @@ nav a:hover{
 /* css cont */
 h1{
     font-size: 3em;
-    background-color: rgb(156, 148, 245);
+    background-color: rgb(42, 27, 206);
+    color:aliceblue;
     height: 70px;
     text-align: center;
     padding: 20px;
@@ -42,7 +43,7 @@ h1{
 }
 h2{
     font-size: 2.5em;
-    background-color: rgb(186, 181, 243);
+    color: aliceblue;
     height: 60px;
     text-align: center;
     padding: 10px;

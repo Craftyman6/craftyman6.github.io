@@ -9,7 +9,7 @@
 nav{
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(24, 226, 24);
     margin-top: -8px
 }
 nav a{
@@ -21,12 +21,12 @@ nav a{
     padding-top: 8px;
     width: 20%;
     font-size: large;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(24, 226, 24);
     border-radius: 0 0 10px 10px;
     transition: transform 0.15s ease, color 0.15s, background-color 0.15s;
 }
 nav a:hover{
-    background-color: rgb(141, 81, 33) ;
+    background-color: rgb(11, 173, 11) ;
     color:aliceblue;
     transform: translateY(5px);
 }
@@ -34,6 +34,12 @@ nav a:hover{
 /* css cont */
 h1{
     font-size: 3em;
+    background-color: rgb(226, 34, 140);
+    color:aliceblue;
+    height: 70px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0px;
 }
 body{
     text-align: center;
@@ -84,7 +90,7 @@ body{
     display: inline-flex;
     width: 140px;
     height: 50px;
-    background-color: rgb(148, 203, 235);
+    background-color: rgb(148, 203, 235, .5);
     border-radius: 35px;
     margin: auto;
     padding: 10px;
@@ -106,7 +112,7 @@ body{
 /* Dupe Kit List */
 #dupeKitList{
     display: none;
-    background-color: rgb(253, 154, 192);
+    background-color: rgb(253, 154, 192, .5);
     border-radius: 15px;
     height: 50px;
 }
@@ -124,7 +130,7 @@ body{
     display: inline-flex;
     width: 700px;
     justify-content: center;
-    background-color: rgb(36, 175, 255);
+    background-color: rgb(36, 175, 255, .5);
     border-radius: 35px;
     margin: 10px 4px 10px;
 }
@@ -141,7 +147,7 @@ body{
     display: inline-flex;
     width: 860px;
     justify-content: center;
-    background-color: rgb(36, 175, 255);
+    background-color: rgb(36, 175, 255, .5);
     border-radius: 35px;
     margin: 10px 4px 10px;
 }
@@ -159,7 +165,7 @@ body{
     display: inline-flex;
     width: 1155px;
     justify-content: center;
-    background-color: rgb(36, 175, 255);
+    background-color: rgb(36, 175, 255, .5);
     border-radius: 35px;
     margin: 10px 4px 10px;
 }
@@ -178,7 +184,7 @@ body{
     width: 750px;
     overflow-x: auto;
     overflow-y: hidden;
-    background-color: rgb(255, 153, 0);
+    background-color: rgb(255, 153, 0, .5);
     border-radius: 30px;
     border: rgb(255, 153, 0), 10px solid;
 }
