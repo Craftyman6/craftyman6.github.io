@@ -64,3 +64,36 @@ p{
     margin: auto;
     margin-bottom: 20px;
 }
+
+/* HEADER COLORS */
+.selA{
+    background-color: hsl(327, 77%, 51%);
+}
+.selB{
+    background-color: hsl(268, 77%, 51%);
+}
+.selC{
+    background-color: hsl(81, 100%, 44%);
+}
+.selD{
+    background-color: hsl(323, 89%, 43%);
+}
+.headerLinks{
+    text-decoration: none;
+}
+.selA,.selB, .selC, .selD{
+    transition: background-color 0.15s;
+}
+/* HOVER TO CHANGE COLOR */
+.selA:hover{
+    background-color: hsl(327, 77%, 21%);
+}
+.selB:hover{
+    background-color:hsl(268, 77%, 21%);
+}
+.selC:hover{
+    background-color: hsl(81, 100%, 14%);
+}
+.selD:hover{
+    background-color: hsl(323, 89%, 13%);
+}
