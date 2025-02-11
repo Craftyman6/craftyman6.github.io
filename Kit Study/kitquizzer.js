@@ -26,10 +26,12 @@ function weaponClick(id) {
         const weapon = Weapon.allWeapons[id];
         if (weapon.sameKit(getCorrectWeapon())) {
             if (document.getElementById('automaticReset').checked) {
-                resetCorrectWeapon();
-            } else {
-                revealAnswer(weapon);
+                let done = false;
+                let interval = setInterval(() => {
+                    if (!done) {resetCorrectWeapon(); done=true;}
+                }, 1000);
             }
+            revealAnswer(weapon);
         } else {
             nopeStreak++;
             document.getElementById("responseWindow").style.height='3em';
@@ -99,7 +101,6 @@ function resetCorrectWeapon() {
     weaponList.style.border=listColors.orangeBorder;
     
     //display hint text
-    console.log(correctWeaponID+"\t"+weaponPool.length);
     document.getElementById("textHint").textContent='What weapon has '+getCorrectWeapon().getSub().getName()+
     ' and '+getCorrectWeapon().getSpecial().getName()+'?';
 

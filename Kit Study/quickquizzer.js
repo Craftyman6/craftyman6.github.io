@@ -30,21 +30,22 @@ function weaponClick(id) {
         //eventually replace this alert with display
         if (correct) { 
             if (document.getElementById('automaticReset').checked){
-                resetCorrectWeapon();
-            } else {
-                const textAnswer=document.getElementById('textAnswer');
-                textAnswer.textContent='Correct! ';
-                for (let i=0;i<correctWeapons.length;i++) {
-                    textAnswer.textContent=textAnswer.textContent+
-                    (i==0?" ":" or ")+
-                    correctWeapons[i].getName();
-                }
-                answered=true;
-                document.getElementById('revealButton').style.display='none';
-                renderListItems('imgAnswer',correctWeapons);
-                document.getElementById('infoWindow').style.height='16em';
-
+                let done = false;
+                let interval = setInterval(() => {
+                    if (!done) {resetCorrectWeapon(); done=true;}
+                }, 1000);
             }
+            const textAnswer=document.getElementById('textAnswer');
+            textAnswer.textContent='Correct! ';
+            for (let i=0;i<correctWeapons.length;i++) {
+                textAnswer.textContent=textAnswer.textContent+
+                (i==0?" ":" or ")+
+                correctWeapons[i].getName();
+            }
+            answered=true;
+            document.getElementById('revealButton').style.display='none';
+            renderListItems('imgAnswer',correctWeapons);
+            document.getElementById('infoWindow').style.height='16em';
             
             document.getElementById('weaponChoices').style.backgroundColor=listColors.green;
             document.getElementById('weaponChoices').style.border=listColors.greenBorder;

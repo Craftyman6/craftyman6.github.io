@@ -98,11 +98,13 @@ function guessAttempt() {
     const selectedGroup = document.getElementById('selectedGroup');
     if (correct) {
         if (document.getElementById('automaticReset').checked) {
-            resetCorrectWeapon();
-        } else {
-            answered=true;
-            document.getElementById('answerButton').style.display='none';
+            let done = false;
+            let interval = setInterval(() => {
+                if (!done) {resetCorrectWeapon(); done=true;}
+            }, 1000);
         }
+        answered=true;
+        document.getElementById('answerButton').style.display='none';
 
         selectedGroup.style.backgroundColor=listColors.green;
     } else {
