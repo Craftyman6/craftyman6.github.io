@@ -1,7 +1,7 @@
 //IMPORTS
 
 //import classes pertaining to kit data
-import { Weapon,Sub,Special,WClass,renderListItems } from './kitdata.js';
+import { Weapon,Sub,Special,WClass,renderListItems,listColors } from './kitdata.js';
 
 //VARIABLES
 
@@ -45,9 +45,15 @@ function weaponClick(id) {
                 document.getElementById('infoWindow').style.height='16em';
 
             }
+            
+            document.getElementById('weaponChoices').style.backgroundColor=listColors.green;
+            document.getElementById('weaponChoices').style.border=listColors.greenBorder;
         } else {
             document.getElementById('textAnswer').textContent='Nope!';
             document.getElementById('infoWindow').style.height='10em';
+            
+            document.getElementById('weaponChoices').style.backgroundColor=listColors.red;
+            document.getElementById('weaponChoices').style.border=listColors.redBorder;
         }
     }
 }
@@ -130,6 +136,8 @@ function resetCorrectWeapon() {
     document.getElementById('revealButton').style.display='inline-block';
 
     renderListItems('weaponChoices',weaponChoices)
+    document.getElementById('weaponChoices').style.backgroundColor=listColors.orange;
+    document.getElementById('weaponChoices').style.border=listColors.orangeBorder;
     
     document.getElementById('textHint').textContent=
     'Who used the '+hint.getName()+'?';

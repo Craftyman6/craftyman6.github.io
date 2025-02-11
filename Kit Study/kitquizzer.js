@@ -1,7 +1,7 @@
 //IMPORTS
 
 //import classes pertaining to kit data
-import { Weapon,Sub,Special,WClass,renderListItems } from './kitdata.js';
+import { Weapon,Sub,Special,WClass,renderListItems,listColors } from './kitdata.js';
 
 //VARIABLES
 
@@ -35,6 +35,10 @@ function weaponClick(id) {
             document.getElementById("responseWindow").style.height='3em';
             document.getElementById("textResponse").textContent=
             "Nope!"+(nopeStreak>1?" x"+nopeStreak:"");
+
+            const weaponList = document.getElementById('weaponList');
+            weaponList.style.backgroundColor=listColors.red;
+            weaponList.style.border=listColors.redBorder;
         }
     }   
 }
@@ -55,6 +59,10 @@ function revealAnswer() {
     //set first weapon to either chosen one or default one
     if (congradulate) {
         weapon=arguments[0];
+
+        const weaponList = document.getElementById('weaponList');
+        weaponList.style.backgroundColor=listColors.green;
+        weaponList.style.border=listColors.greenBorder;
     } else {
         weapon=getCorrectWeapon();
     }
@@ -85,7 +93,10 @@ function resetCorrectWeapon() {
     //chose new weapon
     pickNewWeapon();
     //hide weapon list
-    document.getElementById('weaponList').style.display="none";
+    const weaponList = document.getElementById('weaponList');
+    weaponList.style.display="none";
+    weaponList.style.backgroundColor=listColors.orange;
+    weaponList.style.border=listColors.orangeBorder;
     
     //display hint text
     console.log(correctWeaponID+"\t"+weaponPool.length);

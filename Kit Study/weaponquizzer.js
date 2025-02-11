@@ -1,7 +1,7 @@
 //IMPORTS
 
 //import classes pertaining to kit data
-import { Weapon,Sub,Special,WClass,renderListItems } from './kitdata.js';
+import { Weapon,Sub,Special,WClass,renderListItems,listColors } from './kitdata.js';
 
 //VARIABLES
 
@@ -80,6 +80,9 @@ function resetCorrectWeapon() {
     displayAnswer('');
     answered=false;
     document.getElementById('answerButton').style.display='inline-block';
+    
+    const selectedGroup = document.getElementById('selectedGroup');
+    selectedGroup.style.backgroundColor=listColors.blue;
 }
 window.resetClick = resetCorrectWeapon;
 
@@ -92,6 +95,7 @@ function getCorrectWeapon() {
 function guessAttempt() {
     const correct=getCorrectWeapon().sameKit(selectedSub,selectedSpecial);
     displayAnswer(correct ? "Correct! "+getCorrectWeapon().getSub().getName()+' and '+getCorrectWeapon().getSpecial().getName() : "Nope!");
+    const selectedGroup = document.getElementById('selectedGroup');
     if (correct) {
         if (document.getElementById('automaticReset').checked) {
             resetCorrectWeapon();
@@ -99,6 +103,12 @@ function guessAttempt() {
             answered=true;
             document.getElementById('answerButton').style.display='none';
         }
+
+        selectedGroup.style.backgroundColor=listColors.green;
+    } else {
+        
+
+        selectedGroup.style.backgroundColor=listColors.red;
     }
 }
 

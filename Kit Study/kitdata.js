@@ -1138,3 +1138,14 @@ export function renderListItems(containerId, items) {
     //Make sure list is displayed
     document.getElementById(containerId).style.display="inline-flex";
 }
+
+//array of colors used by lists
+export const listColors = {
+	orange:"rgb(255, 153, 0, .5)",
+	orangeBorder:"rgb(255, 153, 0)",
+	blue:"rgb(148, 203, 235, .5)",
+	green:"rgba(132, 255, 108, 0.5)",
+	greenBorder:"rgb(54, 134, 38)",
+	red:"rgba(255, 108, 108, 0.5)",
+	redBorder:"rgb(133, 33, 33)"
+};
