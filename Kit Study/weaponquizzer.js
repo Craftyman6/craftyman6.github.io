@@ -21,6 +21,12 @@ let correctWeaponID = Math.floor(Math.random() * weaponPool.length);
 
 let answered=false;
 
+//How many times you've gotten the weapon correct
+let winStreak = 0;
+
+//Your best winStreak
+let highWinStreak = 0
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked (not needed)
@@ -97,6 +103,12 @@ function guessAttempt() {
     displayAnswer(correct ? "Correct! "+getCorrectWeapon().getSub().getName()+' and '+getCorrectWeapon().getSpecial().getName() : "Nope!");
     const selectedGroup = document.getElementById('selectedGroup');
     if (correct) {
+        winStreak++;
+        highWinStreak = Math.max(winStreak, highWinStreak);
+        document.getElementById("winStreak").textContent=
+        "Win Streak: "+winStreak;
+        document.getElementById("highWinStreak").textContent=
+        "Highest Win Streak: "+highWinStreak;
         if (document.getElementById('automaticReset').checked) {
             let done = false;
             let interval = setInterval(() => {
@@ -108,7 +120,9 @@ function guessAttempt() {
 
         selectedGroup.style.backgroundColor=listColors.green;
     } else {
-        
+        winStreak = 0;
+        document.getElementById("winStreak").textContent=
+        "Win Streak: "+winStreak;
 
         selectedGroup.style.backgroundColor=listColors.red;
     }

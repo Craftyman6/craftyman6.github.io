@@ -15,6 +15,12 @@ let correctWeapons;
 
 let answered = false;
 
+//How many times you've gotten the weapon correct
+let winStreak = 0;
+
+//Your best winStreak
+let highWinStreak = 0
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
@@ -29,6 +35,13 @@ function weaponClick(id) {
         })
         //eventually replace this alert with display
         if (correct) { 
+            winStreak++;
+            highWinStreak = Math.max(winStreak, highWinStreak);
+            document.getElementById("winStreak").textContent=
+            "Win Streak: "+winStreak;
+            document.getElementById("highWinStreak").textContent=
+            "Highest Win Streak: "+highWinStreak;
+
             if (document.getElementById('automaticReset').checked){
                 let done = false;
                 let interval = setInterval(() => {
@@ -50,6 +63,10 @@ function weaponClick(id) {
             document.getElementById('weaponChoices').style.backgroundColor=listColors.green;
             document.getElementById('weaponChoices').style.border=listColors.greenBorder;
         } else {
+            winStreak = 0;
+            document.getElementById("winStreak").textContent=
+            "Win Streak: "+winStreak;
+            
             document.getElementById('textAnswer').textContent='Nope!';
             document.getElementById('infoWindow').style.height='10em';
             

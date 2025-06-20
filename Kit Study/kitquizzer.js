@@ -18,13 +18,26 @@ let revealed = false;
 //How many times you've gotten the weapon wrong
 let nopeStreak = 0;
 
+//How many times you've gotten the weapon correct
+let winStreak = 0;
+
+//Your best winStreak
+let highWinStreak = 0
+
 //FUNCTIONS
 
 //for when a weapon image from a list is clicked
 function weaponClick(id) {
+    console.log("test");
     if (!revealed) {
         const weapon = Weapon.allWeapons[id];
         if (weapon.sameKit(getCorrectWeapon())) {
+            winStreak++;
+            highWinStreak = Math.max(winStreak, highWinStreak);
+            document.getElementById("winStreak").textContent=
+            "Win Streak: "+winStreak;
+            document.getElementById("highWinStreak").textContent=
+            "Highest Win Streak: "+highWinStreak;
             if (document.getElementById('automaticReset').checked) {
                 let done = false;
                 let interval = setInterval(() => {
@@ -34,6 +47,9 @@ function weaponClick(id) {
             revealAnswer(weapon);
         } else {
             nopeStreak++;
+            winStreak = 0;
+            document.getElementById("winStreak").textContent=
+            "Win Streak: "+winStreak;
             document.getElementById("responseWindow").style.height='3em';
             document.getElementById("textResponse").textContent=
             "Nope!"+(nopeStreak>1?" x"+nopeStreak:"");
