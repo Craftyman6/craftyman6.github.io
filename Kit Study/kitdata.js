@@ -429,7 +429,7 @@ const weapons = [
     {name: "Hoofz Daulie Squelchers",
     sub: "Point Sensor",
     special: "Splattercolor Screen",
-    wclass: "Daulie",
+    wclass: "Dualie",
 	id: 71},
 
     {name: "Hornz Dread Wringer",
