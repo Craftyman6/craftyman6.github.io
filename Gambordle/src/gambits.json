@@ -1,0 +1,2133 @@
+[
+  {
+    "name": "Addiction's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "AFK's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": true
+  },
+  {
+    "name": "Anarchist's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KING"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Anna's Family's Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "PROMOTION"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Aphrodite's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "QUEEN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Artemis' Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "TRAP"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Backup's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY",
+      "LANDING"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Bait's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "TRAP"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Balance Scale's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "KING",
+      "BISHOP",
+      "ROOK",
+      "PIECE SELLER",
+      "KNIGHT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Banana Peel's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Banner's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "ROOK",
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Baron's Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "ROOK"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Barter Trade's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "BISHOP",
+      "PIECE SELLER"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Bear Trap's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "TRAP"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Berzerker's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Beth's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "QUEEN",
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Billionaire's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "GOLDEN"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Black Stallion's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Black Witch's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "QUEEN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Boss Tooth's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "MODIFY SELL VALUE",
+    "unlockable": true
+  },
+  {
+    "name": "Brave Knight's Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "PAWN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Bribe's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "GAMBIT SELLER"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": true
+  },
+  {
+    "name": "Bubble Shield's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Bug Catcher's Gambit",
+    "cost": 4,
+    "rarity": "COMMON",
+    "focus": [
+      "PAWN"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Bunker's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "PROTECTIVE",
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Candle's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "BISHOP",
+      "BLESS"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Carrousel's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY",
+      "KNIGHT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Castling's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "ROOK",
+      "KING"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Catapult's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "ROOK"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Caterpillar's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "PROMOTION"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Cauldron's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "BISHOP",
+      "MONEY"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Cave of Wonder's Gambit",
+    "cost": 10,
+    "rarity": "RARE",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "CEO's Gambit",
+    "cost": 10,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Chamberlain Ghost's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "GOLDEN",
+      "BISHOP",
+      "CRUMBLE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Chemist's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "GOLDEN",
+      "BLESS",
+      "PROTECTIVE",
+      "TRAP",
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "Chess GOAT's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT",
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Chicken's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "PAWN",
+      "QUEEN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Chinese Opening's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "PAWN",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": true
+  },
+  {
+    "name": "Chronobreak's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "SACRIFICE",
+      "BLESS"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Chrysalis' Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "WAIT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Church's Gambit",
+    "cost": 4,
+    "rarity": "COMMON",
+    "focus": [
+      "BISHOP"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Clown's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "PROMOTION",
+      "PROTECTIVE",
+      "TRAP",
+      "BLESS",
+      "GOLDEN",
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Coconut Juice's Gambit",
+    "cost": 6,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "WAIT"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Commercial Favour's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Copycat's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "BISHOP",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Cowboy Horse's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "TRAP",
+      "KNIGHT"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Creature of the Depths' Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "CRUMBLE",
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Crown's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Dainsleif's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KING",
+      "GOLDEN"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": true
+  },
+  {
+    "name": "Dark Knight's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "ROOK",
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "Dead or Alive's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "TRAP"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "Demon's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "SACRIFICE"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Dina's Gaze's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "TRAP"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Dragon Egg's Gambit",
+    "cost": 8,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "GAMBIT SELLER"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "Dragon Horse's Gambit",
+    "cost": 11,
+    "rarity": "EPIC",
+    "focus": [
+      "BISHOP"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Druid's Gambit",
+    "cost": 5,
+    "rarity": "RARE",
+    "focus": [
+      "GOLDEN",
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Dungeon's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "ROOK",
+      "LANDING"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Emperor's Gambit",
+    "cost": 6,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "KING"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Empress's Gambit",
+    "cost": 8,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "KNIGHT"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Enigma's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Equivalent Exchange's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "PIECE SELLER"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": true
+  },
+  {
+    "name": "Eugenic's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "GAMBIT SELLER"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "Excalibur's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KING",
+      "PAWN",
+      "PROMOTION"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Exorcist's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "BISHOP",
+      "PHANTOM"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Fairy's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "BLESS",
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Fallen Crown's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "KING"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Falling Crown's Gambit",
+    "cost": 10,
+    "rarity": "EPIC",
+    "focus": [
+      "WAIT",
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Family's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "KING"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Fire Watch's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "ROOK"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Fleur de Lys' Gambit",
+    "cost": 12,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "KING",
+      "GOLDEN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Foal's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PAWN",
+      "KNIGHT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Fortune Wheel's Gambit",
+    "cost": 9,
+    "rarity": "COMMON",
+    "focus": [
+      "GOLDEN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Frog's Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "LANDING"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Gambler's Gambit",
+    "cost": 6,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Geode's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "GOLDEN"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Ghost's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Gluttony's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "BISHOP",
+      "PIECE SELLER"
+    ],
+    "trigger": "MODIFY SELL VALUE",
+    "unlockable": true
+  },
+  {
+    "name": "Goddess's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "QUEEN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Gold Seeker's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Golden Clover's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Golden Idol's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "GOLDEN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Golden Stair's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "GOLDEN"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Graal's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "GAMBIT SELLER",
+      "BLESS"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "GrandMa's Gift's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "UTILITY",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "GrandMa's Letter's Gambit",
+    "cost": 8,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Gravekeeper's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Hero's Armor's Gambit",
+    "cost": 10,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PROTECTIVE"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Hidden Queen's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "QUEEN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Horse Dealer's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PIECE SELLER",
+      "KNIGHT"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Horseshoe's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "KNIGHT",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Hourglass's Gambit",
+    "cost": 7,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Hunter Trophy's Gambit",
+    "cost": 6,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "TRAP",
+      "UTILITY"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Hyper Bullet's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Impossible Choice's Gambit",
+    "cost": 8,
+    "rarity": "COMMON",
+    "focus": [
+      "WAIT",
+      "MONEY",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Inheritance's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "GOLDEN",
+      "SACRIFICE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Inventor's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "WAIT"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "Investor's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Jockey's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "KNIGHT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Joker's Gambit",
+    "cost": 9,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "BISHOP",
+      "BLESS",
+      "GOLDEN",
+      "PROTECTIVE",
+      "TRAP",
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "Jump's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "CRUMBLE"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Key of Life's Gambit",
+    "cost": 9,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "King Midas's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "GOLDEN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "King XI's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "KING",
+      "GOLDEN"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "King's Guard's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KING"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": true
+  },
+  {
+    "name": "Knights of the Apocalypse's Gambit",
+    "cost": 10,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "KNIGHT",
+      "PHANTOM"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Lavander's Gambit",
+    "cost": 10,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PHANTOM"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Lemmong's Gambit",
+    "cost": 5,
+    "rarity": "EPIC",
+    "focus": [
+      "PAWN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Lich's Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "PHANTOM",
+      "LANDING"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Lifeline's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Limited Edition's Gambit",
+    "cost": 4,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "MODIFY SELL VALUE",
+    "unlockable": false
+  },
+  {
+    "name": "Lucky Coin's Gambit",
+    "cost": 9,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Ludo's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "KNIGHT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Magic Brush's Gambit",
+    "cost": 9,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "WAIT",
+      "BLESS",
+      "GOLDEN",
+      "PROTECTIVE",
+      "TRAP",
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Makibishi's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT",
+      "TRAP"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Marvellous Evolution's Gambit",
+    "cost": 12,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PAWN",
+      "QUEEN",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Medal's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Mercenary's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "KING",
+      "ROOK",
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Merchant Mask's Gambit",
+    "cost": 8,
+    "rarity": "COMMON",
+    "focus": [
+      "PIECE SELLER"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Mime's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "BISHOP"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Minirook's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "ROOK",
+      "PAWN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Miracle's Gambit",
+    "cost": 5,
+    "rarity": "RARE",
+    "focus": [
+      "BLESS"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Mirror's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "MissingNo.'s Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Musketeer's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "BISHOP",
+      "GOLDEN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Necromancer's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Nemo's Pawns' Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "PAWN",
+      "GAMBIT SELLER"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": true
+  },
+  {
+    "name": "Old Idol's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "BLESS"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Old Shield's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Oshiya's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Ouija's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Patience's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "WAIT"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Pegasus' Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT",
+      "PROMOTION"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Pendant's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "BLESS"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Phantom Bride's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "WAIT",
+      "PHANTOM",
+      "QUEEN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Philosopher's Stone's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "GAMBIT SELLER"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Plague Mask's Gambit",
+    "cost": 5,
+    "rarity": "COMMON",
+    "focus": [
+      "PIECE SELLER",
+      "BISHOP"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Poacher's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PAWN",
+      "TRAP"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Pope's Gambit",
+    "cost": 9,
+    "rarity": "EPIC",
+    "focus": [
+      "BISHOP",
+      "QUEEN"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Prayer's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "WAIT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Priest's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "BLESS"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Princess's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "QUEEN",
+      "BLESS"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Proliferation's Gambit",
+    "cost": 8,
+    "rarity": "COMMON",
+    "focus": [
+      "PAWN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Protector's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "ROOK",
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Queen Ant's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "QUEEN",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Race Flag's Gambit",
+    "cost": 4,
+    "rarity": "COMMON",
+    "focus": [
+      "PROMOTION",
+      "MONEY",
+      "PAWN"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Rear up's Gambit",
+    "cost": 9,
+    "rarity": "RARE",
+    "focus": [
+      "KNIGHT",
+      "PROMOTION"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Recruiter Hat's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "WAIT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Reincarnation's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "BISHOP",
+      "UTILITY"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Relic's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "BISHOP",
+      "PHANTOM",
+      "SACRIFICE"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "Resurrection Stone's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Sacrifice's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "Savage Checkmate's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Scapegoat's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "BISHOP",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Scepter's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "BISHOP",
+      "CRUMBLE"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Scout's Gambit",
+    "cost": 8,
+    "rarity": "COMMON",
+    "focus": [
+      "ROOK"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": false
+  },
+  {
+    "name": "Scream's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Seraph's Gambit",
+    "cost": 9,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PROTECTIVE"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Shadow's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Shooting Star's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "GOLDEN",
+      "LANDING"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Shop Card's Gambit",
+    "cost": 4,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Show Jumping's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT",
+      "LANDING"
+    ],
+    "trigger": "GIVE GAMBIT",
+    "unlockable": true
+  },
+  {
+    "name": "Silver Fork's Gambit",
+    "cost": 7,
+    "rarity": "RARE",
+    "focus": [
+      "KNIGHT"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Skydiver's Gambit",
+    "cost": 6,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PROMOTION",
+      "PAWN",
+      "LANDING"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Sleepy's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Soul's Gambit",
+    "cost": 9,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM",
+      "LANDING"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Soul's Lantern's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM",
+      "PIECE SELLER"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Spartan's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Spy's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "TRAP",
+      "LANDING"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Squire's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT",
+      "PAWN"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": true
+  },
+  {
+    "name": "Squirrel's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "PAWN",
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Stock Clearance's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": false
+  },
+  {
+    "name": "Sun's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "GOLDEN",
+      "KING"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": true
+  },
+  {
+    "name": "Super Hero Cape's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "PAWN",
+      "PROMOTION",
+      "SACRIFICE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Super Landing's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "LANDING",
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Supply Box's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "LANDING"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Survivor's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Templar's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "ROOK",
+      "PROTECTIVE"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "THE ROOOOOK's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "ROOK",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Throne's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Thunder's Gambit",
+    "cost": 9,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "PAWN"
+    ],
+    "trigger": "SKIP TURN",
+    "unlockable": false
+  },
+  {
+    "name": "Trampoline's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "LANDING"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Trapper's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "TRAP"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Twister's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY",
+      "BLESS",
+      "GOLDEN",
+      "PROTECTIVE",
+      "TRAP",
+      "PHANTOM"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Valhalla's Gambit",
+    "cost": 10,
+    "rarity": "EPIC",
+    "focus": [
+      "CRUMBLE",
+      "PHANTOM"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Valkyrie's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "QUEEN",
+      "LANDING"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Violet's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM",
+      "WAIT"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "War Axe's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "CRUMBLE"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": true
+  },
+  {
+    "name": "Warlock's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "BLESS",
+      "LANDING"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "Weird Pot's Gambit",
+    "cost": 7,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY",
+      "BLESS"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Whip's Gambit",
+    "cost": 8,
+    "rarity": "EPIC",
+    "focus": [
+      "KNIGHT",
+      "PAWN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "White Crown's Gambit",
+    "cost": 7,
+    "rarity": "LEGENDARY",
+    "focus": [
+      "QUEEN"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Whitelighter's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "MONEY"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  },
+  {
+    "name": "Will O Wisp's Gambit",
+    "cost": 6,
+    "rarity": "EPIC",
+    "focus": [
+      "PHANTOM"
+    ],
+    "trigger": "MODIFY BOARD",
+    "unlockable": false
+  },
+  {
+    "name": "Winter Helmet's Gambit",
+    "cost": 5,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM",
+      "PROMOTION",
+      "PAWN"
+    ],
+    "trigger": "MODIFY PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Winter King's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "PHANTOM",
+      "PIECE SELLER"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": true
+  },
+  {
+    "name": "Wrecking Ball's Gambit",
+    "cost": 6,
+    "rarity": "COMMON",
+    "focus": [
+      "ROOK",
+      "KING",
+      "SACRIFICE"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Yang's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Yin's Gambit",
+    "cost": 7,
+    "rarity": "EPIC",
+    "focus": [
+      "UTILITY"
+    ],
+    "trigger": "PASSIVE",
+    "unlockable": true
+  },
+  {
+    "name": "Zen's Gambit",
+    "cost": 6,
+    "rarity": "RARE",
+    "focus": [
+      "WAIT",
+      "CRUMBLE"
+    ],
+    "trigger": "GIVE PIECE",
+    "unlockable": false
+  },
+  {
+    "name": "Zocman Tax's Gambit",
+    "cost": 8,
+    "rarity": "RARE",
+    "focus": [
+      "MONEY",
+      "KING"
+    ],
+    "trigger": "GIVE MONEY",
+    "unlockable": false
+  }
+]

@@ -1,0 +1,130 @@
+#root {
+  width: 100%;
+  align-items: center;
+}
+
+header {
+  max-width: 600px;
+  width: 100%
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+#options-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.option {
+  margin: 3%;
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.gambit-image {
+  height: 100px;
+}
+
+form {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+#gambit-select {
+  min-width: 75%;
+}
+
+button {
+  border: none;
+  padding: .5rem;
+  color: white;
+}
+
+button:disabled {
+  background-color: dimgray;
+}
+
+button:enabled {
+  background-color: green;
+}
+
+button:enabled:hover {
+  background-color: limegreen;
+}
+
+dialog {
+  width: 80%;
+  position: relative;
+  overflow-y: auto;
+  border: none;
+  box-shadow: 0 0 10px black;
+
+  h1 {
+    line-height: 3rem;
+  }
+
+  h2 {
+    margin: 1rem 0 0 0;
+    font-size: larger;
+  }
+
+  i {
+    font-size: small;
+    line-height: 1rem;
+  }
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.13);
+}
+
+#about-dialog {
+  overflow-y: auto;
+  box-sizing: border-box;
+  max-height: calc(100dvh - 2rem);
+  margin: 1rem auto auto;
+  padding-bottom: 3%;
+}
+
+#win-dialog::backdrop {
+  background: rgba(0, 128, 0, 0.25);
+}
+
+#win-gambit-image {
+  height: 180px;
+}
+
+#share-button {
+  margin: 1% 0;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 32px;
+  height: 32px;
+  background: dimgray;
+  border: none;
+  font-size: larger;
+  padding-bottom: 2rem;
+}
+
+#results-button {
+  display: none;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border: none
+}

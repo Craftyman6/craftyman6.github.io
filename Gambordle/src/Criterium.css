@@ -1,0 +1,26 @@
+.criterium {
+    font-size: small;
+    font-weight: bold;
+    display: flex;
+    flex: 1 1 max-content;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-width: max-content;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 1%;
+    color: white;
+    font-size: large;
+}
+
+.criterium.green {
+    background-color: green;
+}
+.criterium.yellow {
+    background-color: darkgoldenrod;
+}
+.criterium.gray {
+    background-color: dimgray;
+}
