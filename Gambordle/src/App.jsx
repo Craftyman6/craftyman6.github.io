@@ -2,10 +2,17 @@ import { useState, useEffect } from 'react'
 import Select from 'react-select'
 import './App.css'
 import gambits from './gambits.json'
+import placeholderGambitImage from './assets/Placeholder Gambit.PNG'
 import GuessList from './GuessList.jsx'
 import About from './About.jsx'
 import Results from './Results.jsx'
 import Credits from './Credits.jsx'
+
+const gambitImageSources = import.meta.glob('./assets/gambits/*.PNG', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+});
 
 class Criterium {
   constructor(name, value, color) {
@@ -59,7 +66,11 @@ class Gambit {
     this.focus = gambit.focus;
     this.trigger = gambit.trigger;
     this.unlockable = gambit.unlockable;
-    this.imgSrc = `./src/assets/gambits/${this.name}.PNG`;
+    const imagePath = `./assets/gambits/${this.name}.PNG`;
+    this.imgSrc = gambitImageSources[imagePath];
+    if (!this.imgSrc) {
+      throw new Error(`Missing image for gambit "${this.name}": ${imagePath}`);
+    }
     this.criteria = [];
   }
   ToString() {return this.name}
@@ -175,7 +186,7 @@ function App() {
       </header>
       <section id="center">
         <img
-          src={won?correctGambit.imgSrc:selectedGambit?selectedGambit.imgSrc:"./src/assets/Placeholder Gambit.PNG"}
+          src={won?correctGambit.imgSrc:selectedGambit?selectedGambit.imgSrc:placeholderGambitImage}
           className="gambit-image"
         ></img>
         <form>
