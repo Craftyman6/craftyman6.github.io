@@ -1,0 +1,16 @@
+.guess {
+    margin: 2% 0;
+}
+
+.guess-image {
+    max-height: 50px;
+    min-height: 50px;
+}
+
+.criterium-list {
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    gap: 1%;
+}
