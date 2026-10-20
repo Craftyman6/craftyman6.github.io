@@ -6,10 +6,13 @@ const Results = ({guesses, correctGambit, emojis}) => {
     const dialog = document.getElementById(dialogID);
     dialog.close();
   }
+  const triesMessage = () => {
+    return "Gambordle in "+guesses.length+" tr"+(guesses.length==1?"y! Wow!":"ies");
+  }
   // Copies the results to the user's clipboard
   const copyToast = () => toast("Results copied to clipboard", {toastId: "copy"});
   const copyResults = () => {
-    let text = "Gambordle "+(new Date().toLocaleDateString())+"\n"+emojis
+    let text = triesMessage()+" ("+(new Date().toLocaleDateString())+")\n"+emojis
     navigator.clipboard.writeText(text);
     copyToast();
   }
@@ -22,7 +25,7 @@ const Results = ({guesses, correctGambit, emojis}) => {
         src={correctGambit.imgSrc}
         id="win-gambit-image"
       ></img>
-      <p>You guessed today's Gambordle in {guesses.length} tr{guesses.length==1?"y! Wow!":"ies"}</p>
+      <p>You guessed today's {triesMessage()}</p>
       <button id="share-button" onClick={() => copyResults()}>Copy results</button>
       <ToastContainer
         position="top-center"
