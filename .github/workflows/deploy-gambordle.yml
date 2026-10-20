@@ -38,10 +38,12 @@ jobs:
         working-directory: Gambordle
       - name: Setup Pages
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6
-      - name: Stage site
+      - name: Stage sites
         run: |
           mkdir -p _site/Gambordle
           cp -R Gambordle/dist/. _site/Gambordle/
+          mkdir -p "_site/Kit Study"
+          cp -R "Kit Study/." "_site/Kit Study/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5
         with:
