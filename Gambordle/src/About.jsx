@@ -14,8 +14,9 @@ const About = () => {
       <p>A gambit's rarity. Close if one away on the heirarchy.</p>
       <i>(COMMON &gt; RARE &gt; EPIC &gt; LEGENDARY)</i>
       <h2>Focuses</h2>
-      <p>A list of one or more aspects pertaining to what the gambit does. Correct if focus list exactly matches. Close if at least one focus matches another.</p>
-      <i>(PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING, MONEY, UTILITY, PROMOTION, BLESS, GOLDEN, PROTECTIVE, TRAP, WAIT, PHANTOM, LANDING, SACRIFICE, PIECE SELLER, GAMBIT SELLER, CRUMBLE)</i>
+      <p>A list of one or more aspects pertaining to what the gambit does/synergizes with. Correct if focus list exactly matches. Close if at least one focus matches another.</p>
+      <p>Will also display whether the amount of focuses are too many, too few, or equal.</p>
+      <i>(PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING, PHANTOM, PROMOTION, BLESS, GOLDEN, PROTECTIVE, TRAP, CAPTURE, MONEY, SHOP, WAIT, LANDING, CRUMBLE, SACRIFICE, PIECE SELLER, GAMBIT SELLER, CHANCE, MOVEMENT, COUNT AS, INCREMENTAL, DELIMIT)</i>
       <h2>Trigger</h2>
       <p>What the gambit does when triggered. If a gambit does not trigger, or is unconditional, it is labeled as PASSIVE.</p>
       <i>(SKIP TURN, GIVE MONEY, GIVE PIECE, GIVE GAMBIT, MODIFY PIECE, MODIFY BOARD, MODIFY SELL VALUE, PASSIVE)</i>

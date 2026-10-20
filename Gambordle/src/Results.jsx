@@ -23,7 +23,7 @@ const Results = ({guesses, correctGambit, emojis}) => {
         id="win-gambit-image"
       ></img>
       <p>You guessed today's Gambordle in {guesses.length} tr{guesses.length==1?"y! Wow!":"ies"}</p>
-      <button id="share-button" onClick={() => copyResults()}>Share</button>
+      <button id="share-button" onClick={() => copyResults()}>Copy results</button>
       <ToastContainer
         position="top-center"
         theme="dark"

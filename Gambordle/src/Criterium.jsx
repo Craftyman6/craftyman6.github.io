@@ -21,6 +21,9 @@ const Criterium = ({criterium}) => {
 
   return (
     <div className={"criterium "+criterium.color}>
+      {criterium.hint && (
+        <div id="hint"><p>{criterium.hint}</p></div>
+      )}
       {getdivs()}
     </div>
   )

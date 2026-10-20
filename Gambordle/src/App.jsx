@@ -15,11 +15,12 @@ const gambitImageSources = import.meta.glob('./assets/gambits/*.PNG', {
 });
 
 class Criterium {
-  constructor(name, value, color) {
+  constructor(name, value, color, hint = null) {
     this.name = name;
     this.value = value;
     this.color = color;
     this.emoji = ({"green": "🟩", "yellow": "🟨", "gray": "⬛"})[this.color];
+    this.hint = hint;
   }
   static baseCriteria = ["Cost", "Rarity", "Focus", "Trigger", "Unlockable"].map(criterium => new Criterium(criterium));
   // Cost: Return green if exactly correct, yellow if within $2, and gray if more than a $2 difference
@@ -77,10 +78,11 @@ class Gambit {
   static allGambits = gambits.map(gambit => new Gambit(gambit));
   static selectOptions = this.allGambits.map(gambit => ({value: gambit, label: gambit.name}));
   setCriteria(comparedGambit) {
+    const focusHint = this.focus.length == comparedGambit.focus.length ? "=" : this.focus.length > comparedGambit.focus.length ? ">" : "<";
     this.criteria = [
       new Criterium("Cost", this.cost, Criterium.getCostCriterium(this, comparedGambit)),
       new Criterium("Rarity", this.rarity, Criterium.getRarityCriterium(this, comparedGambit)),
-      new Criterium("Focus", this.focus, Criterium.getFocusCriterium(this, comparedGambit)),
+      new Criterium("Focus", this.focus, Criterium.getFocusCriterium(this, comparedGambit), focusHint),
       new Criterium("Trigger", this.trigger, Criterium.getTriggerCriterium(this, comparedGambit)),
       new Criterium("Unlockable", this.unlockable, Criterium.getUnlockableCriterium(this, comparedGambit))
     ]
@@ -180,6 +182,7 @@ function App() {
       <header>
         <div id="options-container">
           <button className="option" id="credits-button" onClick={() => openDialog("credits-dialog")}>i</button>
+          <button className="option" id="results-button" onClick={() => openDialog("win-dialog")}>Results</button>
           <button className="option" id="about-button" onClick={() => openDialog("about-dialog")}>?</button>
         </div>
         <h1>Gambordle</h1>
@@ -222,7 +225,6 @@ function App() {
           >Guess</button>
         </form>
         <GuessList id="guess-list" guesses={guesses}/>
-        <button id="results-button" onClick={() => openDialog("win-dialog")}>Results</button>
 
         {/* Dialog menus */}
         <About />

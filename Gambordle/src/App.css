@@ -17,9 +17,11 @@ h1 {
   justify-content: space-between;
   width: 100%;
 }
-
 .option {
   margin: 3%;
+}
+#results-button {
+  display: none;
 }
 
 #center {
@@ -86,9 +88,6 @@ dialog {
     line-height: 1rem;
   }
 }
-dialog::backdrop {
-  background: rgba(0, 0, 0, 0.13);
-}
 
 #about-dialog {
   overflow-y: auto;
@@ -98,6 +97,23 @@ dialog::backdrop {
   padding-bottom: 3%;
 }
 
+#win-dialog {
+  transition: bottom 1s;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.13);
+}
+#win-dialog[open] {
+  bottom: 0;
+}
+@starting-style {
+  #win-dialog[open] {
+    bottom: -100%;
+  }
+}
+#win-dialog.closing {
+  bottom: -100%;
+}
 #win-dialog::backdrop {
   background: rgba(0, 128, 0, 0.25);
 }
@@ -120,11 +136,4 @@ dialog::backdrop {
   border: none;
   font-size: larger;
   padding-bottom: 2rem;
-}
-
-#results-button {
-  display: none;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  border: none
 }

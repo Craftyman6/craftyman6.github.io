@@ -4,7 +4,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "SHOP",
+      "DELIMIT"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -14,7 +15,8 @@
     "cost": 6,
     "rarity": "EPIC",
     "focus": [
-      "UTILITY"
+      "SHOP",
+      "INCREMENTAL"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": true
@@ -24,7 +26,8 @@
     "cost": 8,
     "rarity": "EPIC",
     "focus": [
-      "KING"
+      "KING",
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -44,7 +47,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "QUEEN"
+      "QUEEN",
+      "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -75,7 +79,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "TRAP"
+      "TRAP",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -99,7 +104,7 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "CHANCE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -120,7 +125,9 @@
     "cost": 9,
     "rarity": "EPIC",
     "focus": [
-      "ROOK"
+      "ROOK",
+      "KING",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -151,7 +158,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "MONEY"
+      "MONEY",
+      "CAPTURE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -162,7 +170,8 @@
     "rarity": "RARE",
     "focus": [
       "QUEEN",
-      "MONEY"
+      "MONEY",
+      "CAPTURE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -172,7 +181,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "GOLDEN"
+      "GOLDEN",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -182,7 +192,8 @@
     "cost": 7,
     "rarity": "EPIC",
     "focus": [
-      "KNIGHT"
+      "KNIGHT",
+      "CAPTURE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -192,7 +203,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "QUEEN"
+      "QUEEN",
+      "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -202,7 +214,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "MONEY"
+      "MONEY",
+      "GAMBIT SELLER"
     ],
     "trigger": "MODIFY SELL VALUE",
     "unlockable": true
@@ -212,7 +225,9 @@
     "cost": 9,
     "rarity": "EPIC",
     "focus": [
-      "PAWN"
+      "PAWN",
+      "KNIGHT",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -232,7 +247,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "PROTECTIVE"
+      "PROTECTIVE",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -242,7 +258,9 @@
     "cost": 4,
     "rarity": "COMMON",
     "focus": [
-      "PAWN"
+      "PAWN",
+      "CAPTURE",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -264,7 +282,8 @@
     "rarity": "RARE",
     "focus": [
       "BISHOP",
-      "BLESS"
+      "BLESS",
+      "PIECE SELLER"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": true
@@ -274,7 +293,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY",
+      "SHOP",
+      "CHANCE",
       "KNIGHT"
     ],
     "trigger": "GIVE PIECE",
@@ -286,7 +306,8 @@
     "rarity": "RARE",
     "focus": [
       "ROOK",
-      "KING"
+      "KING",
+      "CHANCE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -296,7 +317,8 @@
     "cost": 8,
     "rarity": "EPIC",
     "focus": [
-      "ROOK"
+      "ROOK",
+      "CAPTURE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -306,7 +328,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "PROMOTION"
+      "PROMOTION",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -317,7 +340,7 @@
     "rarity": "RARE",
     "focus": [
       "BISHOP",
-      "MONEY"
+      "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -327,7 +350,7 @@
     "cost": 10,
     "rarity": "RARE",
     "focus": [
-      "UTILITY"
+      "SHOP"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -337,8 +360,7 @@
     "cost": 10,
     "rarity": "LEGENDARY",
     "focus": [
-      "PROMOTION",
-      "PAWN"
+      "PROMOTION"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -418,7 +440,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "WAIT"
+      "WAIT",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -428,7 +451,8 @@
     "cost": 4,
     "rarity": "COMMON",
     "focus": [
-      "BISHOP"
+      "BISHOP",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -453,7 +477,8 @@
     "cost": 6,
     "rarity": "LEGENDARY",
     "focus": [
-      "WAIT"
+      "WAIT",
+      "DELIMIT"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -463,7 +488,7 @@
     "cost": 7,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "SHOP"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -485,7 +510,9 @@
     "rarity": "EPIC",
     "focus": [
       "TRAP",
-      "KNIGHT"
+      "KNIGHT",
+      "CAPTURE",
+      "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": true
@@ -496,7 +523,8 @@
     "rarity": "COMMON",
     "focus": [
       "CRUMBLE",
-      "MONEY"
+      "MONEY",
+      "SACRIFICE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -529,7 +557,8 @@
     "rarity": "EPIC",
     "focus": [
       "ROOK",
-      "PROTECTIVE"
+      "PROTECTIVE",
+      "SACRIFICE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": false
@@ -539,7 +568,8 @@
     "cost": 8,
     "rarity": "EPIC",
     "focus": [
-      "TRAP"
+      "TRAP",
+      "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": false
@@ -559,7 +589,9 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "TRAP"
+      "TRAP",
+      "CAPTURE",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -569,7 +601,8 @@
     "cost": 8,
     "rarity": "LEGENDARY",
     "focus": [
-      "GAMBIT SELLER"
+      "GAMBIT SELLER",
+      "INCREMENTAL"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": false
@@ -579,7 +612,9 @@
     "cost": 11,
     "rarity": "EPIC",
     "focus": [
-      "BISHOP"
+      "BISHOP",
+      "KING",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -611,7 +646,9 @@
     "cost": 6,
     "rarity": "LEGENDARY",
     "focus": [
-      "KING"
+      "KING",
+      "CHANCE",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -621,7 +658,9 @@
     "cost": 8,
     "rarity": "LEGENDARY",
     "focus": [
-      "KNIGHT"
+      "KNIGHT",
+      "ROOK",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -631,7 +670,7 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "UTILITY"
+      "CAPTURE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": true
@@ -641,7 +680,8 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "PIECE SELLER"
+      "PIECE SELLER",
+      "INCREMENTAL"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": true
@@ -674,7 +714,8 @@
     "rarity": "RARE",
     "focus": [
       "BISHOP",
-      "PHANTOM"
+      "PHANTOM",
+      "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -685,8 +726,7 @@
     "rarity": "RARE",
     "focus": [
       "BLESS",
-      "PROMOTION",
-      "PAWN"
+      "PROMOTION"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": true
@@ -696,7 +736,9 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "KING"
+      "KING",
+      "PAWN",
+      "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -707,8 +749,7 @@
     "rarity": "EPIC",
     "focus": [
       "WAIT",
-      "PROMOTION",
-      "PAWN"
+      "PROMOTION"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": false
@@ -718,7 +759,8 @@
     "cost": 5,
     "rarity": "COMMON",
     "focus": [
-      "KING"
+      "KING",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -728,7 +770,8 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "ROOK"
+      "ROOK",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -750,7 +793,8 @@
     "rarity": "RARE",
     "focus": [
       "PAWN",
-      "KNIGHT"
+      "KNIGHT",
+      "SHOP"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -760,7 +804,8 @@
     "cost": 9,
     "rarity": "COMMON",
     "focus": [
-      "GOLDEN"
+      "GOLDEN",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": false
@@ -770,7 +815,8 @@
     "cost": 9,
     "rarity": "EPIC",
     "focus": [
-      "LANDING"
+      "LANDING",
+      "CHANCE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -780,7 +826,7 @@
     "cost": 6,
     "rarity": "LEGENDARY",
     "focus": [
-      "UTILITY"
+      "CHANCE"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -790,7 +836,9 @@
     "cost": 5,
     "rarity": "COMMON",
     "focus": [
-      "GOLDEN"
+      "GOLDEN",
+      "MONEY",
+      "SACRIFICE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -800,7 +848,7 @@
     "cost": 6,
     "rarity": "EPIC",
     "focus": [
-      "UTILITY"
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -811,7 +859,8 @@
     "rarity": "EPIC",
     "focus": [
       "BISHOP",
-      "PIECE SELLER"
+      "PIECE SELLER",
+      "CAPTURE"
     ],
     "trigger": "MODIFY SELL VALUE",
     "unlockable": true
@@ -821,7 +870,9 @@
     "cost": 8,
     "rarity": "EPIC",
     "focus": [
-      "QUEEN"
+      "QUEEN",
+      "KNIGHT",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -831,7 +882,9 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "MONEY",
+      "GOLDEN",
+      "CAPTURE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -841,7 +894,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "MONEY"
+      "MONEY",
+      "CHANCE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -851,7 +905,8 @@
     "cost": 8,
     "rarity": "EPIC",
     "focus": [
-      "GOLDEN"
+      "GOLDEN",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -861,7 +916,8 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "GOLDEN"
+      "GOLDEN",
+      "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": true
@@ -882,7 +938,6 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "UTILITY",
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
@@ -903,7 +958,8 @@
     "cost": 5,
     "rarity": "COMMON",
     "focus": [
-      "SACRIFICE"
+      "SACRIFICE",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -923,7 +979,9 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "QUEEN"
+      "QUEEN",
+      "PAWN",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -945,7 +1003,8 @@
     "rarity": "RARE",
     "focus": [
       "KNIGHT",
-      "SACRIFICE"
+      "SACRIFICE",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -955,7 +1014,7 @@
     "cost": 7,
     "rarity": "LEGENDARY",
     "focus": [
-      "UTILITY"
+      "INCREMENTAL"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -965,8 +1024,7 @@
     "cost": 6,
     "rarity": "LEGENDARY",
     "focus": [
-      "TRAP",
-      "UTILITY"
+      "TRAP"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1009,7 +1067,9 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "WAIT"
+      "WAIT",
+      "CHANCE",
+      "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": false
@@ -1019,7 +1079,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "MONEY"
+      "MONEY",
+      "CHANCE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -1029,7 +1090,8 @@
     "cost": 7,
     "rarity": "COMMON",
     "focus": [
-      "KNIGHT"
+      "KNIGHT",
+      "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1054,7 +1116,8 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "CRUMBLE"
+      "CRUMBLE",
+      "MOVEMENT"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -1064,7 +1127,8 @@
     "cost": 9,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "CAPTURE",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1085,7 +1149,8 @@
     "rarity": "EPIC",
     "focus": [
       "KING",
-      "GOLDEN"
+      "GOLDEN",
+      "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": false
@@ -1095,7 +1160,8 @@
     "cost": 8,
     "rarity": "EPIC",
     "focus": [
-      "KING"
+      "KING",
+      "CAPTURE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": true
@@ -1106,7 +1172,9 @@
     "rarity": "LEGENDARY",
     "focus": [
       "KNIGHT",
-      "PHANTOM"
+      "PHANTOM",
+      "CAPTURE",
+      "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1147,7 +1215,7 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "UTILITY"
+      "GAMBIT SELLER"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1157,7 +1225,6 @@
     "cost": 4,
     "rarity": "COMMON",
     "focus": [
-      "MONEY",
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY SELL VALUE",
@@ -1168,7 +1235,7 @@
     "cost": 9,
     "rarity": "LEGENDARY",
     "focus": [
-      "UTILITY"
+      "SHOP"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -1178,7 +1245,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "KNIGHT"
+      "KNIGHT",
+      "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1204,7 +1272,8 @@
     "rarity": "EPIC",
     "focus": [
       "KNIGHT",
-      "TRAP"
+      "TRAP",
+      "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -1226,8 +1295,7 @@
     "cost": 6,
     "rarity": "EPIC",
     "focus": [
-      "PROMOTION",
-      "PAWN"
+      "PROMOTION"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -1259,7 +1327,8 @@
     "cost": 7,
     "rarity": "EPIC",
     "focus": [
-      "BISHOP"
+      "BISHOP",
+      "CAPTURE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -1270,7 +1339,8 @@
     "rarity": "RARE",
     "focus": [
       "ROOK",
-      "PAWN"
+      "PAWN",
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -1280,7 +1350,8 @@
     "cost": 5,
     "rarity": "RARE",
     "focus": [
-      "BLESS"
+      "BLESS",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1290,7 +1361,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "CAPTURE",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1300,7 +1372,6 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY",
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY PIECE",
@@ -1311,7 +1382,10 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
+      "CAPTURE",
       "BISHOP",
+      "KING",
+      "CHANCE",
       "GOLDEN"
     ],
     "trigger": "GIVE PIECE",
@@ -1322,7 +1396,8 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "PHANTOM"
+      "PHANTOM",
+      "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -1343,7 +1418,9 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "BLESS"
+      "BLESS",
+      "CHANCE",
+      "SACRIFICE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -1353,7 +1430,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "PROTECTIVE"
+      "PROTECTIVE",
+      "SACRIFICE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -1363,7 +1441,7 @@
     "cost": 5,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "DELIMIT"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -1373,7 +1451,8 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "PHANTOM"
+      "PHANTOM",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -1383,7 +1462,8 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "WAIT"
+      "WAIT",
+      "CHANCE"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -1394,7 +1474,8 @@
     "rarity": "EPIC",
     "focus": [
       "KNIGHT",
-      "PROMOTION"
+      "PROMOTION",
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -1416,7 +1497,8 @@
     "focus": [
       "WAIT",
       "PHANTOM",
-      "QUEEN"
+      "QUEEN",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1437,7 +1519,8 @@
     "rarity": "COMMON",
     "focus": [
       "PIECE SELLER",
-      "BISHOP"
+      "BISHOP",
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -1448,7 +1531,8 @@
     "rarity": "RARE",
     "focus": [
       "PAWN",
-      "TRAP"
+      "TRAP",
+      "SACRIFICE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": true
@@ -1459,7 +1543,8 @@
     "rarity": "EPIC",
     "focus": [
       "BISHOP",
-      "QUEEN"
+      "QUEEN",
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -1469,7 +1554,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "WAIT"
+      "WAIT",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1490,6 +1576,7 @@
     "rarity": "RARE",
     "focus": [
       "QUEEN",
+      "LANDING",
       "BLESS"
     ],
     "trigger": "MODIFY PIECE",
@@ -1522,7 +1609,8 @@
     "rarity": "COMMON",
     "focus": [
       "QUEEN",
-      "SACRIFICE"
+      "SACRIFICE",
+      "PAWN"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1533,8 +1621,7 @@
     "rarity": "COMMON",
     "focus": [
       "PROMOTION",
-      "MONEY",
-      "PAWN"
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -1545,7 +1632,8 @@
     "rarity": "RARE",
     "focus": [
       "KNIGHT",
-      "PROMOTION"
+      "PROMOTION",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -1555,7 +1643,8 @@
     "cost": 7,
     "rarity": "EPIC",
     "focus": [
-      "WAIT"
+      "WAIT",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1565,8 +1654,7 @@
     "cost": 7,
     "rarity": "COMMON",
     "focus": [
-      "BISHOP",
-      "UTILITY"
+      "BISHOP"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -1598,7 +1686,9 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "SACRIFICE"
+      "SACRIFICE",
+      "INCREMENTAL",
+      "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": false
@@ -1640,7 +1730,8 @@
     "cost": 8,
     "rarity": "COMMON",
     "focus": [
-      "ROOK"
+      "ROOK",
+      "CAPTURE"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": false
@@ -1650,7 +1741,8 @@
     "cost": 8,
     "rarity": "RARE",
     "focus": [
-      "PHANTOM"
+      "PHANTOM",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1660,7 +1752,8 @@
     "cost": 9,
     "rarity": "LEGENDARY",
     "focus": [
-      "PROTECTIVE"
+      "PROTECTIVE",
+      "CHANCE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1691,7 +1784,8 @@
     "cost": 4,
     "rarity": "COMMON",
     "focus": [
-      "MONEY"
+      "MONEY",
+      "SHOP"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -1702,7 +1796,8 @@
     "rarity": "EPIC",
     "focus": [
       "KNIGHT",
-      "LANDING"
+      "LANDING",
+      "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
     "unlockable": true
@@ -1712,7 +1807,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "KNIGHT"
+      "KNIGHT",
+      "CHANCE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -1744,8 +1840,7 @@
     "cost": 9,
     "rarity": "RARE",
     "focus": [
-      "PHANTOM",
-      "LANDING"
+      "PHANTOM"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1788,7 +1883,8 @@
     "rarity": "EPIC",
     "focus": [
       "KNIGHT",
-      "PAWN"
+      "PAWN",
+      "CHANCE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": true
@@ -1809,7 +1905,8 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "UTILITY"
+      "SHOP",
+      "DELIMIT"
     ],
     "trigger": "PASSIVE",
     "unlockable": false
@@ -1875,7 +1972,8 @@
     "rarity": "RARE",
     "focus": [
       "ROOK",
-      "PROTECTIVE"
+      "PROTECTIVE",
+      "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": false
@@ -1886,7 +1984,8 @@
     "rarity": "COMMON",
     "focus": [
       "ROOK",
-      "SACRIFICE"
+      "SACRIFICE",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -1897,7 +1996,7 @@
     "rarity": "COMMON",
     "focus": [
       "PROMOTION",
-      "PAWN"
+      "KING"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": false
@@ -1907,7 +2006,8 @@
     "cost": 9,
     "rarity": "LEGENDARY",
     "focus": [
-      "PAWN"
+      "PAWN",
+      "CAPTURE"
     ],
     "trigger": "SKIP TURN",
     "unlockable": false
@@ -1927,7 +2027,8 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "TRAP"
+      "TRAP",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -1953,7 +2054,8 @@
     "rarity": "EPIC",
     "focus": [
       "CRUMBLE",
-      "PHANTOM"
+      "PHANTOM",
+      "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -1964,7 +2066,8 @@
     "rarity": "COMMON",
     "focus": [
       "QUEEN",
-      "LANDING"
+      "LANDING",
+      "PAWN"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": false
@@ -1985,7 +2088,9 @@
     "cost": 6,
     "rarity": "COMMON",
     "focus": [
-      "CRUMBLE"
+      "CRUMBLE",
+      "CAPTURE",
+      "MONEY"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": true
@@ -2007,7 +2112,8 @@
     "rarity": "COMMON",
     "focus": [
       "MONEY",
-      "BLESS"
+      "BLESS",
+      "CHANCE"
     ],
     "trigger": "GIVE MONEY",
     "unlockable": false
@@ -2018,7 +2124,8 @@
     "rarity": "EPIC",
     "focus": [
       "KNIGHT",
-      "PAWN"
+      "PAWN",
+      "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": false
@@ -2028,7 +2135,8 @@
     "cost": 7,
     "rarity": "LEGENDARY",
     "focus": [
-      "QUEEN"
+      "QUEEN",
+      "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -2048,7 +2156,9 @@
     "cost": 6,
     "rarity": "EPIC",
     "focus": [
-      "PHANTOM"
+      "PHANTOM",
+      "CAPTURE",
+      "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
     "unlockable": false
@@ -2059,8 +2169,7 @@
     "rarity": "RARE",
     "focus": [
       "PHANTOM",
-      "PROMOTION",
-      "PAWN"
+      "PROMOTION"
     ],
     "trigger": "MODIFY PIECE",
     "unlockable": true
@@ -2071,7 +2180,7 @@
     "rarity": "RARE",
     "focus": [
       "PHANTOM",
-      "PIECE SELLER"
+      "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
     "unlockable": true
@@ -2093,7 +2202,7 @@
     "cost": 7,
     "rarity": "EPIC",
     "focus": [
-      "UTILITY"
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
@@ -2103,7 +2212,7 @@
     "cost": 7,
     "rarity": "EPIC",
     "focus": [
-      "UTILITY"
+      "COUNT AS"
     ],
     "trigger": "PASSIVE",
     "unlockable": true
