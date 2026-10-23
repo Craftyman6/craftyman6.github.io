@@ -22,7 +22,8 @@ class Criterium {
     this.emoji = ({"green": "🟩", "yellow": "🟨", "gray": "⬛"})[this.color];
     this.hint = hint;
   }
-  static baseCriteria = ["Cost", "Rarity", "Focus", "Trigger", "Unlockable"].map(criterium => new Criterium(criterium));
+  equals(criteria) {return this.color == criteria.color; }
+  static baseCriteria = ["Cost", "Rarity", "Focus", "Trigger", "Condition"].map(criterium => new Criterium(criterium));
   // Cost: Return green if exactly correct, yellow if within $2, and gray if more than a $2 difference
   static getCostCriterium(gambitA, gambitB) {
     return gambitA.cost == gambitB.cost ? "green" : Math.abs(gambitA.cost - gambitB.cost) < 3 ? "yellow" : "gray";
@@ -49,13 +50,13 @@ class Criterium {
     }
     return "gray";
   }
-  // Trigger: Return green if exactly correct, otherwise return grey
+  // Trigger: Return green if exactly correct, otherwise return gray
   static getTriggerCriterium(gambitA, gambitB) {
     return gambitA.trigger == gambitB.trigger ? "green" : "gray";
   }
-  // Unlockable: Return green if exactly correct, otherwise return grey
-  static getUnlockableCriterium(gambitA, gambitB) {
-    return gambitA.unlockable == gambitB.unlockable ? "green" : "gray";
+  // Condition: Return green if exactly correct, otherwise return gray
+  static getConditionCriterium(gambitA, gambitB) {
+    return gambitA.condition == gambitB.condition ? "green" : "gray";
   }
 }
 
@@ -66,7 +67,7 @@ class Gambit {
     this.rarity = gambit.rarity;
     this.focus = gambit.focus;
     this.trigger = gambit.trigger;
-    this.unlockable = gambit.unlockable;
+    this.condition = gambit.condition;
     const imagePath = `./assets/gambits/${this.name}.PNG`;
     this.imgSrc = gambitImageSources[imagePath];
     if (!this.imgSrc) {
@@ -76,19 +77,35 @@ class Gambit {
   }
   ToString() {return this.name}
   static allGambits = gambits.map(gambit => new Gambit(gambit));
-  static selectOptions = this.allGambits.map(gambit => ({value: gambit, label: gambit.name}));
+  static getCriteria(gambitA, gambitB) {
+    const focusHint = gambitA.focus.length == gambitB.focus.length ? "=" : gambitA.focus.length > gambitB.focus.length ? ">" : "<";
+    return [
+      new Criterium("Cost", gambitA.cost, Criterium.getCostCriterium(gambitA, gambitB)),
+      new Criterium("Rarity", gambitA.rarity, Criterium.getRarityCriterium(gambitA, gambitB)),
+      new Criterium("Focus", gambitA.focus, Criterium.getFocusCriterium(gambitA, gambitB), focusHint),
+      new Criterium("Trigger", gambitA.trigger, Criterium.getTriggerCriterium(gambitA, gambitB)),
+      new Criterium("Condition", gambitA.condition, Criterium.getConditionCriterium(gambitA, gambitB))
+    ];
+  }
   setCriteria(comparedGambit) {
+    if (this.criteria.length > 0) {return; }
     const focusHint = this.focus.length == comparedGambit.focus.length ? "=" : this.focus.length > comparedGambit.focus.length ? ">" : "<";
     this.criteria = [
       new Criterium("Cost", this.cost, Criterium.getCostCriterium(this, comparedGambit)),
       new Criterium("Rarity", this.rarity, Criterium.getRarityCriterium(this, comparedGambit)),
       new Criterium("Focus", this.focus, Criterium.getFocusCriterium(this, comparedGambit), focusHint),
       new Criterium("Trigger", this.trigger, Criterium.getTriggerCriterium(this, comparedGambit)),
-      new Criterium("Unlockable", this.unlockable, Criterium.getUnlockableCriterium(this, comparedGambit))
+      new Criterium("Condition", this.condition, Criterium.getConditionCriterium(this, comparedGambit))
     ]
   }
   getCriteriaEmojis() {
     return this.criteria.map(criterium => criterium.emoji).join('');
+  }
+  matchCriteriaWith(criteria) {
+    for (let i = 0; i < 5; i++) {
+      if (!criteria[i].equals(this.criteria[i])) {return false; }
+    }
+    return true;
   }
 }
 
@@ -129,7 +146,14 @@ function App() {
   const [won, setWon] = useState(false);
   // Result emojis to be displayed and copied
   const [emojis, setEmojis] = useState('');
+  // Options for the select component to use
+  const [selectOptions, setSelectOptions] = useState(Gambit.allGambits.map(gambit => ({value: gambit, label: gambit.name})))
+  // Cheat mode boolean
+  const [cheatMode, setCheatMode] = useState(false);
+  // Whether cheat mode have ever been turned on
+  const [cheated, setCheated] = useState(false);
 
+  // Open about dialog on startup
   useEffect(() => {
     const aboutDialog = document.getElementById("about-dialog");
     if (!aboutDialog.open) {
@@ -143,6 +167,7 @@ function App() {
     // Return if gambit has already been guessed
     if (gambitAlreadyGuessed(selectedGambit)) {return}
     // Assign criteria results to gambit object
+    console.log(selectedGambit);
     selectedGambit.setCriteria(correctGambit);
     // Add gambit to guess list
     setGuesses([selectedGambit, ...guesses])
@@ -151,6 +176,25 @@ function App() {
     // Clear gambit selection
     setSelectedGambit(null)
   };
+  
+  // Side effect for when a gambit is guessed for cheat mode to narrow down selection options
+  useEffect(() => {
+    if (cheatMode) {
+      let filteredGambits = Gambit.allGambits;
+      for (let guess of guesses) {
+        filteredGambits = filteredGambits.filter((option) => guess.matchCriteriaWith(Gambit.getCriteria(guess, option)));
+      }
+      setSelectOptions(filteredGambits.map(gambit => ({value: gambit, label: gambit.name})));
+    } else {
+      setSelectOptions(Gambit.allGambits.map(gambit => ({value: gambit, label: gambit.name})));
+    }
+  }, [guesses, cheatMode])
+
+  // Store that cheat mode was enabled
+  useEffect(() => {
+    if (!cheatMode) {return}
+    setCheated(true);
+  }, [cheatMode]);
 
   // Side effect for when the Gambordle is won
   useEffect(() => {
@@ -196,9 +240,9 @@ function App() {
           <Select
             placeholder="Choose a gambit"
             id="gambit-select"
-            options={Gambit.selectOptions}
+            options={selectOptions}
             // Displays the gambit option coorelating to selectedGambit
-            value={Gambit.selectOptions.find((option) => option.value === selectedGambit) ?? null}
+            value={selectOptions.find((option) => option.value === selectedGambit) ?? null}
             isClearable
             isDisabled = {won}
             // Change selectedGambit when element value changes
@@ -228,8 +272,8 @@ function App() {
 
         {/* Dialog menus */}
         <About />
-        <Results guesses={guesses} correctGambit={correctGambit} emojis={emojis}/>
-        <Credits />
+        <Results guesses={guesses} correctGambit={correctGambit} emojis={emojis} cheated={cheated}/>
+        <Credits cheatMode={cheatMode} setCheatMode={setCheatMode}/>
       </section>
     </>
   )

@@ -8,7 +8,7 @@
       "DELIMIT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "AFK's Gambit",
@@ -16,10 +16,10 @@
     "rarity": "EPIC",
     "focus": [
       "SHOP",
-      "INCREMENTAL"
+      "INCREMENT"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": true
+    "condition": "INCREMENT"
   },
   {
     "name": "Anarchist's Gambit",
@@ -30,7 +30,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Anna's Family's Gambit",
@@ -40,7 +40,7 @@
       "PROMOTION"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Aphrodite's Gambit",
@@ -51,7 +51,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Artemis' Gambit",
@@ -61,7 +61,7 @@
       "TRAP"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Backup's Gambit",
@@ -72,7 +72,7 @@
       "LANDING"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "LAND"
   },
   {
     "name": "Bait's Gambit",
@@ -83,7 +83,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "THREATEN"
   },
   {
     "name": "Balance Scale's Gambit",
@@ -97,7 +97,7 @@
       "KNIGHT"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "SELL"
   },
   {
     "name": "Banana Peel's Gambit",
@@ -107,7 +107,7 @@
       "CHANCE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "TAKE TURN"
   },
   {
     "name": "Banner's Gambit",
@@ -118,7 +118,7 @@
       "PROTECTIVE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "TAKE TURN"
   },
   {
     "name": "Baron's Gambit",
@@ -130,7 +130,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Barter Trade's Gambit",
@@ -141,7 +141,7 @@
       "PIECE SELLER"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Bear Trap's Gambit",
@@ -151,7 +151,7 @@
       "TRAP"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Berzerker's Gambit",
@@ -162,7 +162,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Beth's Gambit",
@@ -174,7 +174,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Billionaire's Gambit",
@@ -185,7 +185,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "TAKE TURN"
   },
   {
     "name": "Black Stallion's Gambit",
@@ -196,7 +196,7 @@
       "CAPTURE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Black Witch's Gambit",
@@ -207,7 +207,7 @@
       "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Boss Tooth's Gambit",
@@ -218,7 +218,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY SELL VALUE",
-    "unlockable": true
+    "condition": "OTHER"
   },
   {
     "name": "Brave Knight's Gambit",
@@ -230,7 +230,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Bribe's Gambit",
@@ -240,7 +240,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Bubble Shield's Gambit",
@@ -251,7 +251,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Bug Catcher's Gambit",
@@ -263,7 +263,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Bunker's Gambit",
@@ -274,7 +274,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Candle's Gambit",
@@ -286,7 +286,7 @@
       "PIECE SELLER"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Carrousel's Gambit",
@@ -298,7 +298,7 @@
       "KNIGHT"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "EARN/BUY"
   },
   {
     "name": "Castling's Gambit",
@@ -310,7 +310,7 @@
       "CHANCE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "TAKE TURN"
   },
   {
     "name": "Catapult's Gambit",
@@ -321,7 +321,7 @@
       "CAPTURE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Caterpillar's Gambit",
@@ -332,7 +332,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Cauldron's Gambit",
@@ -343,7 +343,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "INCREMENT"
   },
   {
     "name": "Cave of Wonder's Gambit",
@@ -353,7 +353,7 @@
       "SHOP"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "CEO's Gambit",
@@ -363,7 +363,7 @@
       "PROMOTION"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Chamberlain Ghost's Gambit",
@@ -375,7 +375,7 @@
       "CRUMBLE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Chemist's Gambit",
@@ -389,7 +389,7 @@
       "PHANTOM"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Chess GOAT's Gambit",
@@ -400,7 +400,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "TAKE TURN"
   },
   {
     "name": "Chicken's Gambit",
@@ -411,7 +411,7 @@
       "QUEEN"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "THREATEN"
   },
   {
     "name": "Chinese Opening's Gambit",
@@ -422,7 +422,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Chronobreak's Gambit",
@@ -433,7 +433,7 @@
       "BLESS"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Chrysalis' Gambit",
@@ -444,7 +444,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Church's Gambit",
@@ -455,7 +455,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Clown's Gambit",
@@ -470,7 +470,7 @@
       "PHANTOM"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Coconut Juice's Gambit",
@@ -481,7 +481,7 @@
       "DELIMIT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Commercial Favour's Gambit",
@@ -491,7 +491,7 @@
       "SHOP"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "EARN/BUY"
   },
   {
     "name": "Copycat's Gambit",
@@ -502,7 +502,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Cowboy Horse's Gambit",
@@ -515,7 +515,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Creature of the Depths' Gambit",
@@ -527,7 +527,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "OTHER"
   },
   {
     "name": "Crown's Gambit",
@@ -538,7 +538,7 @@
       "PAWN"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Dainsleif's Gambit",
@@ -549,7 +549,7 @@
       "GOLDEN"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Dark Knight's Gambit",
@@ -561,7 +561,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Dead or Alive's Gambit",
@@ -572,7 +572,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Demon's Gambit",
@@ -582,7 +582,7 @@
       "SACRIFICE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Dina's Gaze's Gambit",
@@ -594,7 +594,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Dragon Egg's Gambit",
@@ -602,10 +602,10 @@
     "rarity": "LEGENDARY",
     "focus": [
       "GAMBIT SELLER",
-      "INCREMENTAL"
+      "INCREMENT"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "SELL"
   },
   {
     "name": "Dragon Horse's Gambit",
@@ -617,7 +617,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Druid's Gambit",
@@ -628,7 +628,7 @@
       "PHANTOM"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "EARN/BUY"
   },
   {
     "name": "Dungeon's Gambit",
@@ -639,7 +639,7 @@
       "LANDING"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "LAND"
   },
   {
     "name": "Emperor's Gambit",
@@ -651,7 +651,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "TAKE TURN"
   },
   {
     "name": "Empress's Gambit",
@@ -663,7 +663,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Enigma's Gambit",
@@ -673,7 +673,7 @@
       "CAPTURE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Equivalent Exchange's Gambit",
@@ -681,10 +681,10 @@
     "rarity": "RARE",
     "focus": [
       "PIECE SELLER",
-      "INCREMENTAL"
+      "INCREMENT"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Eugenic's Gambit",
@@ -694,7 +694,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "SELL"
   },
   {
     "name": "Excalibur's Gambit",
@@ -706,7 +706,7 @@
       "PROMOTION"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "TAKE TURN"
   },
   {
     "name": "Exorcist's Gambit",
@@ -718,7 +718,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Fairy's Gambit",
@@ -729,7 +729,7 @@
       "PROMOTION"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Fallen Crown's Gambit",
@@ -741,7 +741,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Falling Crown's Gambit",
@@ -752,7 +752,7 @@
       "PROMOTION"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Family's Gambit",
@@ -763,7 +763,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Fire Watch's Gambit",
@@ -774,7 +774,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Fleur de Lys' Gambit",
@@ -785,7 +785,7 @@
       "GOLDEN"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Foal's Gambit",
@@ -797,7 +797,7 @@
       "SHOP"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "EARN/BUY"
   },
   {
     "name": "Fortune Wheel's Gambit",
@@ -808,7 +808,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Frog's Gambit",
@@ -819,7 +819,7 @@
       "CHANCE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "LAND"
   },
   {
     "name": "Gambler's Gambit",
@@ -829,7 +829,7 @@
       "CHANCE"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Geode's Gambit",
@@ -841,7 +841,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Ghost's Gambit",
@@ -851,7 +851,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Gluttony's Gambit",
@@ -863,7 +863,7 @@
       "CAPTURE"
     ],
     "trigger": "MODIFY SELL VALUE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Goddess's Gambit",
@@ -875,7 +875,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Gold Seeker's Gambit",
@@ -887,7 +887,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Golden Clover's Gambit",
@@ -898,7 +898,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "OTHER"
   },
   {
     "name": "Golden Idol's Gambit",
@@ -909,7 +909,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Golden Stair's Gambit",
@@ -920,7 +920,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Graal's Gambit",
@@ -931,7 +931,7 @@
       "BLESS"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "EARN/BUY"
   },
   {
     "name": "GrandMa's Gift's Gambit",
@@ -941,7 +941,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "GrandMa's Letter's Gambit",
@@ -951,7 +951,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Gravekeeper's Gambit",
@@ -962,7 +962,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Hero's Armor's Gambit",
@@ -972,7 +972,7 @@
       "PROTECTIVE"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Hidden Queen's Gambit",
@@ -984,7 +984,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Horse Dealer's Gambit",
@@ -995,7 +995,7 @@
       "KNIGHT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Horseshoe's Gambit",
@@ -1007,17 +1007,17 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Hourglass's Gambit",
     "cost": 7,
     "rarity": "LEGENDARY",
     "focus": [
-      "INCREMENTAL"
+      "INCREMENT"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "INCREMENT"
   },
   {
     "name": "Hunter Trophy's Gambit",
@@ -1027,7 +1027,7 @@
       "TRAP"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Hyper Bullet's Gambit",
@@ -1037,7 +1037,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "OTHER"
   },
   {
     "name": "Impossible Choice's Gambit",
@@ -1049,7 +1049,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "WAIT"
   },
   {
     "name": "Inheritance's Gambit",
@@ -1060,7 +1060,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Inventor's Gambit",
@@ -1072,7 +1072,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Investor's Gambit",
@@ -1083,7 +1083,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Jockey's Gambit",
@@ -1094,7 +1094,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Joker's Gambit",
@@ -1109,7 +1109,7 @@
       "PHANTOM"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "TAKE TURN"
   },
   {
     "name": "Jump's Gambit",
@@ -1120,7 +1120,7 @@
       "MOVEMENT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Key of Life's Gambit",
@@ -1131,7 +1131,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "King Midas's Gambit",
@@ -1141,7 +1141,7 @@
       "GOLDEN"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "King XI's Gambit",
@@ -1153,7 +1153,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "King's Guard's Gambit",
@@ -1164,7 +1164,7 @@
       "CAPTURE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Knights of the Apocalypse's Gambit",
@@ -1177,7 +1177,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Lavander's Gambit",
@@ -1187,7 +1187,7 @@
       "PHANTOM"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Lemmong's Gambit",
@@ -1197,7 +1197,7 @@
       "PAWN"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Lich's Gambit",
@@ -1208,7 +1208,7 @@
       "LANDING"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Lifeline's Gambit",
@@ -1218,7 +1218,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "OTHER"
   },
   {
     "name": "Limited Edition's Gambit",
@@ -1228,7 +1228,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY SELL VALUE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Lucky Coin's Gambit",
@@ -1238,7 +1238,7 @@
       "SHOP"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Ludo's Gambit",
@@ -1249,7 +1249,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Magic Brush's Gambit",
@@ -1264,7 +1264,7 @@
       "PHANTOM"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "WAIT"
   },
   {
     "name": "Makibishi's Gambit",
@@ -1276,7 +1276,7 @@
       "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Marvellous Evolution's Gambit",
@@ -1288,17 +1288,18 @@
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Medal's Gambit",
     "cost": 6,
     "rarity": "EPIC",
     "focus": [
-      "PROMOTION"
+      "PROMOTION",
+      "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Mercenary's Gambit",
@@ -1310,7 +1311,7 @@
       "PROTECTIVE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "TAKE TURN"
   },
   {
     "name": "Merchant Mask's Gambit",
@@ -1320,7 +1321,7 @@
       "PIECE SELLER"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Mime's Gambit",
@@ -1331,7 +1332,7 @@
       "CAPTURE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Minirook's Gambit",
@@ -1343,7 +1344,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Miracle's Gambit",
@@ -1351,10 +1352,11 @@
     "rarity": "RARE",
     "focus": [
       "BLESS",
-      "CHANCE"
+      "CHANCE",
+      "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Mirror's Gambit",
@@ -1365,7 +1367,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "MissingNo.'s Gambit",
@@ -1375,7 +1377,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "SELL"
   },
   {
     "name": "Musketeer's Gambit",
@@ -1389,7 +1391,7 @@
       "GOLDEN"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Necromancer's Gambit",
@@ -1400,7 +1402,7 @@
       "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Nemo's Pawns' Gambit",
@@ -1411,7 +1413,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Old Idol's Gambit",
@@ -1423,7 +1425,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "THREATEN"
   },
   {
     "name": "Old Shield's Gambit",
@@ -1434,7 +1436,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "THREATEN"
   },
   {
     "name": "Oshiya's Gambit",
@@ -1444,7 +1446,7 @@
       "DELIMIT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Ouija's Gambit",
@@ -1455,7 +1457,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Patience's Gambit",
@@ -1466,7 +1468,7 @@
       "CHANCE"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "WAIT"
   },
   {
     "name": "Pegasus' Gambit",
@@ -1478,7 +1480,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Pendant's Gambit",
@@ -1488,7 +1490,7 @@
       "BLESS"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Phantom Bride's Gambit",
@@ -1501,7 +1503,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Philosopher's Stone's Gambit",
@@ -1511,7 +1513,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "SELL"
   },
   {
     "name": "Plague Mask's Gambit",
@@ -1523,7 +1525,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Poacher's Gambit",
@@ -1535,7 +1537,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Pope's Gambit",
@@ -1547,7 +1549,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Prayer's Gambit",
@@ -1558,7 +1560,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Priest's Gambit",
@@ -1568,7 +1570,7 @@
       "BLESS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Princess's Gambit",
@@ -1580,7 +1582,7 @@
       "BLESS"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Proliferation's Gambit",
@@ -1590,7 +1592,7 @@
       "PAWN"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Protector's Gambit",
@@ -1601,7 +1603,7 @@
       "PROTECTIVE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Queen Ant's Gambit",
@@ -1613,7 +1615,7 @@
       "PAWN"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Race Flag's Gambit",
@@ -1624,7 +1626,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Rear up's Gambit",
@@ -1636,7 +1638,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Recruiter Hat's Gambit",
@@ -1647,7 +1649,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Reincarnation's Gambit",
@@ -1657,7 +1659,7 @@
       "BISHOP"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "EARN/BUY"
   },
   {
     "name": "Relic's Gambit",
@@ -1669,7 +1671,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Resurrection Stone's Gambit",
@@ -1679,7 +1681,7 @@
       "PHANTOM"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "EARN/BUY"
   },
   {
     "name": "Sacrifice's Gambit",
@@ -1687,11 +1689,11 @@
     "rarity": "RARE",
     "focus": [
       "SACRIFICE",
-      "INCREMENTAL",
+      "INCREMENT",
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "INCREMENT"
   },
   {
     "name": "Savage Checkmate's Gambit",
@@ -1701,7 +1703,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Scapegoat's Gambit",
@@ -1712,7 +1714,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Scepter's Gambit",
@@ -1723,7 +1725,7 @@
       "CRUMBLE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Scout's Gambit",
@@ -1734,7 +1736,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Scream's Gambit",
@@ -1745,7 +1747,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Seraph's Gambit",
@@ -1756,7 +1758,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Shadow's Gambit",
@@ -1766,7 +1768,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Shooting Star's Gambit",
@@ -1777,7 +1779,7 @@
       "LANDING"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Shop Card's Gambit",
@@ -1788,7 +1790,7 @@
       "SHOP"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Show Jumping's Gambit",
@@ -1800,7 +1802,7 @@
       "GAMBIT SELLER"
     ],
     "trigger": "GIVE GAMBIT",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Silver Fork's Gambit",
@@ -1811,7 +1813,7 @@
       "CHANCE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "TAKE TURN"
   },
   {
     "name": "Skydiver's Gambit",
@@ -1823,7 +1825,7 @@
       "LANDING"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "LAND"
   },
   {
     "name": "Sleepy's Gambit",
@@ -1833,7 +1835,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Soul's Gambit",
@@ -1843,7 +1845,7 @@
       "PHANTOM"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Soul's Lantern's Gambit",
@@ -1854,7 +1856,7 @@
       "PIECE SELLER"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "PASSIVE"
   },
   {
     "name": "Spartan's Gambit",
@@ -1864,7 +1866,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Spy's Gambit",
@@ -1875,7 +1877,7 @@
       "LANDING"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Squire's Gambit",
@@ -1887,7 +1889,7 @@
       "CHANCE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": true
+    "condition": "TAKE TURN"
   },
   {
     "name": "Squirrel's Gambit",
@@ -1898,7 +1900,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "EARN/BUY"
   },
   {
     "name": "Stock Clearance's Gambit",
@@ -1909,7 +1911,7 @@
       "DELIMIT"
     ],
     "trigger": "PASSIVE",
-    "unlockable": false
+    "condition": "PASSIVE"
   },
   {
     "name": "Sun's Gambit",
@@ -1920,7 +1922,7 @@
       "KING"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": true
+    "condition": "EARN/BUY"
   },
   {
     "name": "Super Hero Cape's Gambit",
@@ -1932,7 +1934,7 @@
       "SACRIFICE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Super Landing's Gambit",
@@ -1943,7 +1945,7 @@
       "PROTECTIVE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Supply Box's Gambit",
@@ -1953,7 +1955,7 @@
       "LANDING"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Survivor's Gambit",
@@ -1964,7 +1966,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Templar's Gambit",
@@ -1976,7 +1978,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "EARN/BUY"
   },
   {
     "name": "THE ROOOOOK's Gambit",
@@ -1988,7 +1990,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Throne's Gambit",
@@ -1999,7 +2001,7 @@
       "KING"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Thunder's Gambit",
@@ -2010,7 +2012,7 @@
       "CAPTURE"
     ],
     "trigger": "SKIP TURN",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Trampoline's Gambit",
@@ -2020,7 +2022,7 @@
       "LANDING"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "LAND"
   },
   {
     "name": "Trapper's Gambit",
@@ -2031,7 +2033,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Twister's Gambit",
@@ -2046,7 +2048,7 @@
       "PHANTOM"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Valhalla's Gambit",
@@ -2058,7 +2060,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "OTHER"
   },
   {
     "name": "Valkyrie's Gambit",
@@ -2070,7 +2072,7 @@
       "PAWN"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "LAND"
   },
   {
     "name": "Violet's Gambit",
@@ -2081,7 +2083,7 @@
       "WAIT"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "WAIT"
   },
   {
     "name": "War Axe's Gambit",
@@ -2093,7 +2095,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Warlock's Gambit",
@@ -2104,7 +2106,7 @@
       "LANDING"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "LAND"
   },
   {
     "name": "Weird Pot's Gambit",
@@ -2116,7 +2118,7 @@
       "CHANCE"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Whip's Gambit",
@@ -2128,7 +2130,7 @@
       "CAPTURE"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "White Crown's Gambit",
@@ -2139,7 +2141,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Whitelighter's Gambit",
@@ -2149,7 +2151,7 @@
       "MONEY"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "ONCE A GAME"
   },
   {
     "name": "Will O Wisp's Gambit",
@@ -2161,7 +2163,7 @@
       "CHANCE"
     ],
     "trigger": "MODIFY BOARD",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Winter Helmet's Gambit",
@@ -2172,7 +2174,7 @@
       "PROMOTION"
     ],
     "trigger": "MODIFY PIECE",
-    "unlockable": true
+    "condition": "MODIFY PIECE"
   },
   {
     "name": "Winter King's Gambit",
@@ -2183,7 +2185,7 @@
       "CAPTURE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": true
+    "condition": "CAPTURE"
   },
   {
     "name": "Wrecking Ball's Gambit",
@@ -2195,7 +2197,7 @@
       "SACRIFICE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "CAPTURE"
   },
   {
     "name": "Yang's Gambit",
@@ -2205,7 +2207,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Yin's Gambit",
@@ -2215,7 +2217,7 @@
       "COUNT AS"
     ],
     "trigger": "PASSIVE",
-    "unlockable": true
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Zen's Gambit",
@@ -2226,7 +2228,7 @@
       "CRUMBLE"
     ],
     "trigger": "GIVE PIECE",
-    "unlockable": false
+    "condition": "WAIT"
   },
   {
     "name": "Zocman Tax's Gambit",
@@ -2234,9 +2236,10 @@
     "rarity": "RARE",
     "focus": [
       "MONEY",
-      "KING"
+      "KING",
+      "WAIT"
     ],
     "trigger": "GIVE MONEY",
-    "unlockable": false
+    "condition": "WAIT"
   }
 ]

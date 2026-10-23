@@ -16,13 +16,13 @@ const About = () => {
       <h2>Focuses</h2>
       <p>A list of one or more aspects pertaining to what the gambit does/synergizes with. Correct if focus list exactly matches. Close if at least one focus matches another.</p>
       <p>Will also display whether the amount of focuses are too many, too few, or equal.</p>
-      <i>(PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING, PHANTOM, PROMOTION, BLESS, GOLDEN, PROTECTIVE, TRAP, CAPTURE, MONEY, SHOP, WAIT, LANDING, CRUMBLE, SACRIFICE, PIECE SELLER, GAMBIT SELLER, CHANCE, MOVEMENT, COUNT AS, INCREMENTAL, DELIMIT)</i>
+      <i>(PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING, PHANTOM, PROMOTION, BLESS, GOLDEN, PROTECTIVE, TRAP, CAPTURE, MONEY, SHOP, WAIT, LANDING, CRUMBLE, SACRIFICE, PIECE SELLER, GAMBIT SELLER, CHANCE, MOVEMENT, COUNT AS, INCREMENT, DELIMIT)</i>
       <h2>Trigger</h2>
       <p>What the gambit does when triggered. If a gambit does not trigger, or is unconditional, it is labeled as PASSIVE.</p>
       <i>(SKIP TURN, GIVE MONEY, GIVE PIECE, GIVE GAMBIT, MODIFY PIECE, MODIFY BOARD, MODIFY SELL VALUE, PASSIVE)</i>
-      <h2>Unlockable</h2>
-      <p>Specifies whether the gambit is unlocked from the start of the game, or has an unlock method.</p>
-      <i>(UNLOCKABLE, NO UNLOCK)</i>
+      <h2>Condition</h2>
+      <p>What makes the gambit trigger. If a gambit does not trigger, or is unconditional, it is labeled as PASSIVE.</p>
+      <i>(CAPTURE, LAND, WAIT, SELL, THREATEN, MODIFY PIECE, MOVE ON TILE, INCREMENT, OTHER, PASSIVE)</i>
     </dialog>
   )
 }

@@ -1,7 +1,7 @@
 import {ToastContainer, toast, Zoom} from 'react-toastify'
 import Countdown from 'react-countdown'
 
-const Results = ({guesses, correctGambit, emojis}) => {
+const Results = ({guesses, correctGambit, emojis, cheated}) => {
   const closeDialog = (dialogID) => {
     const dialog = document.getElementById(dialogID);
     dialog.close();
@@ -26,7 +26,11 @@ const Results = ({guesses, correctGambit, emojis}) => {
         id="win-gambit-image"
       ></img>
       <p>You guessed today's {triesMessage()}</p>
-      <button id="share-button" onClick={() => copyResults()}>Copy results</button>
+      <button
+        id="share-button"
+        onClick={() => copyResults()}
+        disabled={cheated}
+      >{cheated ? "Sharing disabled for cheaters" : "Copy results"}</button>
       <ToastContainer
         position="top-center"
         theme="dark"
