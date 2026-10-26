@@ -22,7 +22,7 @@ const About = () => {
       <i>(SKIP TURN, GIVE MONEY, GIVE PIECE, GIVE GAMBIT, MODIFY PIECE, MODIFY BOARD, MODIFY SELL VALUE, PASSIVE)</i>
       <h2>Condition</h2>
       <p>What makes the gambit trigger. If a gambit does not trigger, or is unconditional, it is labeled as PASSIVE.</p>
-      <i>(CAPTURE, LAND, WAIT, SELL, THREATEN, MODIFY PIECE, MOVE ON TILE, INCREMENT, OTHER, PASSIVE)</i>
+      <i>(CAPTURE, LAND, WAIT, SELL, EARN/BUY, THREATEN, MODIFY PIECE, MOVE ON TILE, ONCE A GAME, INCREMENT, OTHER, PASSIVE)</i>
     </dialog>
   )
 }
