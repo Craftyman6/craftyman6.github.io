@@ -1678,10 +1678,11 @@
     "cost": 6,
     "rarity": "RARE",
     "focus": [
-      "PHANTOM"
+      "PHANTOM",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
-    "condition": "EARN/BUY"
+    "condition": "MOVE ON TILE"
   },
   {
     "name": "Sacrifice's Gambit",
