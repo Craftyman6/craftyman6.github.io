@@ -684,7 +684,7 @@
       "INCREMENT"
     ],
     "trigger": "GIVE GAMBIT",
-    "condition": "SELL"
+    "condition": "INCREMENT"
   },
   {
     "name": "Eugenic's Gambit",
@@ -1215,7 +1215,8 @@
     "cost": 7,
     "rarity": "RARE",
     "focus": [
-      "GAMBIT SELLER"
+      "GAMBIT SELLER",
+      "PIECE SELLER"
     ],
     "trigger": "GIVE PIECE",
     "condition": "OTHER"
