@@ -1434,7 +1434,8 @@
     "rarity": "COMMON",
     "focus": [
       "PROTECTIVE",
-      "SACRIFICE"
+      "SACRIFICE",
+      "CHANCE"
     ],
     "trigger": "MODIFY PIECE",
     "condition": "THREATEN"
